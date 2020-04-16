@@ -1,0 +1,303 @@
+<!doctype html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+
+		<title>Proposal Presentation</title>
+
+ 		<link rel="icon" type="image/x-icon" href="css/gt-logo-gold.png">
+
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/print/print.css">
+        <link rel="stylesheet" href="css/CRAWLAB.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+		<!-- <script src="js/reveal.js"></script> -->
+
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+                <section> <!-- Title Slide -->
+                    <br>
+                    <h2 style="text-align:center;">Bayesian Edge Analytics of Manufacturing Process and Health Status in an IoT Framework</h2>
+                    <p style="text-align: center;">
+					<br>
+					<h2 style="text-align:center;">April 2020</h2>
+                    Daniel Newman<br>    
+                    Department of Mechanical Engineering<br>
+                    Georia Institute of Technology<br>
+                    <a href="mailto:danielnewman@gatech.edu" title="Email">danielnewman@gatech.edu</a><br>
+                 </p>
+                </section>
+
+
+            <section>
+                <div style="position:relative; width:1280px; height:960px; margin:0 auto;justify-content: center;">
+                    <h2 style="margin-top:-25px;margin-bottom:0;">Background</h2>
+                    <div style="display:inline-block;position: absolute;top: 55%; left: 50%;transform: translate(-50%,-50%);width:100%;">
+                        <div style="font-size: 1.0em">
+                            <ul style="line-height:1.5;">
+                                <!-- <li class="fragment fade-up">Edge computing will become increasingly useful due to benefits of increased security and reduced latency versus the cloud.</li> -->
+                                <li class="fragment fade-up">Industrial Internet of Things</li>
+                                <li class="fragment fade-up">Data Sources and Protocols</li>
+                                <ul style="line-height:1.0">
+                                    <li class="fragment fade-up">OPC-UA</li>
+                                    <li class="fragment fade-up">MTConnect</li>
+                                    <li class="fragment fade-up">MQTT</li>
+                                </ul>
+                                <li class="fragment fade-up">Frequency-Domain Signal Processsing</li>
+                                <ul style="line-height:1.0">
+                                    <li class="fragment fade-up">Discrete Fourier Transform</li>
+                                    <li class="fragment fade-up">Improving DFT results</li>
+                                </ul>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2 style="margin-top:-25px;margin-bottom:0;">IIoT</h2>
+                <div style="position:relative; width:1152px; height:864px; margin: 0% auto;justify-content: center;">
+                    <img src="../Figures/IIoT_Generic.png" style="vertical-align:middle;border:0;height:100%">
+                </div>
+            </section>
+
+            <section>
+                <div style="position:relative; width:1280px; height:960px; margin:0 auto;justify-content: center;">
+                    <h2 style="margin-top:-25px;margin-bottom:0;">IoT Architecture</h2>
+                    <div style="display:inline-block;position: absolute;top: 55%; left: 50%;transform: translate(-50%,-50%);width:100%;">
+                        <div style="font-size: 1.0em">
+                            <ul style="line-height:1.5;">
+                                <!-- <li class="fragment fade-up">Edge computing will become increasingly useful due to benefits of increased security and reduced latency versus the cloud.</li> -->
+                                <li class="fragment fade-up">Background and Prior Work</li>
+                                <li class="fragment fade-up">Proposed Architecture</li>
+                                <li class="fragment fade-up">Message Formatting</li>
+                                <ul style="line-height:1.0">
+                                    <li class="fragment fade-up">MQTT Topic Structure</li>
+                                    <li class="fragment fade-up">Payload Structure</li>
+                                </ul>
+                                <li class="fragment fade-up">Health Monitoring Application</li>
+                                <ul style="line-height:1.0">
+                                    <li class="fragment fade-up">Utility of Controller Data</li>
+                                    <li class="fragment fade-up">Sensor Data Contextualization</li>
+                                    <li class="fragment fade-up">Case Study: Historical monitoring of 3-Axis Mill</li>
+                                </ul>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section>
+                <div style="position:relative; width:1280px; height:960px; margin:0 auto;justify-content: center;">
+                    <h2 style="margin-top:-25px;margin-bottom:0;">Edge-Deployable Tools</h2>
+                    <div style="display:inline-block;position: absolute;top: 55%; left: 50%;transform: translate(-50%,-50%);width:100%;">
+                        <div style="font-size: 1.0em">
+                            <ul style="line-height:1.5;">
+                                <!-- <li class="fragment fade-up">Edge computing will become increasingly useful due to benefits of increased security and reduced latency versus the cloud.</li> -->
+                                <li class="fragment fade-up">Overview of Available Tools</li>
+                                <li class="fragment fade-up">Anomaly Detection</li>
+                                <ul style="line-height:1.0">
+                                    <li class="fragment fade-up">Gaussian Mixture Modeling</li>
+                                    <li class="fragment fade-up">MLP Autoencoders</li>
+                                    <li class="fragment fade-up">Convolutional Autoencoders</li>
+                                </ul>
+                                <li class="fragment fade-up">Classification</li>
+                                <ul style="line-height:1.0">
+                                    <li class="fragment fade-up">Naive Bayes</li>
+                                    <li class="fragment fade-up">Neural Network Classifiers</li>
+                                </ul>
+                                <li class="fragment fade-up">Edge and IoT Deployment</li>
+                                <ul style="line-height:1.0">
+                                    <li class="fragment fade-up">Anomaly Detection</li>
+                                    <li class="fragment fade-up">Classification</li>
+                                </ul>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        
+            <section>
+                <h2 style="margin-top:-25px;margin-bottom:0;">Test Dataset Parameters</h2>
+                <div style="position:relative; width:1152px; height:864px; margin: 0% auto;justify-content: center;">
+                    <img src="figures/Chapter4/Chapt4-Example-Value-Tables.png" style="vertical-align:middle;border:0;height:50%">
+                </div>
+            </section>
+
+            <section>
+                <div style="position:relative; width:1152px; height:864px; margin: 0% auto;justify-content: center;">
+                    <h2 style="margin-top:-25px;margin-bottom:0;">Test Dataset</h2>
+                        <div style="display:inline-block;position: absolute;top: 55%; left: 50%;transform: translate(-50%,-50%);width:100%;">
+                    <img src="figures/Chapter4/Test_Data/Test_Signal.png" style="vertical-align:middle;border:0;width:100%">
+                    <img src="figures/Chapter4/Test_Data/Test_Signal_FFT.png" style="vertical-align:middle;border:0;width:100%">
+                </div>
+                </div>
+            </section>
+
+            <section>
+                <h2 style="margin-top:-25px;margin-bottom:0;">Gaussian Mixture Model</h2>
+                <div style="position:relative; width:1152px; height:864px; margin: 0% auto;justify-content: center;">
+                    <img src="figures/Chapter4/Test_Data/PCA-GMM_64_Histogram_Train_Healthy.png" style="vertical-align:middle;border:0;width:50%">
+                    <img src="figures/Chapter4/Test_Data/PCA-GMM_64_NormalTest.png" style="vertical-align:middle;border:0;width:50%">
+                </div>
+            </section>
+
+            <section>
+                <h2 style="margin-top:-25px;margin-bottom:0;">Gaussian Mixture Model</h2>
+                <div style="position:relative; width:1152px; height:864px; margin: 0% auto;justify-content: center;">
+                    <img src="figures/Chapter4/Test_Data/PCA-GMM_64_Histogram_Train_Compare.png" style="vertical-align:middle;border:0;width:100%">
+                    <img src="figures/Chapter4/Test_Data/PCA-GMM_64_Histogram_Healthy_Compare.png" style="vertical-align:middle;border:0;width:100%">
+                </div>
+            </section>
+
+            <section>
+                <h2 style="margin-top:-25px;margin-bottom:0;">Autoencoder</h2>
+                <div style="position:relative; width:1152px; height:864px; margin: 0% auto;justify-content: center;">
+                    <img src="figures/Chapter4/Test_Data/AE_Histogram_Train_Healthy.png" style="vertical-align:middle;border:0;width:50%">
+                    <img src="figures/Chapter4/Test_Data/AE_NormalTest.png" style="vertical-align:middle;border:0;width:50%">
+                </div>
+            </section>
+
+            <section>
+                <div style="position:relative; width:1152px; height:864px; margin: 0% auto;justify-content: center;">
+                    <h2 style="margin-top:-25px;margin-bottom:0;">Autoencoder</h2>
+                        <div style="display:inline-block;position: absolute;top: 55%; left: 50%;transform: translate(-50%,-50%);width:100%;">
+                    <img src="figures/Chapter4/Test_Data/AE_Histogram_All.png" style="vertical-align:middle;border:0;width:100%">
+                </div>
+                </div>
+            </section>
+
+            <section>
+                <h2 style="margin-top:-25px;margin-bottom:0;">Conv. Autoencoder</h2>
+                <div style="position:relative; width:1152px; height:864px; margin: 0% auto;justify-content: center;">
+                    <img src="figures/Chapter4/Test_Data/CONV_AE_Histogram_Train_Healthy.png" style="vertical-align:middle;border:0;width:50%">
+                    <img src="figures/Chapter4/Test_Data/CONV_AE_NormalTest.png" style="vertical-align:middle;border:0;width:50%">
+                </div>
+            </section>
+
+            <section>
+                <div style="position:relative; width:1152px; height:864px; margin: 0% auto;justify-content: center;">
+                <h2 style="margin-top:-25px;margin-bottom:0;">Conv. Autoencoder</h2>
+                    <div style="display:inline-block;position: absolute;top: 55%; left: 50%;transform: translate(-50%,-50%);width:100%;">
+                    <img src="figures/Chapter4/Test_Data/Conv_AE_Histogram_All.png" style="vertical-align:middle;border:0;width:100%">
+                </div>
+                </div>
+            </section>
+
+            <section>
+                <div style="position:relative; width:1280px; height:960px; margin:0 auto;justify-content: center;">
+                    <h2 style="margin-top:-25px;margin-bottom:0;">Integrated Edge Device</h2>
+                    <div style="display:inline-block;position: absolute;top: 55%; left: 50%;transform: translate(-50%,-50%);width:100%;">
+                        <div style="font-size: 1.0em">
+                            <ul style="line-height:1.5;">
+                                <!-- <li class="fragment fade-up">Edge computing will become increasingly useful due to benefits of increased security and reduced latency versus the cloud.</li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div style="position:relative; width:1280px; height:960px; margin:0 auto;justify-content: center;">
+                    <h2 style="margin-top:-25px;margin-bottom:0;">Case Study: Tool Wear Analysis and Prediction</h2>
+                    <div style="display:inline-block;position: absolute;top: 55%; left: 50%;transform: translate(-50%,-50%);width:100%;">
+                        <div style="font-size: 1.0em">
+                            <ul style="line-height:1.5;">
+                                <!-- <li class="fragment fade-up">Edge computing will become increasingly useful due to benefits of increased security and reduced latency versus the cloud.</li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+        <!-- <script src="lib/js/head.min.js"></script> -->
+        
+        <script src="js/reveal.js"></script>
+
+        <!-- Try to get jQuery from CDN, if not fall back to local version -->
+        <!-- <script src="https://code.jquery.com/jquery-1.8.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/jquery-1.8.0.min.js"><\/script>')</script>
+         -->
+        <!-- Try to get jQuery UI from CDN, if not fall back to local version -->
+        <!-- <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+        <script>window.jQuery.ui || document.write('<script src="js/jquery-ui.min.js"><\/script>')</script> -->
+
+        <script>
+            // Full list of configuration options available at:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: false,
+                progress: true,
+                history: true,
+                center: false,
+                
+                // Help the user learn the controls by providing hints, for example by
+                // bouncing the down arrow when they first encounter a vertical slide
+                controlsTutorial: true,
+
+                transition: 'none', // none/fade/slide/convex/concave/zoom
+                
+                // The "normal" size of the presentation, aspect ratio will be preserved
+                // when the presentation is scaled to fit different resolutions. Can be
+                // specified using percentage units.
+                width: 1280,
+                height: 960,
+
+                // Factor of the display size that should remain empty around the content
+                margin: 0.0,
+
+                // Bounds for smallest/largest possible scale to apply to content
+                minScale: 0.2,
+                maxScale: 1.5,
+
+                pdfSeparateFragments: false,
+
+                slideNumber: 'c/t',
+
+                // Optional reveal.js plugins
+                dependencies: [
+                    { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/highlight/highlight.js', async: true},
+                    { src: 'plugin/zoom-js/zoom.js', async: true },
+                    { src: 'plugin/math/math.js', async: true },
+                    { src: 'plugin/notes/notes.js', async: true }
+                ]
+            });
+
+            Reveal.addEventListener( 'centerText', function() {
+			    Reveal.configure({center: true});
+			}, false );
+
+            // You can provide a function to fully customize the number:
+            Reveal.configure({ slideNumber: function() {
+            // Ignore numbering of vertical slides
+            return [ Reveal.getIndices().h +  '/' ];
+            }});
+        </script>
+        
+	</body>
+</html>
