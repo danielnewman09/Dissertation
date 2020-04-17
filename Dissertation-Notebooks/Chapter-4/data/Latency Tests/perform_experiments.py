@@ -8,7 +8,7 @@ modelIds = ['PCA-GMM','AE','CNN-AE','CNN-AE-Lite','PCA-GNB','MLP','CNN-MLP','CNN
 data_labels = ['Train_Healthy','Valid_Healthy','Train_Unhealthy','Valid_Unhealthy']
 
 INFERENCE_LOCATION = 'Desktop'
-MODEL_STATUS = 'Unloaded'
+MODEL_STATUS = 'Loaded'
 BASE_PATH = '/home/dnewman/'
 
 
