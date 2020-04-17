@@ -11,7 +11,6 @@ INFERENCE_LOCATION = 'Amazon-EC2'
 MODEL_STATUS = 'Loaded'
 BASE_PATH = '/home/daniel/Git/Edge-Analytics-IoT-Framework/'
 
-
 if INFERENCE_LOCATION == 'Desktop':
         import tensorflow as tf
         gpus= tf.config.experimental.list_physical_devices('GPU')
