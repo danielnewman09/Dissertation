@@ -7,9 +7,9 @@ import pandas as pd
 modelIds = ['PCA-GMM','AE','CNN-AE','CNN-AE-Lite','PCA-GNB','MLP','CNN-MLP','CNN-MLP-Lite']
 data_labels = ['Train_Healthy','Valid_Healthy','Train_Unhealthy','Valid_Unhealthy']
 
-INFERENCE_LOCATION = 'Desktop'
-MODEL_STATUS = 'Unloaded'
-BASE_PATH = '/home/dnewman/'
+INFERENCE_LOCATION = 'Amazon-EC2'
+MODEL_STATUS = 'Loaded'
+BASE_PATH = '/home/daniel/Git/Edge-Analytics-IoT-Framework/'
 
 
 if INFERENCE_LOCATION == 'Desktop':
