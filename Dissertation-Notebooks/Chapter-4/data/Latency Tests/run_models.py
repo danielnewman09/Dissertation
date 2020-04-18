@@ -9,7 +9,7 @@ from scipy.stats import describe
 from tensorflow.keras.models import load_model
 from tensorflow.keras.metrics import mean_squared_error
 import tflite_runtime.interpreter as tflite
-# import tensorflow as tf
+import tensorflow as tf
 # import tensorflow.keras as keras
 # from Custom_Layers import Dropout_Live
 
@@ -26,15 +26,15 @@ class RunModels(object):
 
         if preload_models == True:
 
-            self.pca_gmm_model = load(basePath + "Models/GMM/PCA-GMM.joblib")
-            self.cnn_ae_model = load_model(basePath + "Models/Autoencoder/Full/CNN-AE.h5")
-            self.ae_model = load_model(basePath + "Models/Autoencoder/Full/AE.h5")
-            self.cnn_ae_lite_model = tflite.Interpreter(model_path=self.basePath + "Models/Autoencoder/Lite/CNN-AE-Lite.tflite")
+            #self.pca_gmm_model = load(basePath + "Models/GMM/PCA-GMM.joblib")
+            #self.cnn_ae_model = load_model(basePath + "Models/Autoencoder/Full/CNN-AE.h5")
+            #self.ae_model = load_model(basePath + "Models/Autoencoder/Full/AE.h5")
+            #self.cnn_ae_lite_model = tf.lite.Interpreter(model_path=self.basePath + "Models/Autoencoder/Lite/CNN-AE-Lite.tflite")
 
-            self.pca_gnb_model = load(basePath + "Models/GNB/PCA-GNB.joblib")
-            self.mlp_model = load_model(basePath + "Models/MLP-Classifier/Full/MLP.h5")
+            #self.pca_gnb_model = load(basePath + "Models/GNB/PCA-GNB.joblib")
+            #self.mlp_model = load_model(basePath + "Models/MLP-Classifier/Full/MLP.h5")
             self.cnn_mlp_model = load_model(basePath + "Models/MLP-Classifier/Full/CNN-MLP.h5")
-            self.cnn_mlp_lite_model = tflite.Interpreter(model_path=self.basePath + "Models/MLP-Classifier/Lite/CNN-MLP-Lite.tflite")
+            #self.cnn_mlp_lite_model = tf.lite.Interpreter(model_path=self.basePath + "Models/MLP-Classifier/Lite/CNN-MLP-Lite.tflite")
 
         
 
