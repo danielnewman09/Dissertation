@@ -7,7 +7,7 @@ from time import process_time
 modelIds = ['PCA-GMM','AE','CNN-AE','CNN-AE-Lite','PCA-GNB','MLP','CNN-MLP','CNN-MLP-Lite']
 data_labels = ['Train_Healthy','Valid_Healthy','Train_Unhealthy','Valid_Unhealthy']
 
-INFERENCE_LOCATION = 'Pocketbeagle'
+INFERENCE_LOCATION = 'Beaglebone'
 MODEL_STATUS = 'Loaded'
 BASE_PATH = '/home/debian/Git/Edge-Analytics-IoT-Framework/'
 
@@ -45,11 +45,11 @@ for k in range(4):
             value = 0.
 
             if j == 0:
-                #pass
-                value = thisModel.model_gmm(values,modelId)
-            elif j == 1: #or  j == 2:
                 pass
-                #value = thisModel.model_inference_full(values,modelId)
+                #value = thisModel.model_gmm(values,modelId)
+            elif j == 1: #or  j == 2:
+                #pass
+                value = thisModel.model_inference_full(values,modelId)
             elif j == 3:
                 #pass
                 value = thisModel.model_inference_lite(values,modelId)
@@ -80,6 +80,7 @@ for k in range(4):
     modelHeader = ','.join(Id for Id in modelIds)
     np.savetxt('Results/' + INFERENCE_LOCATION + '_' + MODEL_STATUS + '_' + data_labels[k] + '.csv',latency,delimiter=',',header=modelHeader)
     np.savetxt('Results/' + INFERENCE_LOCATION + '_' + MODEL_STATUS + '_' + data_labels[k] + '_values.csv',inferenceVals,delimiter=',',header=modelHeader)
+
 
 
 

@@ -35,8 +35,7 @@ class RunModels(object):
             #self.mlp_model = load_model(basePath + "Models/MLP-Classifier/Full/MLP.h5")
             #self.cnn_mlp_model = load_model(basePath + "Models/MLP-Classifier/Full/CNN-MLP.h5")
             self.cnn_mlp_lite_model = tf.lite.Interpreter(model_path=self.basePath + "Models/MLP-Classifier/Lite/CNN-MLP-Lite.tflite")
-
-        
+       
 
 
     def classifier_inference_full(self,values,modelId):
