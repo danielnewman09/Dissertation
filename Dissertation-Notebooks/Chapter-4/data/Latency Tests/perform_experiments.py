@@ -7,9 +7,10 @@ from time import process_time
 modelIds = ['PCA-GMM','AE','CNN-AE','CNN-AE-Lite','PCA-GNB','MLP','CNN-MLP','CNN-MLP-Lite']
 data_labels = ['Train_Healthy','Valid_Healthy','Train_Unhealthy','Valid_Unhealthy']
 
-INFERENCE_LOCATION = 'Beaglebone'
+INFERENCE_LOCATION = 'Desktop'
 MODEL_STATUS = 'Loaded'
-BASE_PATH = '/home/debian/Git/Edge-Analytics-IoT-Framework/'
+# BASE_PATH = '/home/dnewman/Git/Edge-Analytics-IoT-Framework/'
+BASE_PATH = '/home/dnewman/Documents/Github/Edge-Analytics-IoT-Framework/'
 
 if INFERENCE_LOCATION == 'Desktop':
         import tensorflow as tf
@@ -45,23 +46,23 @@ for k in range(4):
             value = 0.
 
             if j == 0:
-                pass
-                #value = thisModel.model_gmm(values,modelId)
-            elif j == 1: #or  j == 2:
                 #pass
-                value = thisModel.model_inference_full(values,modelId)
+                value = thisModel.model_gmm(values,modelId)
+            elif j == 1 or  j == 2:
+                pass
+                #value = thisModel.model_inference_full(values,modelId)
             elif j == 3:
-                pass
-                #value = thisModel.model_inference_lite(values,modelId)
+                #pass
+                value = thisModel.model_inference_lite(values,modelId)
             elif j == 4:   
-                pass
-                #value = thisModel.model_gnb(values,modelId) 
-            elif j == 6: #or j == 6:
+                #pass
+                value = thisModel.model_gnb(values,modelId) 
+            elif j == 5 or j == 6:
                 pass
                 #value = thisModel.classifier_inference_full(values,modelId)
             elif j == 7:
-                pass
-                #value = thisModel.classifier_inference_lite(values,modelId)
+                #pass
+                value = thisModel.classifier_inference_lite(values,modelId)
 
             end_time = process_time()
 
@@ -78,8 +79,9 @@ for k in range(4):
     #myDF.to_csv('Results/' + INFERENCE_LOCATION + '_' + MODEL_STATUS + '_' + data_labels[k] +  '_values.csv')
 
     modelHeader = ','.join(Id for Id in modelIds)
-    np.savetxt('Results/' + INFERENCE_LOCATION + '2_' + MODEL_STATUS + '_' + data_labels[k] + '.csv',latency,delimiter=',',header=modelHeader)
-    np.savetxt('Results/' + INFERENCE_LOCATION + '2_' + MODEL_STATUS + '_' + data_labels[k] + '_values.csv',inferenceVals,delimiter=',',header=modelHeader)
+    np.savetxt('Results/' + INFERENCE_LOCATION + '1_' + MODEL_STATUS + '_' + data_labels[k] + '.csv',latency,delimiter=',',header=modelHeader)
+    np.savetxt('Results/' + INFERENCE_LOCATION + '1_' + MODEL_STATUS + '_' + data_labels[k] + '_values.csv',inferenceVals,delimiter=',',header=modelHeader)
+
 
 
 
