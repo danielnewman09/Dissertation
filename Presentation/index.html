@@ -300,11 +300,65 @@
                     <h2 style="margin-top:-25px;margin-bottom:0;">Integrated Edge Device</h2>
                     <div style="display:inline-block;position: absolute;top: 55%; left: 50%;transform: translate(-50%,-50%);width:100%;">
                         <div style="font-size: 1.0em">
-                            <ul style="line-height:1.5;">
+                            <ul style="line-height:1.0;">
                                 <!-- <li class="fragment fade-up">Edge computing will become increasingly useful due to benefits of increased security and reduced latency versus the cloud.</li> -->
+                                <li class="fragment fade-up">Using a Beaglebone device, what's a reasonable performance expectation for vibration data acquisition, feature extraction, and model inference</li>
+                                <li class="fragment fade-up">Experimental Setup:</li>
+                                    <ul>
+                                        <li>Use C script for PRU measurements</li>
+                                        <li>Store measurements in a serial file</li>
+                                        <li>Use Python API for feature extraction, followed by model inference</li>
+                                    </ul>
+                                <li class="fragment fade-up">Evaluate computation time required for increasing sample sizes</li>
+                                <li class="fragment fade-up">Hold sampling duration constant (higher sample size = higher sample rate)</li>
                             </ul>
                         </div>
                     </div>
+                </div>
+            </section>
+
+            <section>
+                <div style="position:relative; width:1152px; height:864px; margin: 0% auto;justify-content: center;">
+                    <h2 style="margin-top:-25px;margin-bottom:0;">Edge Device Diagram</h2>
+                        <!-- <div style="display:inline-block;position: absolute;top: 55%; left: 50%;transform: translate(-50%,-50%);width:100%;"> -->
+                    <img src="figures/Chapter5/Edge_Device_NodeRed.png" style="vertical-align:middle;border:0;height:100%">
+                <!-- </div> -->
+                </div>
+            </section>
+
+            <section>
+                <div style="position:relative; width:1152px; height:864px; margin: 0% auto;justify-content: center;">
+                    <h2 style="margin-top:-25px;margin-bottom:0;">Sampling Latency</h2>
+                        <div style="display:inline-block;position: absolute;top: 55%; left: 50%;transform: translate(-50%,-50%);width:100%;">
+                    <img src="figures/Chapter5/SampleLatency_PCA-GMM.png" style="vertical-align:middle;border:0;width:100%">
+                </div>
+                </div>
+            </section>
+
+            <section>
+                <div style="position:relative; width:1152px; height:864px; margin: 0% auto;justify-content: center;">
+                    <h2 style="margin-top:-25px;margin-bottom:0;">Processing Latency</h2>
+                        <div style="display:inline-block;position: absolute;top: 55%; left: 50%;transform: translate(-50%,-50%);width:100%;">
+                    <img src="figures/Chapter5/FeatureExtractLatency_PCA-GMM.png" style="vertical-align:middle;border:0;width:100%">
+                </div>
+                </div>
+            </section>
+
+            <section>
+                <div style="position:relative; width:1152px; height:864px; margin: 0% auto;justify-content: center;">
+                    <h2 style="margin-top:-25px;margin-bottom:0;">SK-Learn Latency</h2>
+                        <div style="display:inline-block;position: absolute;top: 55%; left: 50%;transform: translate(-50%,-50%);width:100%;">
+                    <img src="figures/Chapter5/ModelInferenceLatency_PCA-GMM.png" style="vertical-align:middle;border:0;width:100%">
+                </div>
+                </div>
+            </section>
+
+            <section>
+                <div style="position:relative; width:1152px; height:864px; margin: 0% auto;justify-content: center;">
+                    <h2 style="margin-top:-25px;margin-bottom:0;">Total Time</h2>
+                        <div style="display:inline-block;position: absolute;top: 55%; left: 50%;transform: translate(-50%,-50%);width:100%;">
+                    <img src="figures/Chapter5/TotalLatency_PCA-GMM.png" style="vertical-align:middle;border:0;width:100%">
+                </div>
                 </div>
             </section>
 

@@ -6,7 +6,7 @@ import ast
 
 class DBQuerier(object):
 
-    def __init__(self,database,assetId,host='10.8.0.1',debug=True):
+    def __init__(self,database,assetId,connection='Personal',debug=True,limit=None):
 
         if debug:
             self.debug_str = ""
@@ -19,10 +19,16 @@ class DBQuerier(object):
         self.assetId = assetId
         self.reset_min_date()
 
-        self.user = 'dnewman'
-        self.password = 'Convolve7691!'
-        self.host = host
-
+        if connection.lower() == 'personal':
+            self.user = 'dnewman'
+            self.password = 'Convolve7691!'
+            self.host = '10.8.0.1'
+        elif connection.lower() == 'boeing':
+            self.user = 'searcher'
+            self.password = 'oDxAYdZaC3FWhY66'
+            self.host = 'db18.iotfm.org'
+        self.limit = limit
+        
     def connect(self):
         self.mydb = mysql.connector.connect(user=self.user,password=self.password,
                                 host=self.host,database=self.database)
@@ -34,19 +40,58 @@ class DBQuerier(object):
         self.minQueriedDate = "2999-01-01 00:00:00.000000"
 
     def insert_labels(self,dates,labels):
-
-        insert_vals = ["('" + dates[i] + "', '" + self.assetId + "', '" + labels[i] + "')," for i in range(len(dates))]
-        # insert_vals = insert_vals[0]
-        insert_vals = ''.join(insert_vals)[:-1]
         
+        insert_vals = ["('" + dates[i] + "', '" + self.assetId + "', '" + labels[i] + "')," for i in range(len(dates))]
+        insert_vals = ''.join(insert_vals)[:-1]
         
         query = """INSERT INTO """ + self.database + """.VibrationState
                 (`dateTime`,`assetId`,`values`) VALUES 
                 """ + insert_vals + """;"""
-
-        # print(query)
-
-        self.execute_query(query)
+        
+        if self.debug:
+            print(query)
+        else:
+            self.execute_query(query)
+            
+    def insert_labels_program(self,dates,labels, programName):
+        
+        insert_vals = ["('" + dates[i] + "', '" + self.assetId + "', '" + labels[i] + "', '" + programName + "')," for i in range(len(dates))]
+        insert_vals = ''.join(insert_vals)[:-1]
+        
+        query = """INSERT INTO """ + self.database + """.VibrationState
+                (`dateTime`,`assetId`,`values`,`programName`) VALUES 
+                """ + insert_vals + """;"""
+        
+        if self.debug:
+            print(query)
+        else:
+            self.execute_query(query)
+            
+    def insert_labels_experiment(self,table,dates,
+                                      experimentNumber,
+                                      experimentName,
+                                      toolStatus,
+                                      toolSize,
+                                      material,
+                                      depthOfCut,
+                                      surfaceSpeed,
+                                      feedRate):
+        
+        insert_vals = ["('" + dates[i] + "', '" + self.assetId + "', " + str(experimentNumber) + ", '" + experimentName +"', '" 
+                        + toolStatus + "', '" +  toolSize + "', '" + material + "', '" + depthOfCut + "', '"
+                        + surfaceSpeed + "', '" + feedRate + "')," for i in range(len(dates))]
+        
+        insert_vals = ''.join(insert_vals)[:-1]
+        
+        query = """INSERT INTO """ + self.database + """.""" + table + """
+                (`dateTime`,`assetId`,`experimentSample`, `experimentName`, `toolStatus`,
+                 `toolSize`,`material`,`depthOfCut`,`surfaceSpeed`,`feedRate`) VALUES 
+                """ + insert_vals + """;"""
+        
+        if self.debug:
+            print(query)
+        else:
+            self.execute_query(query)
 
     def select_labels(self):
         query = """SELECT VibrationState.values, VibrationState.dateTime, RMS.values as rmsVals
@@ -81,7 +126,19 @@ class DBQuerier(object):
         sensorId = [data[i][0] for i in range(len(data))]
 
         return sensorId
+    
+    def select_frequency_interval(self):
+        query = """SELECT frequencyInterval FROM """ + self.database + """.FFT
+                where assetId = '""" + self.assetId + """'
+                order by id desc limit 1;"""
 
+        cursor = self.execute_query(query)
+        data=cursor.fetchall()
+
+        frequencyInterval = float(data[0][0])
+
+        return frequencyInterval
+        
     def select_fft_features(self,
                             minDate=None,
                             stdev=False,
@@ -90,6 +147,7 @@ class DBQuerier(object):
                             limit=None,
                             descending_order=True,
                             fft_interval=None,
+                            extra_condition = '',
                             ):
         if self.debug:
             print(self.minQueriedDate)
@@ -122,8 +180,8 @@ class DBQuerier(object):
         else:
             minDate_str = ""
 
-        if limit is not None:
-            limit_str = "limit {}".format(limit)
+        if self.limit is not None:
+            limit_str = "limit {}".format(self.limit)
         else:
             limit_str = ""
         
@@ -136,7 +194,8 @@ class DBQuerier(object):
         """ + table + """.dateTime AS dateTime, 
         """ + table + """.values AS fftVals, 
         RMS.values AS rmsVals,
-        VibrationState.values as vibState
+        VibrationState.values as vibState,
+        VibrationState.programName as programName
         FROM """ + self.database + """.""" + table + """
         INNER JOIN """ + self.database + """.RMS ON 
         """ + self.database + """.RMS.dateTime = """ + self.database + """.""" + table + """.dateTime 
@@ -147,7 +206,7 @@ class DBQuerier(object):
         where """ + vibStateSelect + """
         """ + self.debug_str + """ 
         and """ + table + """.assetId = '""" + self.assetId + """'
-        """ + minDate_str + """ """ + interval_str + """
+        """ + minDate_str + """ """ + interval_str + """ """ + extra_condition + """
         order by """ + table + """.dateTime """ + desc_str + " " + limit_str + """; """
         
         print(query)
@@ -157,22 +216,24 @@ class DBQuerier(object):
 
         if len(data) <= 0:
             return pd.DataFrame(),pd.DataFrame(),pd.DataFrame()
+        
+        fftVals = np.array([[]])
          
  
         sensorId = np.array([[data[i][0] for i in range(len(data))]]).T
         dateTime = np.array([[data[i][1] for i in range(len(data))]]).T
-        fftVals = np.array([ast.literal_eval(data[i][2]) for i in range(len(data))])
-        rmsVals = np.array([[data[i][3] for i in range(len(data))]]).T
+        fftVals = np.array([np.array(ast.literal_eval(data[i][2])) for i in range(len(data))])
+        rmsVals = np.array([[data[i][3] for i in range(len(data))]]).T.astype(float)
         vibState = np.array([[data[i][4] for i in range(len(data))]]).T
+        programName = np.array([[data[i][5] for i in range(len(data))]]).T
 
         columns = ['FFT-{}'.format(i) for i in range(fftVals.shape[1])]
-        columns = ['dateTime'] + columns + ['RMS','sensorId','VibState']
+        columns = ['dateTime'] + columns + ['RMS','sensorId','VibState','programName']
+
         
-        fftVals = lin_log_interp(fftVals)
+        fftVals = lin_log_interp(fftVals).astype(float)
 
-#         self.minQueriedDate = np.amin(dateTime).strftime('%Y-%m-%d %H:%M:%S.%f')
-
-        statsFeatures = np.hstack((dateTime,fftVals,rmsVals,sensorId,vibState))
+        statsFeatures = np.hstack((dateTime,fftVals,rmsVals,sensorId,vibState,programName))
 
         featuresDF = pd.DataFrame(data=statsFeatures,columns=columns)
         featuresDF = featuresDF.set_index('dateTime')
@@ -183,11 +244,15 @@ class DBQuerier(object):
 
         sensorIdDF = featuresDF.loc[:, featuresDF.columns == 'sensorId']
         vibStateDF = featuresDF.loc[:, featuresDF.columns == 'VibState']
-        featuresDF = featuresDF.drop(['RMS','sensorId','VibState'],axis=1).astype(float)
+        progNameDF = featuresDF.loc[:, featuresDF.columns == 'programName']
+        featuresDF = featuresDF.drop(['RMS','sensorId','VibState'],axis=1)
         
-        return featuresDF,sensorIdDF,vibStateDF
+        self.minQueriedDate = np.amin(dateTime).strftime('%Y-%m-%d %H:%M:%S.%f')
 
-    def select_ml_features(self,labeled=True,sensorId=None,limit=None):
+        
+        return featuresDF,sensorIdDF,vibStateDF, programName
+
+    def select_ml_features(self,labeled=True,sensorId=None):
 
         if self.debug:
             print(self.minQueriedDate)
@@ -206,7 +271,7 @@ class DBQuerier(object):
             sensorId_str = ''
 
         if limit is not None:
-            limit_str = "limit {}".format(limit)
+            limit_str = "limit {}".format(self.limit)
         else:
             limit_str = ""
 
@@ -290,10 +355,5 @@ class DBQuerier(object):
             cursor.close()
             self.disconnect()
             return True
-        elif query.lower().find('select') != -1:
-            return cursor
         else:
-            self.mydb.commit()
-            cursor.close()
-            self.disconnect()
-            return True
+            return cursor
