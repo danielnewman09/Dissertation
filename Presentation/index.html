@@ -318,6 +318,43 @@
             </section>
 
             <section>
+                <div style="position:relative; width:1280px; height:960px; margin:0 auto;justify-content: center;">
+                    <h2 style="margin-top:-25px;margin-bottom:0;">Notes</h2>
+                    <div style="display:inline-block;position: absolute;top: 55%; left: 50%;transform: translate(-50%,-50%);width:100%;">
+                        <div style="font-size: 1.0em">
+                            <ul style="line-height:1.0;">
+                                <!-- <li class="fragment fade-up">Edge computing will become increasingly useful due to benefits of increased security and reduced latency versus the cloud.</li> -->
+                                <li class="fragment fade-up">Al Salour hasn't responded to schedule proposal</li>
+                                <li class="fragment fade-up">MMM access for experiments</li>
+                                    <ul>
+                                        <li>I've set up everything I believe I can to be prepared. I have toolpaths ready</li>
+                                    </ul>
+                                <li class="fragment fade-up">I reached out to my Boeing manager and I am in good shape (target start date 8/28).</li>
+                                <li class="fragment fade-up">Full draft revision (chapters 1-5) on track for Friday</li>
+                                    <ul>
+                                        <li>Fully convert to Word or PDF okay?</li>
+                                    </ul>
+                                <li>Spoke with Pierrick. Shared data acquisition philosophy. Sounds like Beaglebon AI can be used for his work.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div style="position:relative; width:1280px; height:960px; margin:0 auto;justify-content: center;">
+                    <h2 style="margin-top:-25px;margin-bottom:0;">Summary Modifications</h2>
+                    <div style="display:inline-block;position: absolute;top: 55%; left: 50%;transform: translate(-50%,-50%);width:100%;">
+                        <div style="font-size: 1.0em">
+                            <p>Using modern machine learning tools and embedded computing, a low-cost, integrated data acquisition platform is proposed in this work. Built on modern, open-source hardware and software, this platform enables high-quality sensor data acquisition and edge-based computation to facilitate machine health monitoring in an IoT framework. By leveraging proposed protocols for edge-based feature extraction, large sensor samples are reduced in size to facilitate health monitoring and near real-time inference. This proposed methodology compares favorably to cloud-based solutions.  A case study in tool wear analysis shows that CNC controller data may be used to contextualize accelerometer measurements, and in turn facilitate training novelty detection and classification algorithms. These algorithms are then deployed to the edge device for near-real time inference. 
+                            </p>
+                            </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section>
                 <div style="position:relative; width:1152px; height:864px; margin: 0% auto;justify-content: center;">
                     <h2 style="margin-top:-25px;margin-bottom:0;">Edge Device Diagram</h2>
                         <!-- <div style="display:inline-block;position: absolute;top: 55%; left: 50%;transform: translate(-50%,-50%);width:100%;"> -->
@@ -328,55 +365,28 @@
 
             <section>
                 <div style="position:relative; width:1152px; height:864px; margin: 0% auto;justify-content: center;">
-                    <h2 style="margin-top:-25px;margin-bottom:0;">Total Latency</h2>
-                        <div style="display:inline-block;position: absolute;top: 55%; left: 50%;transform: translate(-50%,-50%);width:100%;">
-                    <img src="figures/Chapter5/Beaglebone_TotalLatency_CNN-AE-Lite.png" style="vertical-align:middle;border:0;width:100%">
-                </div>
-                </div>
-            </section>
-
-            <section>
-                <div style="position:relative; width:1152px; height:864px; margin: 0% auto;justify-content: center;">
-                    <h2 style="margin-top:-25px;margin-bottom:0;">Sampling Latency</h2>
-                        <div style="display:inline-block;position: absolute;top: 55%; left: 50%;transform: translate(-50%,-50%);width:100%;">
-                    <img src="figures/Chapter5/SampleLatency_PCA-GMM.png" style="vertical-align:middle;border:0;width:100%">
-                </div>
-                </div>
-            </section>
-
-            <section>
-                <div style="position:relative; width:1152px; height:864px; margin: 0% auto;justify-content: center;">
                     <h2 style="margin-top:-25px;margin-bottom:0;">Processing Latency</h2>
                         <div style="display:inline-block;position: absolute;top: 55%; left: 50%;transform: translate(-50%,-50%);width:100%;">
-                    <img src="figures/Chapter5/FeatureExtractLatency_PCA-GMM.png" style="vertical-align:middle;border:0;width:100%">
+                    <img src="figures/Chapter5/Edge_ExtractLatency_.png" style="vertical-align:middle;border:0;width:100%">
                 </div>
                 </div>
             </section>
 
             <section>
                 <div style="position:relative; width:1152px; height:864px; margin: 0% auto;justify-content: center;">
-                    <h2 style="margin-top:-25px;margin-bottom:0;">SK-Learn Latency</h2>
+                    <h2 style="margin-top:-25px;margin-bottom:0;">Inference Latency</h2>
                         <div style="display:inline-block;position: absolute;top: 55%; left: 50%;transform: translate(-50%,-50%);width:100%;">
-                    <img src="figures/Chapter5/ModelInferenceLatency_PCA-GMM.png" style="vertical-align:middle;border:0;width:100%">
+                    <img src="figures/Chapter5/Edge_InferenceLatency.png" style="vertical-align:middle;border:0;width:100%">
                 </div>
                 </div>
             </section>
 
             <section>
                 <div style="position:relative; width:1152px; height:864px; margin: 0% auto;justify-content: center;">
-                    <h2 style="margin-top:-25px;margin-bottom:0;">Total Time</h2>
+                    <h2 style="margin-top:-25px;margin-bottom:0;">Cloud vs Edge</h2>
                         <div style="display:inline-block;position: absolute;top: 55%; left: 50%;transform: translate(-50%,-50%);width:100%;">
-                    <img src="figures/Chapter5/TotalLatency_PCA-GMM.png" style="vertical-align:middle;border:0;width:100%">
+                    <img src="figures/Chapter5/EdgeCloud_TotalLatency.png" style="vertical-align:middle;border:0;width:100%">
                 </div>
-                </div>
-            </section>
-
-            <section>
-                <div style="position:relative; width:1152px; height:864px; margin: 0% auto;justify-content: center;">
-                    <h2 style="margin-top:-25px;margin-bottom:0;">Total Time: RMS Only </h2>
-                        
-                    <img src="figures/Chapter5/Beaglebone_TotalLatency_RMS-Only.png" style="vertical-align:middle;border:0;width:100%">
-               
                 </div>
             </section>
 
