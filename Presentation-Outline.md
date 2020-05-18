@@ -30,15 +30,11 @@
   - Integrated Data Acquisition Device capable of performing real-time sensor data capture and near real-time inference.
 
 0.5. Outline
-
-- Background 
-
-  - Timeline
-  - 
   
 1.1. Timeline
 
-- Show the progression of embedded computing technology
+  - Show the progression of embedded computing technology
+  - 
 
 1.2. Industrial Internet of Things
 
@@ -54,10 +50,25 @@
 2.1 - Digital Architecture for Machine Health Monitoring
 
 
+
 2.2 - Utility of Controller Data
+
+  - Figures:
+    - Good/Bad tool
+    - Part Setup
+    - Controller Histogram
+    - Accelerometer Histogram
+    - Accelerometer FFT
 
 2.3 - Example - Historical monitoring of spindle health
 
+  - Linked Sensor data with CNC controller data to trigger on machine startup
+  - Sent commanded spindle speeds and program names 
+  - Detected an honest-to-goodness anomaly
+  - Figures: 
+    - Spindle Warmup Program Speed
+    - RMS of vibration for spindle program
+    - RMS history over the course of monitoring
 
 3.1 - Edge-Deployable Statistical and Machine Learning Inference Tools
 
@@ -67,4 +78,30 @@
 3.2 - Different Machine Learning Approaches
 
   - Show supervised/unsupervised learning
+  - Figure:
+    - Tree structure showing different methods
+
+3.3 - Data preprocessing
+
+  - PCA
+  - Data normalization
+  - Labeling if possible
+
+3.4 - Statistical Models
+
+  - Gaussian Naive Bayes
+  - Gaussian Mixture Models
+
+3.5 - Neural Network Models
+
+  - How a neural network functions
+  - How Convolutional Neural Networks Function
+  - Autoencoders
+
+3.6 - Example Case Study with Simulated Data
+
+  
+4.1 - Integrated Data Acquisition Device
+
+
 
