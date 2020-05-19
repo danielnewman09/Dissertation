@@ -100,8 +100,27 @@
 
 3.6 - Example Case Study with Simulated Data
 
+  - Introduction/Explanation
+  - Data Preprocessing
+    - PCA
+  - Classification Model Discussion
+  - Novelty Detection Model Discussion
+  - Deployment to edge/cloud
   
 4.1 - Integrated Data Acquisition Device
 
+  - Beaglebone
+    - PRU
+  - Node Red
+  - Data Acquisition
+    - MTConnect
+    - OPC-UA
+    - Analog Sensors
+  - Data processing
+  - Latency Analysis
+    - Comparison with Cloud
+
+5.1 - Case Study
+  
 
 
