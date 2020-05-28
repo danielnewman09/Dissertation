@@ -1,3 +1,12 @@
+Dissertation-Notebooks/Chapter-6/cnn-ae_fft/
+Dissertation-Notebooks/Chapter-6/cnn_fft_classifier/
+Dissertation-Notebooks/Chapter-6/cnn_vib_classifier/
+Dissertation-Notebooks/Chapter-6/ae_fft/
+Dissertation-Notebooks/Chapter-6/mlp_fft_classifier/
+Dissertation-Notebooks/Chapter-6/untitled_project/
+Dissertation-Notebooks/Chapter-4/cnn_fft_classifier/
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
