@@ -853,26 +853,14 @@
 
             <section>
                 <div class="slide">
-                    <h2 style="margin-top:-25px;margin-bottom:0;">Case Study: Tool Wear Analysis and Prediction</h2>
+                    <h2 style="margin-top:-25px;margin-bottom:0;">Case Study: Tool Wear</h2>
                     <div style="display:inline-block;position: absolute;top: 55%; left: 50%;transform: translate(-50%,-50%);width:100%;">
                         <div style="font-size: 1.0em">
                             <ul style="line-height:1.0;">
                                 <!-- <li class="fragment fade-up">Edge computing will become increasingly useful due to benefits of increased security and reduced latency versus the cloud.</li> -->
                                 <li class="fragment fade-up">Two studies to illustrate different health monitoring techniques</li>
-                                <li class="fragment fade-up">Classification (3-level, 3-factor full-factorial)</li>
-                                    <ul>
-                                        <li>SFM: 200-300</li>
-                                        <li>Chip Load (IPT): 0.001-0.003</li>
-                                        <li>Axial Engagement: 5% - 25%</li>
-                                    </ul>
-                                    <li class="fragment fade-up">Anomaly detection (5-level, 1-factor)</li>
-                                    <ul>
-                                        <li>SFM: 250</li>
-                                        <li>Chip Load (IPT): 0.002</li>
-                                        <li>Axial Engagement: 5% - 25%</li>
-                                    </ul>
-                                <li class="fragment fade-up">Use previous data to validate approaches</li>
-                                
+                                <li class="fragment fade-up">Classification: PCA-GNB model</li>
+                                <li class="fragment fade-up">Anomaly detection:PCA-GMM model</li>                             
                             </ul>
                         </div>
                     </div>
@@ -881,46 +869,128 @@
 
             <section>
                 <div class="slide">
-                    <h2 style="margin-top:-25px;margin-bottom:0;">Classification - Train</h2>
+                    <h2 style="margin-top:-25px;margin-bottom:0;">Tool Wear Classification</h2>
+                    <div style="display:inline-block;position: absolute;top: 55%; left: 50%;transform: translate(-50%,-50%);width:100%;">
+                        <div style="font-size: 1.0em">
+                            <ul style="line-height:1.0;">
+                                <!-- <li class="fragment fade-up">Edge computing will become increasingly useful due to benefits of increased security and reduced latency versus the cloud.</li> -->
+                                <li class="fragment fade-up">Determine which features to use:</li>
+                                <ul style="line-height:1.0;">
+                                    <li class="fragment fade-up">Power Spectral Density Measurements</li>
+                                    <li class="fragment fade-up">Time-domain statistics</li>
+                                    <li class="fragment fade-up">OPC-UA controller labels (Spindle speed, feed rate)</li>
+                                </ul>
+                                <li class="fragment fade-up">Determine how many frequency components in PSD to use</li>
+                                <li class="fragment fade-up">Determine many PCA dimensions to use</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="slide">
+                    <h3 style="margin-top:-25px;margin-bottom:0;">Hyperparameter Optimization</h3>
                         <div style="display:inline-block;position: absolute;top: 55%; left: 50%;transform: translate(-50%,-50%);width:100%;">
-                    <img src="../Dissertation-Notebooks/Chapter-6/figures/pca_gnb_confmatrix_train.png" style="vertical-align:middle;border:0;width:60%">
+                    <img src="../Dissertation-Notebooks/Chapter-6/figures/noDoE_Scores_Presentation.png" style="vertical-align:middle;border:0;width:75%">
                 </div>
                 </div>
             </section>
 
             <section>
                 <div class="slide">
-                    <h2 style="margin-top:-25px;margin-bottom:0;">Classification - Validation</h2>
-                        <div style="display:inline-block;position: absolute;top: 65%; left: 50%;transform: translate(-50%,-50%);width:100%;">
-                    <img src="../Dissertation-Notebooks/Chapter-6/figures/pca_gnb_confmatrix_valid.png" style="vertical-align:middle;border:0;width:60%">
+                    <h3 style="margin-top:-25px;margin-bottom:0;">Model Comparison</h3>
+                        <div style="display:inline-block;position: absolute;top: 55%; left: 50%;transform: translate(-50%,-50%);width:100%;">
+                    <img src="../Figures/Features-Performance-Comparison.png" style="vertical-align:middle;border:0;width:75%">
                 </div>
-                <table style="font-size:1.5em;margin-bottom:3px;">
-                    <thead>
-                        <tr>
-                            <th>Train Accuracy</th>
-                            <th>Validation Accuracy</th>
-                            <th>True Positive</th>
-                            <th>True Negative</th>
-                        </tr>
-                    </thead>
-                        <tbody>
+                </div>
+            </section>
+
+            <section>
+                <div class="slide">
+                    <h3 style="margin-top:-25px;margin-bottom:0;">Model Performance: Training</h3>
+                        <div style="display:inline-block;position: absolute;top: 55%; left: 50%;transform: translate(-50%,-50%);width:100%;">
+                            <img src="../Dissertation-Notebooks/Chapter-6/figures/pca_gnb_confmatrix_train.png" style="vertical-align:middle;border:0;width:75%">   
+                        </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="slide">
+                    <h3 style="margin-top:-25px;margin-bottom:0;">Model Performance: Validation</h3>
+                        <div style="display:inline-block;position: absolute;top: 55%; left: 50%;transform: translate(-50%,-50%);width:100%;">
+                            <img src="../Dissertation-Notebooks/Chapter-6/figures/pca_gnb_confmatrix_valid.png" style="vertical-align:middle;border:0;width:75%">   
+                        </div>
+                </div>
+            </section>
+
+            <!-- <section>
+                <div class="slide">
+                    <h2 class="header">Model Comparison</h2>
+                    <table style="font-size:1.5em;margin-bottom:3px;">
+                        <thead>
                             <tr>
-                                <td>78.1%</td>
-                                <td>78.8%</td>
-                                <td>74.4%</td>
-                                <td>80.7%</td>
+                                <th>Feature<br>Combination</th>
+                                <th>Optimal PCA Dimensionality</th>
+                                <th>Optimal PSD Bandwidth</th>
+                                <th>Validation Precision</th>
+                                <th>Validation Recall</th>
                             </tr>
-                        </tbody>
-                </table>
-            
-                </div>
-            </section>
+                        </thead>
+                            <tbody>
+                                <tr>
+                                    <td>PSD Only</td>
+                                    <td>31</td>
+                                    <td>1,470Hz</td>
+                                    <td>96.5%</td>
+                                    <td>94.8%</td>
+                                </tr>
+                                <tr>
+                                    <td>With OPC-UA</td>
+                                    <td>36</td>
+                                    <td>2,237Hz</td>
+                                    <td>94.8%</td>
+                                    <td>94.8%</td>
+                                </tr>
+                                <tr>
+                                    <td>With time-domain</td>
+                                    <td>76</td>
+                                    <td>410Hz</td>
+                                    <td>80.7%</td>
+                                    <td>85.2%</td>
+                                </tr>
+                                <tr>
+                                    <td>With OPC-UA and time-domain</td>
+                                    <td>121</td>
+                                    <td>1,158Hz</td>
+                                    <td>84.2%</td>
+                                    <td>78.7%</td>
+                                </tr>
+                            </tbody>
+                    </table>
+                
+                    <div style="position:absolute;left:0px;bottom:1%;height:15%">
+                        <img src="css/chevron.png" style="vertical-align:middle;border:0;height:100%">
+                        <h4 style="position:absolute;left:100%;top:74%;border:0;">Architecture</h4>
+                    </div>
+                    </div>
+            </section> -->
+
 
             <section>
                 <div class="slide">
-                    <h2 style="margin-top:-25px;margin-bottom:0;">Anomaly Detection</h2>
+                    <h3 style="margin-top:-25px;margin-bottom:0;">Anomaly Detection: Training vs Validation</h3>
                         <div style="display:inline-block;position: absolute;top: 55%; left: 50%;transform: translate(-50%,-50%);width:100%;">
                     <img src="../Dissertation-Notebooks/Chapter-6/figures/Spindle_Load_Anomalous_Compare.png" style="vertical-align:middle;border:0;width:83%">
+                </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="slide">
+                    <h3 style="margin-top:-25px;margin-bottom:0;">Anomaly Detection: Healthy vs Unhealthy</h3>
+                        <div style="display:inline-block;position: absolute;top: 55%; left: 50%;transform: translate(-50%,-50%);width:100%;">
+                    <img src="../Dissertation-Notebooks/Chapter-6/figures/Spindle_Load_Anomalous_Compare-Healthy_Unhealthy.png" style="vertical-align:middle;border:0;width:83%">
                 </div>
                 </div>
             </section>
