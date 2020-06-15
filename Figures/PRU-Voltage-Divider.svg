@@ -30,10 +30,10 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.7"
-     inkscape:cx="159.26553"
+     inkscape:cx="-106.44876"
      inkscape:cy="90.894226"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g1658"
      showgrid="false"
      inkscape:object-paths="true"
      inkscape:window-width="1853"
@@ -55,7 +55,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -266,20 +266,23 @@
          width="299.62732"
          id="rect1517"
          style="opacity:1;fill:none;stroke:#000000;stroke-width:4.90617847;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-      <flowRoot
-         transform="matrix(0,-1.2265446,1.2265446,0,20.363714,909.18096)"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;line-height:1.25;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
-         id="flowRoot1519"
-         xml:space="preserve"><flowRegion
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start"
-           id="flowRegion1521"><rect
-             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start"
-             y="351.80536"
-             x="565"
-             height="55.714298"
-             width="248.57146"
-             id="rect1523" /></flowRegion><flowPara
-           id="flowPara1525">PRU Input</flowPara></flowRoot>    </g>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:49.06178284px;line-height:1.25;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.22654462"
+         x="-216.18326"
+         y="497.24042"
+         id="text895"
+         transform="rotate(-90)"><tspan
+           sodipodi:role="line"
+           x="-216.18326"
+           y="497.24042"
+           id="tspan893"
+           style="stroke-width:1.22654462"><tspan
+             x="-216.18326"
+             y="497.24042"
+             id="tspan891"
+             style="stroke-width:1.22654462">PRU Input</tspan></tspan></text>
+    </g>
     <g
        transform="rotate(90,99.902028,99.033576)"
        id="g1658">
@@ -421,20 +424,23 @@
            id="path1678-1-1-5-0-6-0"
            style="display:inline;fill:#cfd65a;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.02999878;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.98701298" />
       </g>
-      <flowRoot
+      <text
          xml:space="preserve"
-         id="flowRoot1519-5"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;line-height:1.25;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none"
-         transform="matrix(0,-0.26458333,0.26458333,0,16.515375,350.97112)"><flowRegion
-           id="flowRegion1521-9"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle"><rect
-             id="rect1523-3"
-             width="217.14291"
-             height="57.142883"
-             x="565"
-             y="351.80536"
-             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle" /></flowRegion><flowPara
-           id="flowPara1625">ADXL203</flowPara></flowRoot>      <rect
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.58333333px;line-height:1.25;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332;"
+         x="-199.22406"
+         y="119.38454"
+         id="text901"
+         transform="rotate(-90)"><tspan
+           sodipodi:role="line"
+           x="-199.22406"
+           y="119.38454"
+           id="tspan899"
+           style="stroke-width:0.26458332;-inkscape-font-specification:'CMU Serif, Bold';font-family:'CMU Serif';font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.58333333px;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;"><tspan
+             x="-199.22406"
+             y="119.38454"
+             id="tspan897"
+             style="stroke-width:0.26458332;-inkscape-font-specification:'CMU Serif, Bold';font-family:'CMU Serif';font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.58333333px;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;">ADXL203</tspan></tspan></text>
+      <rect
          transform="rotate(-90)"
          style="display:inline;opacity:1;fill:none;stroke:#000000;stroke-width:1.0583334;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
          id="rect1517-1"

@@ -15,7 +15,7 @@
    viewBox="0 0 285.52258 285.57651"
    version="1.1"
    id="svg1956"
-   inkscape:version="0.92.4 (f8dce91, 2019-08-02)"
+   inkscape:version="0.92.5 (0.92.5+69)"
    sodipodi:docname="MTConnect_Schematic.svg"
    inkscape:export-filename="/home/dnewman/Nextcloud/Documents/PhD/Figures/MTConnect_Schematic.png"
    inkscape:export-xdpi="96"
@@ -151,13 +151,13 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.7"
-     inkscape:cx="519.86924"
-     inkscape:cy="787.15406"
+     inkscape:cx="254.15495"
+     inkscape:cy="501.43977"
      inkscape:document-units="mm"
-     inkscape:current-layer="g6988"
+     inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1301"
-     inkscape:window-height="713"
+     inkscape:window-width="1853"
+     inkscape:window-height="1025"
      inkscape:window-x="67"
      inkscape:window-y="27"
      inkscape:window-maximized="1"
@@ -174,7 +174,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -220,34 +220,51 @@
        id="image823-7"
        x="115.32829"
        y="274.59366" />
-    <flowRoot
+    <text
        xml:space="preserve"
-       id="flowRoot2231-2-9-6-6-8-9-9-6-5-3-1"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;line-height:1.25;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none"
-       transform="matrix(0.26458333,0,0,0.26458333,87.074087,339.05759)"><flowRegion
-         id="flowRegion2233-0-2-1-3-2-3-6-5-6-6-2"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle"><rect
-           id="rect2235-2-2-2-2-3-9-9-9-5-7-7"
-           width="512.73285"
-           height="141.94003"
-           x="111.42857"
-           y="62.519684"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle" /></flowRegion><flowPara
-         id="flowPara2480">MTConnect Adapter</flowPara><flowPara
-         id="flowPara10365">(Machine Specific)</flowPara></flowRoot>    <flowRoot
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.58333333px;line-height:1.25;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332;"
+       x="128.48293"
+       y="365.38672"
+       id="text1069"><tspan
+         sodipodi:role="line"
+         x="128.48293"
+         y="365.38672"
+         id="tspan1063"
+         style="stroke-width:0.26458332;-inkscape-font-specification:'CMU Serif, Bold';font-family:'CMU Serif';font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.58333333px;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;"><tspan
+           x="128.48293"
+           y="365.38672"
+           id="tspan1059"
+           style="stroke-width:0.26458332;-inkscape-font-specification:'CMU Serif, Bold';font-family:'CMU Serif';font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.58333333px;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;">MTConnect Adapter</tspan><tspan
+           dx="0"
+           x="240.29005"
+           y="365.38672"
+           id="tspan1061"
+           style="stroke-width:0.26458332;-inkscape-font-specification:'CMU Serif, Bold';font-family:'CMU Serif';font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.58333333px;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;" /></tspan><tspan
+         sodipodi:role="line"
+         x="134.91148"
+         y="378.61591"
+         id="tspan1067"
+         style="stroke-width:0.26458332;-inkscape-font-specification:'CMU Serif, Bold';font-family:'CMU Serif';font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.58333333px;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;"><tspan
+           x="134.91148"
+           y="378.61591"
+           id="tspan1065"
+           style="stroke-width:0.26458332;-inkscape-font-specification:'CMU Serif, Bold';font-family:'CMU Serif';font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.58333333px;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;">(Machine Specific)</tspan></tspan></text>
+    <text
        xml:space="preserve"
-       id="flowRoot2231-2-9-6-6-8-9-9-6-5-3-1-8"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;line-height:1.25;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none"
-       transform="matrix(0.26458333,0,0,0.26458333,-17.02649,337.99885)"><flowRegion
-         id="flowRegion2233-0-2-1-3-2-3-6-5-6-6-2-8"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle"><rect
-           id="rect2235-2-2-2-2-3-9-9-9-5-7-7-7"
-           width="332.73288"
-           height="114.79716"
-           x="111.42857"
-           y="62.519684"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle" /></flowRegion><flowPara
-         id="flowPara2577">Machine Data</flowPara></flowRoot>    <path
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.58333333px;line-height:1.25;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332;"
+       x="18.997667"
+       y="364.328"
+       id="text1057"><tspan
+         sodipodi:role="line"
+         x="18.997665"
+         y="364.328"
+         id="tspan1055"
+         style="stroke-width:0.26458332;-inkscape-font-specification:'CMU Serif, Bold';font-family:'CMU Serif';font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.58333333px;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;"><tspan
+           x="18.997667"
+           y="364.328"
+           id="tspan1053"
+           style="stroke-width:0.26458332;-inkscape-font-specification:'CMU Serif, Bold';font-family:'CMU Serif';font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.58333333px;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;">Machine Data</tspan></tspan></text>
+    <path
        sodipodi:nodetypes="cc"
        inkscape:connector-curvature="0"
        id="path2216-0"
@@ -283,39 +300,98 @@
       <g
          id="g3988"
          transform="translate(-189.69731,-25.683751)">
-        <flowRoot
+        <text
            xml:space="preserve"
-           id="flowRoot2231-2-9-6-6-8-9-9-6-5-3"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;line-height:1.25;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none"
-           transform="matrix(0.26458333,0,0,0.26458333,179.18968,125.27289)"><flowRegion
-             id="flowRegion2233-0-2-1-3-2-3-6-5-6-6"
-             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start"><rect
-               id="rect2235-2-2-2-2-3-9-9-9-5-7"
-               width="427.01865"
-               height="70.511452"
-               x="111.42857"
-               y="62.519684"
-               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start" /></flowRegion><flowPara
-             id="flowPara3230">Response (XML):</flowPara><flowPara
-             id="flowPara3876" /><flowPara
-             id="flowPara3874" /></flowRoot>        <flowRoot
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.58333302px;line-height:1.25;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           x="208.6716"
+           y="151.60204"
+           id="text1011"><tspan
+             sodipodi:role="line"
+             x="208.6716"
+             y="151.60204"
+             id="tspan1005"
+             style="stroke-width:0.26458332"><tspan
+               x="208.6716"
+               y="151.60204"
+               id="tspan1001"
+               style="stroke-width:0.26458332">Response (XML):</tspan><tspan
+               dx="0"
+               x="303.44617"
+               y="151.60204"
+               id="tspan1003"
+               style="stroke-width:0.26458332" /></tspan><tspan
+             sodipodi:role="line"
+             x="208.6716"
+             y="151.60204"
+             id="tspan1009"
+             style="stroke-width:0.26458332"><tspan
+               x="208.6716"
+               y="164.83119"
+               id="tspan1007"
+               style="stroke-width:0.26458332" /></tspan></text>
+        <text
            xml:space="preserve"
-           id="flowRoot2231-2-9-6-6-8-9-9-6-5-3-3"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;line-height:1.25;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none"
-           transform="matrix(0.26458333,0,0,0.26458333,173.08171,139.11415)"><flowRegion
-             id="flowRegion2233-0-2-1-3-2-3-6-5-6-6-1"
-             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start"><rect
-               id="rect2235-2-2-2-2-3-9-9-9-5-7-6"
-               width="698.4472"
-               height="246.22575"
-               x="111.42857"
-               y="62.519684"
-               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start" /></flowRegion><flowPara
-             id="flowPara3953">&lt;Samples&gt; </flowPara><flowPara
-             id="flowPara7296">&lt;Load dataItemId=&quot;LS1Load&quot; </flowPara><flowPara
-             id="flowPara3961">  timestamp: 2020-02-18...&gt;22.5</flowPara><flowPara
-             id="flowPara7300">&lt;/Load&gt;&lt;/Samples&gt;</flowPara><flowPara
-             id="flowPara3874-2" /></flowRoot>      </g>
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.58333302px;line-height:1.25;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           x="202.56363"
+           y="165.4433"
+           id="text1037"><tspan
+             sodipodi:role="line"
+             x="202.56363"
+             y="165.4433"
+             id="tspan1017"
+             style="stroke-width:0.26458332"><tspan
+               x="202.56363"
+               y="165.4433"
+               id="tspan1013"
+               style="stroke-width:0.26458332">&lt;Samples&gt; </tspan><tspan
+               dx="0"
+               x="268.85416"
+               y="165.4433"
+               id="tspan1015"
+               style="stroke-width:0.26458332" /></tspan><tspan
+             sodipodi:role="line"
+             x="202.56363"
+             y="178.67245"
+             id="tspan1023"
+             style="stroke-width:0.26458332"><tspan
+               x="202.56363"
+               y="178.67245"
+               id="tspan1019"
+               style="stroke-width:0.26458332">&lt;Load dataItemId=&quot;LS1Load&quot; </tspan><tspan
+               dx="0"
+               x="373.77798"
+               y="178.67245"
+               id="tspan1021"
+               style="stroke-width:0.26458332" /></tspan><tspan
+             sodipodi:role="line"
+             x="202.56363"
+             y="191.90163"
+             id="tspan1029"
+             style="stroke-width:0.26458332"><tspan
+               x="202.56363"
+               y="191.90163"
+               id="tspan1025"
+               style="stroke-width:0.26458332">  timestamp: 2020-02-18...&gt;22.5</tspan><tspan
+               dx="0"
+               x="372.12433"
+               y="191.90163"
+               id="tspan1027"
+               style="stroke-width:0.26458332" /></tspan><tspan
+             sodipodi:role="line"
+             x="202.56363"
+             y="205.1308"
+             id="tspan1035"
+             style="stroke-width:0.26458332"><tspan
+               x="202.56363"
+               y="205.1308"
+               id="tspan1031"
+               style="stroke-width:0.26458332">&lt;/Load&gt;&lt;/Samples&gt;</tspan><tspan
+               dx="0"
+               x="321.95685"
+               y="205.1308"
+               id="tspan1033"
+               style="stroke-width:0.26458332" /></tspan></text>
+      </g>
     </g>
     <g
        id="g5463"
@@ -335,21 +411,36 @@
              width="83.165421"
              id="rect2454-7-5-2-3-3"
              style="display:inline;fill:#b8c8d8;fill-opacity:1;fill-rule:nonzero;stroke:#b8c8d8;stroke-width:1.05833328;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-          <flowRoot
+          <text
              xml:space="preserve"
-             id="flowRoot2231-2-9-6-6-8-9-9-6-5-3-5"
-             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;line-height:1.25;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none"
-             transform="matrix(0.26458333,0,0,0.26458333,-35.521446,113.15034)"><flowRegion
-               id="flowRegion2233-0-2-1-3-2-3-6-5-6-6-8"
-               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle"><rect
-                 id="rect2235-2-2-2-2-3-9-9-9-5-7-8"
-                 width="771.30432"
-                 height="219.79718"
-                 x="111.42857"
-                 y="62.519684"
-                 style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle" /></flowRegion><flowPara
-               id="flowPara3230-2">HTTP GET:</flowPara><flowPara
-               id="flowPara7262">/sample</flowPara></flowRoot>        </g>
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.58333333px;line-height:1.25;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332;"
+             x="61.870541"
+             y="139.47948"
+             id="text999"><tspan
+               sodipodi:role="line"
+               x="61.870541"
+               y="139.47948"
+               id="tspan993"
+               style="stroke-width:0.26458332;-inkscape-font-specification:'CMU Serif, Bold';font-family:'CMU Serif';font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.58333333px;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;"><tspan
+                 x="61.870541"
+                 y="139.47948"
+                 id="tspan989"
+                 style="stroke-width:0.26458332;-inkscape-font-specification:'CMU Serif, Bold';font-family:'CMU Serif';font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.58333333px;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;">HTTP GET:</tspan><tspan
+                 dx="0"
+                 x="130.12477"
+                 y="139.47948"
+                 id="tspan991"
+                 style="stroke-width:0.26458332;-inkscape-font-specification:'CMU Serif, Bold';font-family:'CMU Serif';font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.58333333px;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;" /></tspan><tspan
+               sodipodi:role="line"
+               x="74.686295"
+               y="152.70865"
+               id="tspan997"
+               style="stroke-width:0.26458332;-inkscape-font-specification:'CMU Serif, Bold';font-family:'CMU Serif';font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.58333333px;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;"><tspan
+                 x="74.686295"
+                 y="152.70865"
+                 id="tspan995"
+                 style="stroke-width:0.26458332;-inkscape-font-specification:'CMU Serif, Bold';font-family:'CMU Serif';font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.58333333px;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;">/sample</tspan></tspan></text>
+        </g>
       </g>
     </g>
     <g
@@ -372,172 +463,46 @@
          width="113.35843"
          height="35.587116"
          preserveAspectRatio="none"
-         xlink:href="data:image/png;base64,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
-RU5ErkJggg==
-"
+         xlink:href="data:image/png;base64,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 RU5ErkJggg== "
          id="image10362"
          x="63.463268"
          y="212.23779" />
     </g>
-    <flowRoot
+    <text
        xml:space="preserve"
-       id="flowRoot2231-2-9-6-6-8-9-9-6-5-3-1-5"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;line-height:1.25;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none"
-       transform="matrix(0.26458333,0,0,0.26458333,41.226175,227.57584)"><flowRegion
-         id="flowRegion2233-0-2-1-3-2-3-6-5-6-6-2-9"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle"><rect
-           id="rect2235-2-2-2-2-3-9-9-9-5-7-7-71"
-           width="512.73285"
-           height="141.94003"
-           x="111.42857"
-           y="62.519684"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle" /></flowRegion><flowPara
-         id="flowPara2480-3">MTConnect</flowPara><flowPara
-         id="flowPara11340">Agent</flowPara><flowPara
-         id="flowPara10365-7" /></flowRoot>    <path
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.58333333px;line-height:1.25;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332;"
+       x="106.46819"
+       y="253.90498"
+       id="text1051"><tspan
+         sodipodi:role="line"
+         x="106.46819"
+         y="253.90498"
+         id="tspan1043"
+         style="stroke-width:0.26458332;-inkscape-font-specification:'CMU Serif, Bold';font-family:'CMU Serif';font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.58333333px;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;"><tspan
+           x="106.46819"
+           y="253.90498"
+           id="tspan1039"
+           style="stroke-width:0.26458332;-inkscape-font-specification:'CMU Serif, Bold';font-family:'CMU Serif';font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.58333333px;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;">MTConnect</tspan><tspan
+           dx="0"
+           x="170.60898"
+           y="253.90498"
+           id="tspan1041"
+           style="stroke-width:0.26458332;-inkscape-font-specification:'CMU Serif, Bold';font-family:'CMU Serif';font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.58333333px;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;" /></tspan><tspan
+         sodipodi:role="line"
+         x="122.52922"
+         y="267.13416"
+         id="tspan1049"
+         style="stroke-width:0.26458332;-inkscape-font-specification:'CMU Serif, Bold';font-family:'CMU Serif';font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.58333333px;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;"><tspan
+           x="122.52922"
+           y="267.13416"
+           id="tspan1045"
+           style="stroke-width:0.26458332;-inkscape-font-specification:'CMU Serif, Bold';font-family:'CMU Serif';font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.58333333px;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;">Agent</tspan><tspan
+           dx="0"
+           x="154.54794"
+           y="267.13416"
+           id="tspan1047"
+           style="stroke-width:0.26458332;-inkscape-font-specification:'CMU Serif, Bold';font-family:'CMU Serif';font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.58333333px;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;" /></tspan></text>
+    <path
        style="display:inline;fill:none;stroke:#000000;stroke-width:1.05833328;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker2275-0-7-2-9-0-3-1)"
        d="m 185.39405,278.97042 -0.0234,-34.09252"
        id="path2216-0-3-9-8-3-84-6"
@@ -551,19 +516,20 @@ RU5ErkJggg==
        x="0"
        y="0"
        transform="matrix(0.26458333,0,0,0.26458333,-7.0678042,-77.076298)" />
-    <flowRoot
+    <text
        xml:space="preserve"
-       id="flowRoot2231-2-9-6-6-8-9-9-6-5-3-1-8-1"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;line-height:1.25;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none"
-       transform="matrix(0.26458333,0,0,0.26458333,-50.249181,88.968545)"><flowRegion
-         id="flowRegion2233-0-2-1-3-2-3-6-5-6-6-2-8-7"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle"><rect
-           id="rect2235-2-2-2-2-3-9-9-9-5-7-7-7-9"
-           width="332.73288"
-           height="114.79716"
-           x="111.42857"
-           y="62.519684"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle" /></flowRegion><flowPara
-         id="flowPara2577-4"
-         style="font-size:53.33333588px">Client</flowPara></flowRoot>  </g>
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.58333333px;line-height:1.25;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332;"
+       x="1.7395458"
+       y="118.5602"
+       id="text987"><tspan
+         sodipodi:role="line"
+         x="1.7395458"
+         y="118.5602"
+         id="tspan985"
+         style="stroke-width:0.26458332;-inkscape-font-specification:'CMU Serif, Bold';font-family:'CMU Serif';font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.58333333px;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;"><tspan
+           x="1.7395458"
+           y="118.5602"
+           style="font-size:10.58333333px;stroke-width:0.26458332;-inkscape-font-specification:'CMU Serif, Bold';font-family:'CMU Serif';font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;"
+           id="tspan983">Client</tspan></tspan></text>
+  </g>
 </svg>

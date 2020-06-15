@@ -15,7 +15,7 @@
    viewBox="0 0 318.90054 304.7496"
    version="1.1"
    id="svg11852"
-   inkscape:version="0.92.4 (f8dce91, 2019-08-02)"
+   inkscape:version="0.92.5 (0.92.5+69)"
    sodipodi:docname="MQTT_Example.svg"
    inkscape:export-filename="/home/dnewman/Nextcloud/Documents/PhD/Figures/MQTT_Example.png"
    inkscape:export-xdpi="96"
@@ -90,14 +90,14 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.35"
-     inkscape:cx="365.9562"
-     inkscape:cy="453.07382"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="656.23638"
+     inkscape:cy="899.93255"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g18414"
      showgrid="false"
-     inkscape:window-width="1301"
-     inkscape:window-height="713"
+     inkscape:window-width="1853"
+     inkscape:window-height="1025"
      inkscape:window-x="67"
      inkscape:window-y="27"
      inkscape:window-maximized="1"
@@ -113,7 +113,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -152,20 +152,22 @@
        width="314.30026"
        id="rect2218-0"
        style="fill:#d8bfd8;fill-opacity:1;fill-rule:nonzero;stroke:#d8bfd8;stroke-width:1.00012493;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-    <flowRoot
-       transform="matrix(0.26458333,0,0,0.26458333,59.534974,132.87528)"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;line-height:1.25;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
-       id="flowRoot2231-4"
-       xml:space="preserve"><flowRegion
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start"
-         id="flowRegion2233-9"><rect
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start"
-           y="62.519684"
-           x="111.42857"
-           height="86.551125"
-           width="646.53882"
-           id="rect2235-4" /></flowRegion><flowPara
-         id="flowPara2237-8">MQTT Message Broker</flowPara></flowRoot>    <g
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.58333302px;line-height:1.25;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="89.016891"
+       y="159.20442"
+       id="text1155"><tspan
+         sodipodi:role="line"
+         x="89.016891"
+         y="159.20442"
+         id="tspan1153"
+         style="stroke-width:0.26458332"><tspan
+           x="89.016891"
+           y="159.20442"
+           id="tspan1151"
+           style="stroke-width:0.26458332">MQTT Message Broker</tspan></tspan></text>
+    <g
        id="g3355-4"
        transform="matrix(1.2447938,0,0,1.2447938,-155.32116,-63.166201)"
        style="display:inline">
@@ -1335,21 +1337,36 @@
          width="142.63213"
          id="rect18848-6"
          style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.05833328;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:1.05833327, 1.05833327;stroke-dashoffset:0;stroke-opacity:1" />
-      <flowRoot
+      <text
          xml:space="preserve"
-         id="flowRoot2231-4-3"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;line-height:1.25;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none"
-         transform="matrix(0.26458333,0,0,0.26458333,-36.811484,165.72134)"><flowRegion
-           id="flowRegion2233-9-2"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle"><rect
-             id="rect2235-4-2"
-             width="555.11023"
-             height="182.26541"
-             x="111.42857"
-             y="62.519684"
-             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle" /></flowRegion><flowPara
-           id="flowPara13101">Publish - Topic: </flowPara><flowPara
-           id="flowPara13105">Asset/ANT001/Vibration</flowPara></flowRoot>    </g>
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.58333333px;line-height:1.25;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332;"
+         x="23.742701"
+         y="192.05048"
+         id="text1203"><tspan
+           sodipodi:role="line"
+           x="25.768415"
+           y="192.05048"
+           id="tspan1197"
+           style="stroke-width:0.26458332;-inkscape-font-specification:'CMU Serif, Bold';font-family:'CMU Serif';font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.58333333px;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;"><tspan
+             x="23.742701"
+             y="192.05048"
+             id="tspan1193"
+             style="stroke-width:0.26458332;-inkscape-font-specification:'CMU Serif, Bold';font-family:'CMU Serif';font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.58333333px;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;">Publish - Topic: </tspan><tspan
+             dx="0"
+             x="112.52281"
+             y="192.05048"
+             id="tspan1195"
+             style="stroke-width:0.26458332;-inkscape-font-specification:'CMU Serif, Bold';font-family:'CMU Serif';font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.58333333px;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;" /></tspan><tspan
+           sodipodi:role="line"
+           x="-2.829324"
+           y="205.27965"
+           id="tspan1201"
+           style="stroke-width:0.26458332;-inkscape-font-specification:'CMU Serif, Bold';font-family:'CMU Serif';font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.58333333px;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;"><tspan
+             x="-2.8293209"
+             y="205.27965"
+             id="tspan1199"
+             style="stroke-width:0.26458332;-inkscape-font-specification:'CMU Serif, Bold';font-family:'CMU Serif';font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.58333333px;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;">Asset/ANT001/Vibration</tspan></tspan></text>
+    </g>
     <g
        id="g20897"
        transform="translate(-40.745853)">
@@ -1368,21 +1385,36 @@
          id="image823-7"
          x="192.05234"
          y="208.87039" />
-      <flowRoot
+      <text
          xml:space="preserve"
-         id="flowRoot2231-4-3-7-4"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;line-height:1.25;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none"
-         transform="matrix(0.26458333,0,0,0.26458333,197.20197,282.80301)"><flowRegion
-           id="flowRegion2233-9-2-3-7"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle"><rect
-             id="rect2235-4-2-1-2"
-             width="327.96738"
-             height="173.69398"
-             x="111.42857"
-             y="62.519684"
-             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle" /></flowRegion><flowPara
-           id="flowPara2237-8-6-0-9">Client:</flowPara><flowPara
-           id="flowPara13067-4">CNC Machine</flowPara></flowRoot>      <g
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.58333333px;line-height:1.25;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332;"
+         x="252.25339"
+         y="309.13214"
+         id="text1227"><tspan
+           sodipodi:role="line"
+           x="252.25339"
+           y="309.13214"
+           id="tspan1221"
+           style="stroke-width:0.26458332;-inkscape-font-specification:'CMU Serif, Bold';font-family:'CMU Serif';font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.58333333px;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;"><tspan
+             x="252.25339"
+             y="309.13214"
+             id="tspan1217"
+             style="stroke-width:0.26458332;-inkscape-font-specification:'CMU Serif, Bold';font-family:'CMU Serif';font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.58333333px;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;">Client:</tspan><tspan
+             dx="0"
+             x="287.88947"
+             y="309.13214"
+             id="tspan1219"
+             style="stroke-width:0.26458332;-inkscape-font-specification:'CMU Serif, Bold';font-family:'CMU Serif';font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.58333333px;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;" /></tspan><tspan
+           sodipodi:role="line"
+           x="231.98589"
+           y="322.36133"
+           id="tspan1225"
+           style="stroke-width:0.26458332;-inkscape-font-specification:'CMU Serif, Bold';font-family:'CMU Serif';font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.58333333px;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;"><tspan
+             x="231.98589"
+             y="322.36133"
+             id="tspan1223"
+             style="stroke-width:0.26458332;-inkscape-font-specification:'CMU Serif, Bold';font-family:'CMU Serif';font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.58333333px;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;">CNC Machine</tspan></tspan></text>
+      <g
          transform="translate(50.270827,6.0638649)"
          id="g19866">
         <rect
@@ -1394,39 +1426,69 @@
            y="172.87234"
            rx="8.5640068"
            ry="8.5333147" />
-        <flowRoot
-           transform="matrix(0.26458333,0,0,0.26458333,107.76631,157.25475)"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;line-height:1.25;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none"
-           id="flowRoot2231-4-3-0"
-           xml:space="preserve"><flowRegion
-             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle"
-             id="flowRegion2233-9-2-0"><rect
-               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle"
-               y="62.519684"
-               x="111.42857"
-               height="180.83684"
-               width="625.11023"
-               id="rect2235-4-2-6" /></flowRegion><flowPara
-             id="flowPara13101-8">Publish - Topic: </flowPara><flowPara
-             id="flowPara13105-8">Asset/ANT002/SpindleSpeed</flowPara></flowRoot>      </g>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.58333333px;line-height:1.25;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332;"
+           x="177.58092"
+           y="183.58389"
+           id="text1191"><tspan
+             sodipodi:role="line"
+             x="179.60663"
+             y="183.58389"
+             id="tspan1185"
+             style="stroke-width:0.26458332;-inkscape-font-specification:'CMU Serif, Bold';font-family:'CMU Serif';font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.58333333px;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;"><tspan
+               x="177.58092"
+               y="183.58389"
+               id="tspan1181"
+               style="stroke-width:0.26458332;-inkscape-font-specification:'CMU Serif, Bold';font-family:'CMU Serif';font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.58333333px;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;">Publish - Topic: </tspan><tspan
+               dx="0"
+               x="266.36102"
+               y="183.58389"
+               id="tspan1183"
+               style="stroke-width:0.26458332;-inkscape-font-specification:'CMU Serif, Bold';font-family:'CMU Serif';font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.58333333px;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;" /></tspan><tspan
+             sodipodi:role="line"
+             x="141.02501"
+             y="196.81306"
+             id="tspan1189"
+             style="stroke-width:0.26458332;-inkscape-font-specification:'CMU Serif, Bold';font-family:'CMU Serif';font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.58333333px;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;"><tspan
+               x="141.02501"
+               y="196.81306"
+               id="tspan1187"
+               style="stroke-width:0.26458332;-inkscape-font-specification:'CMU Serif, Bold';font-family:'CMU Serif';font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.58333333px;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;">Asset/ANT002/SpindleSpeed</tspan></tspan></text>
+      </g>
     </g>
     <g
        id="g18390">
-      <flowRoot
+      <text
          xml:space="preserve"
-         id="flowRoot2231-4-3-7"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;line-height:1.25;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none"
-         transform="matrix(0.26458333,0,0,0.26458333,-14.637828,-0.25798041)"><flowRegion
-           id="flowRegion2233-9-2-3"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle"><rect
-             id="rect2235-4-2-1"
-             width="384.79843"
-             height="164.01088"
-             x="111.42857"
-             y="62.519684"
-             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle" /></flowRegion><flowPara
-           id="flowPara2237-8-6-0">Client:</flowPara><flowPara
-           id="flowPara13067">Asset Dashboard </flowPara></flowRoot>      <g
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.58333302px;line-height:1.25;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="47.931736"
+         y="27.129496"
+         id="text1137"><tspan
+           sodipodi:role="line"
+           x="47.931736"
+           y="27.129496"
+           id="tspan1131"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.58333302px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.26458332"><tspan
+             x="47.931736"
+             y="27.129496"
+             id="tspan1127"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.58333302px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.26458332">Client:</tspan><tspan
+             dx="0"
+             x="83.567802"
+             y="27.129496"
+             id="tspan1129"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.58333302px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.26458332" /></tspan><tspan
+           sodipodi:role="line"
+           x="20.512222"
+           y="40.358662"
+           id="tspan1135"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.58333302px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.26458332"><tspan
+             x="20.512222"
+             y="40.358662"
+             id="tspan1133"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.58333302px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.26458332">Asset Dashboard </tspan></tspan></text>
+      <g
          style="display:inline"
          transform="matrix(0.3733337,0,0,0.3733337,-253.83355,28.692271)"
          id="g7727">
@@ -1496,36 +1558,66 @@
            inkscape:connector-curvature="0"
            sodipodi:nodetypes="cc" />
       </g>
-      <flowRoot
+      <text
          xml:space="preserve"
-         id="flowRoot2231-4-3-73-2"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;line-height:1.25;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none"
-         transform="matrix(0.26458333,0,0,0.26458333,-37.202342,89.532782)"><flowRegion
-           id="flowRegion2233-9-2-9-2"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle"><rect
-             id="rect2235-4-2-8-9"
-             width="555.11023"
-             height="182.26541"
-             x="111.42857"
-             y="62.519684"
-             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle" /></flowRegion><flowPara
-           id="flowPara13101-6-5">Subscribe - Topic: </flowPara><flowPara
-           id="flowPara13105-7-6">Asset/ANT001/#</flowPara></flowRoot>    </g>
-    <flowRoot
-       transform="matrix(0.26458333,0,0,0.26458333,-6.207778,281.83666)"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;line-height:1.25;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none"
-       id="flowRoot2231-4-3-7-9"
-       xml:space="preserve"><flowRegion
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle"
-         id="flowRegion2233-9-2-3-0"><rect
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle"
-           y="62.519684"
-           x="111.42857"
-           height="175.12256"
-           width="273.68167"
-           id="rect2235-4-2-1-7" /></flowRegion><flowPara
-         id="flowPara2237-8-6-0-0">Client:</flowPara><flowPara
-         id="flowPara13067-7">Sensorpack</flowPara></flowRoot>    <g
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.58333333px;line-height:1.25;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332;"
+         x="17.636429"
+         y="115.86192"
+         id="text1149"><tspan
+           sodipodi:role="line"
+           x="19.662146"
+           y="115.86192"
+           id="tspan1143"
+           style="stroke-width:0.26458332;-inkscape-font-specification:'CMU Serif, Bold';font-family:'CMU Serif';font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.58333333px;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;"><tspan
+             x="17.636429"
+             y="115.86192"
+             id="tspan1139"
+             style="stroke-width:0.26458332;-inkscape-font-specification:'CMU Serif, Bold';font-family:'CMU Serif';font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.58333333px;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;">Subscribe - Topic: </tspan><tspan
+             dx="0"
+             x="117.84737"
+             y="115.86192"
+             id="tspan1141"
+             style="stroke-width:0.26458332;-inkscape-font-specification:'CMU Serif, Bold';font-family:'CMU Serif';font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.58333333px;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;" /></tspan><tspan
+           sodipodi:role="line"
+           x="17.3057"
+           y="129.09109"
+           id="tspan1147"
+           style="stroke-width:0.26458332;-inkscape-font-specification:'CMU Serif, Bold';font-family:'CMU Serif';font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.58333333px;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;"><tspan
+             x="17.3057"
+             y="129.09109"
+             id="tspan1145"
+             style="stroke-width:0.26458332;-inkscape-font-specification:'CMU Serif, Bold';font-family:'CMU Serif';font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.58333333px;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;">Asset/ANT001/#</tspan></tspan></text>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.58333333px;line-height:1.25;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332;"
+       x="41.661911"
+       y="308.1658"
+       id="text1215"><tspan
+         sodipodi:role="line"
+         x="41.661911"
+         y="308.1658"
+         id="tspan1209"
+         style="stroke-width:0.26458332;-inkscape-font-specification:'CMU Serif, Bold';font-family:'CMU Serif';font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.58333333px;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;"><tspan
+           x="41.661911"
+           y="308.1658"
+           id="tspan1205"
+           style="stroke-width:0.26458332;-inkscape-font-specification:'CMU Serif, Bold';font-family:'CMU Serif';font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.58333333px;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;">Client:</tspan><tspan
+           dx="0"
+           x="77.297974"
+           y="308.1658"
+           id="tspan1207"
+           style="stroke-width:0.26458332;-inkscape-font-specification:'CMU Serif, Bold';font-family:'CMU Serif';font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.58333333px;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;" /></tspan><tspan
+         sodipodi:role="line"
+         x="29.910688"
+         y="321.39496"
+         id="tspan1213"
+         style="stroke-width:0.26458332;-inkscape-font-specification:'CMU Serif, Bold';font-family:'CMU Serif';font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.58333333px;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;"><tspan
+           x="29.910688"
+           y="321.39496"
+           id="tspan1211"
+           style="stroke-width:0.26458332;-inkscape-font-specification:'CMU Serif, Bold';font-family:'CMU Serif';font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.58333333px;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;">Sensorpack</tspan></tspan></text>
+    <g
        id="g20269"
        transform="translate(32.392453)">
       <g
@@ -1618,36 +1710,66 @@
                inkscape:connector-curvature="0"
                sodipodi:nodetypes="cc" />
           </g>
-          <flowRoot
+          <text
              xml:space="preserve"
-             id="flowRoot2231-4-3-7-49"
-             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;line-height:1.25;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none"
-             transform="matrix(0.26458333,0,0,0.26458333,108.82114,7.67952)"><flowRegion
-               id="flowRegion2233-9-2-3-5"
-               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle"><rect
-                 id="rect2235-4-2-1-5"
-                 width="444.39743"
-                 height="157.94997"
-                 x="111.42857"
-                 y="62.519684"
-                 style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle" /></flowRegion><flowPara
-               id="flowPara2237-8-6-0-5">Client:</flowPara><flowPara
-               id="flowPara13067-42">dataItem Dashboard</flowPara></flowRoot>        </g>
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.58333302px;line-height:1.25;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+             x="179.27524"
+             y="35.066998"
+             id="text1167"><tspan
+               sodipodi:role="line"
+               x="179.27524"
+               y="35.066998"
+               id="tspan1161"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.58333302px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.26458332"><tspan
+                 x="179.27524"
+                 y="35.066998"
+                 id="tspan1157"
+                 style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.58333302px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.26458332">Client:</tspan><tspan
+                 dx="0"
+                 x="214.9113"
+                 y="35.066998"
+                 id="tspan1159"
+                 style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.58333302px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.26458332" /></tspan><tspan
+               sodipodi:role="line"
+               x="142.22324"
+               y="48.296162"
+               id="tspan1165"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.58333302px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.26458332"><tspan
+                 x="142.22324"
+                 y="48.296162"
+                 id="tspan1163"
+                 style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.58333302px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.26458332">dataItem Dashboard</tspan></tspan></text>
+        </g>
       </g>
-      <flowRoot
-         transform="matrix(0.26458333,0,0,0.26458333,94.084312,89.532782)"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;line-height:1.25;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none"
-         id="flowRoot2231-4-3-73"
-         xml:space="preserve"><flowRegion
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle"
-           id="flowRegion2233-9-2-9"><rect
-             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle"
-             y="62.519684"
-             x="111.42857"
-             height="182.26541"
-             width="555.11023"
-             id="rect2235-4-2-8" /></flowRegion><flowPara
-           id="flowPara13101-6">Subscribe - Topic: </flowPara><flowPara
-           id="flowPara13105-7">Asset/+/Vibration</flowPara></flowRoot>    </g>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.58333333px;line-height:1.25;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332;"
+         x="148.92308"
+         y="115.86192"
+         id="text1179"><tspan
+           sodipodi:role="line"
+           x="150.94879"
+           y="115.86192"
+           id="tspan1173"
+           style="stroke-width:0.26458332;-inkscape-font-specification:'CMU Serif, Bold';font-family:'CMU Serif';font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.58333333px;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;"><tspan
+             x="148.92308"
+             y="115.86192"
+             id="tspan1169"
+             style="stroke-width:0.26458332;-inkscape-font-specification:'CMU Serif, Bold';font-family:'CMU Serif';font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.58333333px;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;">Subscribe - Topic: </tspan><tspan
+             dx="0"
+             x="249.13402"
+             y="115.86192"
+             id="tspan1171"
+             style="stroke-width:0.26458332;-inkscape-font-specification:'CMU Serif, Bold';font-family:'CMU Serif';font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.58333333px;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;" /></tspan><tspan
+           sodipodi:role="line"
+           x="146.04987"
+           y="129.09109"
+           id="tspan1177"
+           style="stroke-width:0.26458332;-inkscape-font-specification:'CMU Serif, Bold';font-family:'CMU Serif';font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.58333333px;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;"><tspan
+             x="146.04987"
+             y="129.09109"
+             id="tspan1175"
+             style="stroke-width:0.26458332;-inkscape-font-specification:'CMU Serif, Bold';font-family:'CMU Serif';font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.58333333px;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;">Asset/+/Vibration</tspan></tspan></text>
+    </g>
   </g>
 </svg>

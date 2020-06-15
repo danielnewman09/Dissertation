@@ -1,0 +1,969 @@
+<!doctype html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+
+		<title>Dissertation Presentation</title>
+
+ 		<link rel="icon" type="image/x-icon" href="Presentation/css/gt-logo-gold.png">
+
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="Presentation/css/reveal.css">
+		<link rel="stylesheet" href="Presentation/css/print/print.css">
+        <link rel="stylesheet" href="Presentation/css/CRAWLAB.css" id="theme">
+
+        <script src="Presentationplugin/markdown/markdown.js"></script>
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'Presentation/css/print/pdf.css' : 'Presentation/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+		<!-- <script src="js/reveal.js"></script> -->
+
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+        <section> <!-- Title Slide -->
+            <br>
+            <br>
+            <br>
+            <h2 style="text-align:center;">Bayesian Edge Analytics of Manufacturing Process and Health Status in an IoT Framework</h2>
+            <p style="text-align: center;">
+            <br>
+            <h2 style="text-align:center;">July 7th 2020</h2>
+            Daniel Newman<br>    
+            Department of Mechanical Engineering<br>
+            Georia Institute of Technology<br>
+            <a href="mailto:danielnewman@gatech.edu" title="Email">danielnewman@gatech.edu</a><br>
+            <a href="https://www.danielmnewman.com">www.danielmnewman.com</a>
+            </p>
+        </section>
+
+        <!-- Introduction Material -->
+
+            <section> <!-- The Past Decade -->
+                <div class="slide">
+                    <h2 class="header">The Past Decade</h2>
+                    <img src="Figures/Timeline.svg" class="center_image">
+                    <div class="footer">
+                        <img src="Presentation/css/chevron.png" class="footer">
+                        <h4 class="footer">Introduction</h4>
+                    </div>
+                </div>
+            </section>
+
+            <section> <!-- Research Questions -->
+                <div class="slide">
+                    <h2 class="header">Research Questions</h2>
+                    <img src="Figures/Dissertation-Contribution-Overview/Overall.svg" class="right_image">
+                    <div class="left_text">
+                        <ul>
+                            <li class="fragment fade-up">How can machine health data be effectively captured in an IoT architecture?</li>
+
+                            <li class="fragment fade-up">How can state-of-the-art machine learning tools be leveraged for health monitoring?</li>
+
+                            <li class="fragment fade-up">Can embedded computing be effective in health monitoring applications?</li>
+                        </ul>
+                    </div>
+                    <div class="footer">
+                        <img src="Presentation/css/chevron.png" class="footer">
+                        <h4 class="footer">Introduction</h4>
+                    </div>
+                </div>
+            </section>
+
+            <!-- <section> 
+                <div class="slide">
+                    <h2 class="header">Recent Work</h2>
+                    <img src="Figures/Dissertation-Contribution-Overview/Overall.svg" class="right_image">
+                    <div class="left_text">
+                        <ul>
+                            <li class="fragment fade-up">How can machine health data be effectively captured in an IoT architecture?</li>
+
+                            <li class="fragment fade-up">How can state-of-the-art machine learning tools be leveraged for health monitoring?</li>
+
+                            <li class="fragment fade-up">Can embedded computing be effective in health monitoring applications?</li>
+                        </ul>
+                    </div>
+                    <div class="footer">
+                        <img src="Presentation/css/chevron.png" class="footer">
+                        <h4 class="footer">Introduction</h4>
+                    </div>
+                </div>
+            </section> -->
+
+            <section> <!-- Thesis Contributions -->
+                <div class="slide">
+                    <h2 class="header">Thesis Contributions</h2>
+                        <img src="Figures/Dissertation-Contribution-Overview/Overall.svg" class="right_image">
+                    <div class="left_text">
+                        <ul>
+                            <li class="fragment fade-up">Data acquisition stragegy integrating:</li>
+                            <ul>
+                                <li class="fragment fade-up">Machine controller data</li>
+                                <li class="fragment fade-up">External sensor measurements</li>
+                            </ul>
+                            <li class="fragment fade-up">Consistent machine learning framework</li>
+                            <ul>
+                                <li class="fragment fade-up">Open source software</li>
+                                <li class="fragment fade-up">Edge-deployable models</li>
+                            </ul>
+                        
+                            <li class="fragment fade-up">Integrated edge device</li>
+                            <ul>
+                                <li class="fragment fade-up">Open source components</li>
+                                <li class="fragment fade-up">High quality sensor measurements</li>
+                                <li class="fragment fade-up">Data preprocessing framework</li>
+                            </ul>
+                        </ul>
+                    </div>
+                    <div class="footer">
+                        <img src="Presentation/css/chevron.png" class="footer">
+                        <h4 class="footer">Introduction</h4>
+                    </div>
+                </div>
+            </section>
+
+            <section> <!-- Sensor/Controller Integration -->
+                <div class="slide">
+                    <h2 class="header">Sensor/Controller Integration</h2>
+                    <img src="Figures/Dissertation-Contribution-Overview/Contextualization.svg" class="right_image">
+                    <div class="left_text">
+                        <ul>
+                            <li class="fragment fade-up">Bidirectional communication facilitates:</li>
+                            <ul>
+                                <li class="fragment fade-up">Sample triggering</li>
+                                <li class="fragment fade-up">Sensor contextualization</li>
+                            </ul>
+                            <li class="fragment fade-up">Standardized message structure</li>
+                        </ul>
+                    </div>
+                    <div class="footer">
+                        <img src="Presentation/css/chevron.png" class="footer">
+                        <h4 class="footer">Introduction</h4>
+                    </div>
+            </section>
+
+            <section> <!-- Consistent ML Framework -->
+                <div class="slide">
+                    <h2 class="header">Consistent ML Framework</h2>
+                    <img src="Figures/Dissertation-Contribution-Overview/Machine-Learning.svg" class="right_image">
+
+                    <div class="left_text">
+                        <ul>
+                            <li class="fragment fade-up">Perform training remotely</li>
+                            <li class="fragment fade-up">Deploy trained models to the edge for inference</li>
+                            <li class="fragment fade-up">"Close the loop"</li>
+                        </ul>
+                    </div>
+                    <div class="footer">
+                        <img src="Presentation/css/chevron.png" class="footer">
+                        <h4 class="footer">Introduction</h4>
+                    </div>
+            </section>
+
+            <section> <!-- Integrated Edge Device -->
+                <div class="slide">
+                    <h2 class="header">Integrated Edge Device</h2>
+                        <img src="Figures/Dissertation-Contribution-Overview/Edge-Device.svg" class="right_image">
+                    <div class="left_text">
+                        <ul>
+                            <li class="fragment fade-up">Embedded Linux computer capable of:</li>
+                            <ul>
+                                <li class="fragment fade-up">Controller data acquisition</li>
+                                <li class="fragment fade-up">Analog sensor measurements</li>
+                            </ul>
+                            <li class="fragment fade-up">Open source software</li>
+                            <li class="fragment fade-up">Near real-time data analytics</li>
+                        </ul>
+                    </div>
+                    <div class="footer">
+                        <img src="Presentation/css/chevron.png" class="footer">
+                        <h4 class="footer">Introduction</h4>
+                    </div>
+                </div>
+            </section>
+
+            <section> <!-- Demonstration-->
+                <h2 class="header">Demonstration</h2>
+                <div style="position:relative; width:1152px; height:864px; margin: 0% auto;justify-content: center;">
+                    <p>This slide will show a video demonstrating the tool wear experiment on the Emco</p>
+                </div>
+            </section>
+
+            <section> <!-- Outline -->
+                <div class="slide">
+                    <h2 class="header">Outline</h2>
+                        <div class="left_text">
+                            <ul style="line-height:1.5;">
+                                <!-- <li class="fragment fade-up">Edge computing will become increasingly useful due to benefits of increased security and reduced latency versus the cloud.</li> -->
+                                <li class="fragment fade-up">Background</li>
+                                <ul style="line-height:1.0">
+                                    <li class="fragment fade-up">Industrial Internet of Things</li>
+                                    <li class="fragment fade-up">Data Acquisition Strategies</li>
+                                    <li class="fragment fade-up">Open Source Tools</li>
+                                    <li class="fragment fade-up">Machine Health Monitoring</li>
+                                </ul>
+                                <li class="fragment fade-up">Proposed IoT framework</li>
+                                <ul style="line-height:1.0">
+                                    <li class="fragment fade-up">OPC-UA</li>
+                                </ul>
+
+                                <li class="fragment fade-up">Frequency-Domain Signal Processsing</li>
+                                <ul style="line-height:1.0">
+                                    <li class="fragment fade-up">Discrete Fourier Transform</li>
+                                    <li class="fragment fade-up">Improving DFT results</li>
+                                </ul>
+
+                            </ul>
+                        </div>
+                </div>
+            </section>
+
+        <!-- Background -->
+
+            <section> <!-- Industrial Internet of Things -->
+                <div class="slide">
+                    <h2 class="header">Industrial Internet of Things</h2>
+                    <img src="Figures/CPS_Architecture.svg" class="center_image">
+                    <div class="footer">
+                        <img src="Presentation/css/chevron.png" class="footer">
+                        <h4 class="footer">Background</h4>
+                    </div>
+                    </div>
+            </section>
+
+            <section> <!-- Industrial Internet of Things -->
+                <div class="slide">
+                    <h2 class="header">Industrial Internet of Things</h2>
+                    <img src="Figures/IIoT_Generic.svg" class="center_image">
+                    <div class="footer">
+                        <img src="Presentation/css/chevron.png" class="footer">
+                        <h4 class="footer">Background</h4>
+                    </div>
+                </div>
+            </section>
+
+            <section> <!-- CNC Controller Protocols -->
+                <div class="slide">
+                    <h2 class="header">CNC Controller Protocols</h2>
+                    <img src="Figures/MTConnect_Schematic.svg" class="right_image">
+                    <div class="left_text">
+                        <ul>
+                            <li class="fragment fade-up">Modern CNC machines utilize communications protocols to share operational information</li>
+                            <li class="fragment fade-up">Two protocols considered:</li>
+                            <ul>
+                                <li class="fragment fade-up">MTConnect</li>
+                                <li class="fragment fade-up">OPC-UA</li>
+                            </ul>
+                            <li class="fragment fade-up">With the Internet of Things, machine data availability has greatly increased</li>
+                        </ul>
+                    </div>
+                    <div class="footer">
+                        <img src="Presentation/css/chevron.png" class="footer">
+                        <h4 class="footer">Background</h4>
+                    </div>
+            </section>
+
+            <section> <!-- Sensor Data Acquisition -->
+                <div class="slide">
+                    <h2 class="header">Sensor Data Acquisition</h2>
+                    <img src="Figures/Existing-Sensors.svg" class="right_image">
+                    <div class="left_text">
+                        <ul>
+                            <li class="fragment fade-up">IoT-compatible sensor data acquisition is an unsolved issue</li>
+                            <li class="fragment fade-up">Two types of equipment are typically available:</li>
+                            <ul>
+                                <li class="fragment fade-up">High-voltage, high-precision, proprietary DAQ</li>
+                                <li class="fragment fade-up">Low-voltage, open-source DAQ</li>
+                            </ul>
+                        </ul>
+                    </div>
+                    <div class="footer">
+                        <img src="Presentation/css/chevron.png" class="footer">
+                        <h4 class="footer">Background</h4>
+                    </div>
+            </section>
+
+            <!-- Health Monitoring bullet points -->
+            <!-- <section>  
+            <div class="slide">
+                <h2 class="header">Health Monitoring</h2>
+                <div style="display:inline-block;position: absolute;top: 60%; left: 50%;transform: translate(-50%,-50%);height:100%;width:100%">
+                </div>
+                <div style="position:absolute;left:0px;top:15%;width:50%">
+                    <ul>
+                        <li class="fragment fade-up">Condition-based and predictive maintenance are widely understood methods of reducing downtime and maintenance costs</li>
+                        <li class="fragment fade-up">The objective of sensor data acquisition is to retrieve actionable information on machine health status</li>
+                        <li class="fragment fade-up">Feature extraction and model inference are excellent methods by which this may be done</li>
+                    </ul>
+                </div>
+                <div class="footer">
+                    <img src="Presentation/css/chevron.png" style="vertical-align:middle;border:0;height:100%">
+                    <h4 class="footer">Background</h4>
+                </div>
+        </section> -->
+
+            <section> <!-- Health Monitoring -->
+                <div class="slide">
+                    <h2 class="header">Health Monitoring</h2>
+                    <img src="Figures/Equipment_Data_Streams.svg" class="center_image">
+                    <div class="footer">
+                        <img src="Presentation/css/chevron.png" class="footer">
+                        <h4 class="footer">Background</h4>
+                    </div>
+                </div>
+            </section>
+
+            <section> <!-- Time-Domain Vibration Features -->
+                <div class="slide">
+                    <h2 class="header">Time-Domain Statistics</h2>
+                    <div class="left_text">
+                        \begin{equation}
+                        M^{k} = \frac{1}{n} \sum\limits_{i=1}^n X_i^k
+                        \end{equation}
+                        \begin{equation}
+                        \sigma^2 = \frac{1}{(n-1)} \sum\limits_{i=1}^n (X_i-\bar{X})^2
+                        \end{equation}
+                        \begin{equation}
+                        \mathrm{Skew} = \frac{M^{3}}{\sigma^3}
+                        \end{equation}
+                        \begin{equation}
+                        \mathrm{Kurtosis} = \frac{M^{4}}{\sigma^4}
+                        \end{equation}
+                    </div>
+                    <div class="footer">
+                        <img src="Presentation/css/chevron.png" class="footer">
+                        <h4 class="footer">Background</h4>
+                    </div>
+            </section>
+
+            <section> <!-- Discrete Fourier Transform -->
+                <div class="slide">
+                    <h2 class="header">Discrete Fourier Transform</h2>
+                    <div class="left_text">
+                        \begin{equation}
+                        X[n] = \sum_{k=0}^{N-1} x[k] e^{-j \frac{2 \pi}{N} n k}
+                        \end{equation}
+
+                        \begin{equation}
+                        \begin{bmatrix}
+                        X_1\\
+                        X_2\\
+                        X_3\\
+                        \vdots\\
+                        X_{N}
+                        \end{bmatrix}= 
+                        \begin{bmatrix}
+                        W^{0} & W^{0} & W^{0} & \dots & W^{0} \\
+                        W^{0} & W^{1} & W^{2} & \dots & W^{N-1} \\
+                        W^{0} & W^{2} & W^{4} & \dots & W^{2(N-1)} \\
+                        \vdots \\
+                        W^{0} & W^{N-1} & W^{2(N-1)} & \dots & W^{(N-1)^2} \\
+                        \end{bmatrix}
+                        \begin{bmatrix}
+                        x_1\\
+                        x_2\\
+                        x_3\\
+                        \vdots\\
+                        x_{N}
+                        \end{bmatrix}
+                        \end{equation}
+                    </div>
+                    <div class="footer">
+                        <img src="Presentation/css/chevron.png" class="footer">
+                        <h4 class="footer">Background</h4>
+                    </div>
+            </section>
+
+            <section> <!-- Spectral Power Approximation -->
+                <div class="slide">
+                    <h2 class="header">Spectral Power Approximation</h2>
+                    <div class="left_text">
+                        \begin{equation}
+                        X[n] = \sum_{k=0}^{N-1} x[k] e^{-j \frac{2 \pi}{N} n k}
+                        \end{equation}
+
+                        \begin{equation}
+                        \begin{bmatrix}
+                        X_1\\
+                        X_2\\
+                        X_3\\
+                        \vdots\\
+                        X_{N}
+                        \end{bmatrix}= 
+                        \begin{bmatrix}
+                        W^{0} & W^{0} & W^{0} & \dots & W^{0} \\
+                        W^{0} & W^{1} & W^{2} & \dots & W^{N-1} \\
+                        W^{0} & W^{2} & W^{4} & \dots & W^{2(N-1)} \\
+                        \vdots \\
+                        W^{0} & W^{N-1} & W^{2(N-1)} & \dots & W^{(N-1)^2} \\
+                        \end{bmatrix}
+                        \begin{bmatrix}
+                        x_1\\
+                        x_2\\
+                        x_3\\
+                        \vdots\\
+                        x_{N}
+                        \end{bmatrix}
+                        \end{equation}
+                    </div>
+                    <div class="footer">
+                        <img src="Presentation/css/chevron.png" class="footer">
+                        <h4 class="footer">Background</h4>
+                    </div>
+            </section>
+
+            <section> <!-- Example Training Data -->
+                <div class="slide">
+                    <h2 class="header">Example Data</h2>
+                    
+                    <div class="footer">
+                        <img src="Presentation/css/chevron.png" class="footer">
+                        <h4 class="footer">Background</h4>
+                    </div>
+            </section>
+
+        <!-- Digital Architecture -->
+
+            <section> <!-- Digital Architecture for Health Monitoring -->
+                <div class="slide">
+                    <h2 class="header">Digital Architecture for Health Monitoring</h2>
+                    <img src="Figures/Proposed_Architecture.svg" class="center_image">
+                    <div class="footer">
+                        <img src="Presentation/css/chevron.png" class="footer">
+                        <h4 class="footer">Architecture</h4>
+                    </div>
+                </div>
+            </section>
+
+            <section> <!-- Controller vs Sensor Data -->
+                <div class="slide">
+                    <h2 class="header">Controller vs Sensor Data</h2>
+                    <div class="left_text">
+                        <ul style="line-height:1.1;">
+                            <li class="fragment fade-up">This framework relies on two data sources:</li>
+                            <ul>
+                                <li class="fragment fade-up">CNC controllers</li>
+                                <li class="fragment fade-up">Sensors</li>
+                            </ul>
+                            <li class="fragment fade-up">CNC machines can provide large quantities of highly detailed data</li>
+                            <ul>
+                                <li class="fragment fade-up">G-Code program name</li>
+                                <li class="fragment fade-up">Spindle speed</li>
+                                <li class="fragment fade-up">Axis loads</li>
+                                <li class="fragment fade-up">Machine coordinates</li>
+                            </ul>
+                        </ul>
+                    </div>
+                    <div class="center_emphasis">
+                            <p><b>Why use external sensors?</b></p>
+                    </div>
+                    <div class="footer">
+                        <img src="Presentation/css/chevron.png" class="footer">
+                        <h4 class="footer">Architecture</h4>
+                    </div>
+                    </div>
+            </section>
+
+            <section> <!-- Controller vs Sensor Test -->
+                <div class="slide">
+                    <h2 class="header">Controller vs Sensor Test</h2>
+                        <img src="Figures/Tool_Wear/Good_Bad_Presentation.svg" class="center_image_width">
+                    <div class="full_text" style="margin-top:-1em">
+                        <ul style="line-height:1.1;">
+                            <li class="fragment fade-up">Compare process data from worn and unworn tools</li>
+                            <li class="fragment fade-up">Use spindle power from CNC controller</li>
+                            <li class="fragment fade-up">Compare with accelerometer measurements</li>
+                            <li class="fragment fade-up">Given the advanced wear, data should show obvious distinction between tools</li>
+                        </ul>
+                    </div>
+
+                    <div class="footer">
+                        <img src="Presentation/css/chevron.png" class="footer">
+                        <h4 class="footer">Architecture</h4>
+                    </div>
+                </div>
+            </section>
+
+            <section> <!-- Controller vs Sensor Results -->
+                <div class="slide">
+                    <h2 class="header">Controller vs Sensor Results</h2>
+                        <img src="Dissertation-Notebooks/Chapter-3/figures/Spindle_Load_Anomalous_Compare.svg" class="center_plot">
+                        <img src="Dissertation-Notebooks/Chapter-3/figures/RMS_Anomalous_Compare.svg" class="center_plot">
+                    <div class="footer">
+                        <img src="Presentation/css/chevron.png" class="footer">
+                        <h4 class="footer">Architecture</h4>
+                    </div>
+                    </div>
+            </section>
+
+            <section> <!-- Frequency-Domain Results -->
+                <div class="slide">
+                    <h2 class="header">Frequency-Domain Results</h2>
+                        <img src="Dissertation-Notebooks/Chapter-3/figures/Emco_Nominal_vs_Anomalous_FFT.svg" class="center_plot" style="margin-top:0em;">
+                        <img src="Dissertation-Notebooks/Chapter-3/figures/Emco_Nominal_vs_Anomalous_FFT_Diff.svg" class="center_plot">
+                    <div class="footer">
+                        <img src="Presentation/css/chevron.png" class="footer">
+                        <h4 class="footer">Architecture</h4>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Frequency-Domain Results: Summary bullet points -->
+            <!-- <section> 
+        <div class="slide">
+            <h2 class="header">Frequency-Domain Results</h4>
+            <img src="Dissertation-Notebooks/Chapter-3/Figures/Emco_Nominal_vs_Anomalous_FFT.png" style="vertical-align:middle;border:0;width:70%;">
+            <img src="Dissertation-Notebooks/Chapter-3/Figures/Emco_Nominal_vs_Anomalous_FFT_Diff.png" style="vertical-align:middle;border:0;width:70%;">
+            <div style="position:absolute;left:0px;top:10%;margin:1em;background-color:rgba(255, 255, 255, 1.0);box-shadow: 5px 10px 8px #888888;border:3pt solid black;">
+                <p><b>Clearly, an accelerometer provides more <i>features</i> than the controller. More control over sampling ensures better distinction in health metrics as well.</b></p>
+            </div>
+            <div style="position:absolute;left:0px;top:50%;margin:1em;background-color:rgba(255, 255, 255, 1.0);box-shadow: 5px 10px 8px #888888;border:3pt solid black;">
+                <p><b>For these reasons, the controller data are considered useful for <i>contextual</i> information such as Program Name, Spindle Speed, Tool Number, etc. Sensor data are used to extract health metrics within this context.</b></p>
+            </div>
+            <div style="position:absolute;left:0px;bottom:1%;height:15%">
+                <img src="Presentation/css/chevron.png" style="vertical-align:middle;border:0;height:100%">
+                <h4 style="position:absolute;left:100%;top:74%;border:0;">Architecture</h4>
+            </div>
+            </div>
+    </section> -->
+
+            <section> <!-- MQTT-Based Framework -->
+                <div class="slide">
+                    <h2 class="header">MQTT-Based Framework</h2>
+                        <img src="Figures/MQTT_Example.svg" class="center_image">
+                    <div class="footer">
+                        <img src="Presentation/css/chevron.png" class="footer">
+                        <h4 class="footer">Architecture</h4>
+                    </div>
+                </div>
+            </section>
+
+            <section> <!-- JSON Message Definitions -->
+                <div class="slide">
+                    <h2 class="header">MQTT Message Definitions</h2>
+                    <img src="Figures/MQTT_Topic_Structure.svg" class="center_image" style="height:35%;margin-top:1em;">
+                    <img src="Figures/JSON-Message.svg" class="center_image" style="height:40%;margin-top:-0.em;">
+                    <div class="footer">
+                        <img src="Presentation/css/chevron.png" class="footer">
+                        <h4 class="footer">Architecture</h4>
+                    </div>
+                    </div>
+            </section>
+
+            <section> <!-- Controller Payload Example -->
+                <div class="slide">
+                    <h2 class="header">Controller Payload Example</h2>
+                    <p style="text-align:left;">
+                    
+                    <b>topic</b>: "Asset/A1000/rotaryVelocity_S"<br>
+                    <b>payload</b>: { <br>    
+                    &nbsp;&nbsp;&nbsp;&nbsp; "dateTime": "2019-03-08T15:43:44.808Z",<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp; "assetId" : "A1000",<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp; "dataItemId" : "rotaryVelocity_S",<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp; "value" : 1002<br>
+                        }</p>
+
+                        <div class="footer">
+                            <img src="Presentation/css/chevron.png" class="footer">
+                            <h4 class="footer">Architecture</h4>
+                        </div>
+                    </div>
+            </section>
+
+            <section> <!-- Sensor Payload Example -->
+                <div class="slide">
+                    <h2 class="header">Sensor Payload Example</h2>
+                    <p style="text-align:left;font-size:1.1em;">
+                        <b>topic</b>: "Asset/A1000/Vibration"<br>
+                        <b>payload</b>: {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp; "dateTime": "2019-03-08T15:43:44.808Z",<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp; "assetId" : "A1000",<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp; "dataItemId" : "Vibration",<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp; "iteminstanceId" : "Part_1001",<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp; "sensorId": "accelerometer1",<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp; "samplingInterval":0.00048828125,<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp; "Kurtosis": 0.033,<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp; "mean": -0.040,<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp; "rootMeanSquare": 0.025,<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp; "skewness": -0.204,<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp; "variance": 0.001,<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp; "PSDFreqInterval":10,<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp; "PSDAmps":[0.895,0.889,...,0.877]<br>
+                        }
+                        </p>
+
+                        <div class="footer">
+                            <img src="Presentation/css/chevron.png" class="footer">
+                            <h4 class="footer">Architecture</h4>
+                        </div>
+                    </div>
+            </section>
+
+            <section> <!-- Contextual Data Acquisition -->
+                <div class="slide">
+                    <h2 class="header">Contextual Data Acquisition</h2>
+                        <img src="Figures/Contextual_Training.svg" class="right_image">
+                    <div class="footer">
+                        <img src="Presentation/css/chevron.png" class="footer">
+                        <h4 class="footer">Architecture</h4>
+                    </div>
+                </div>
+            </section>
+
+            <section> <!-- Contextual Data Acquisition -->
+                <div class="slide">
+                    <h2 class="header">Data Contextualization Training</h2>
+                        <img src="Figures/Table_Example.svg" class="right_image">
+                    <div class="footer">
+                        <img src="Presentation/css/chevron.png" class="footer">
+                        <h4 class="footer">Architecture</h4>
+                    </div>
+                </div>
+            </section>
+
+            <section> <!-- Emco Warm-Up -->
+                <div class="slide">
+                    <h2 class="header">CNC Mill Warmup</h2>
+                        <img src="Dissertation-Notebooks/Chapter-3/Emco_Warmup_Monitoring/figures/Warmup_Spindle_Speed.svg" class="right_image">
+                    <div class="footer">
+                        <img src="Presentation/css/chevron.png" class="footer">
+                        <h4 class="footer">Architecture</h4>
+                    </div>
+                </div>
+            </section>
+
+            <section> <!-- Emco Warm-Up Program -->
+                <div class="slide">
+                    <h2 class="header">Emco Warm-Up Program</h2>
+                        <img src="Dissertation-Notebooks/Chapter-3/Emco_Warmup_Monitoring/figures/Warmup_Spindle_Speed.svg" class="center_plot" style="margin-top:0.5em;">
+                        <img src="Dissertation-Notebooks/Chapter-3/Emco_Warmup_Monitoring/figures/Warmup_RMS.svg" class="center_plot">
+                    <div class="footer">
+                        <img src="Presentation/css/chevron.png" class="footer">
+                        <h4 class="footer">Architecture</h4>
+                    </div>
+                </div>
+            </section>
+
+            <section> <!-- Emco Warm-Up History -->
+                <div class="slide">
+                    <h2 class="header">Emco Warm-Up History</h2>
+                        <img src="Dissertation-Notebooks/Chapter-3/Emco_Warmup_Monitoring/figures/Warmup_RMS_History.svg" class="right_image" style="height:60%">
+                    <div class="footer">
+                        <img src="Presentation/css/chevron.png" class="footer">
+                        <h4 class="footer">Architecture</h4>
+                    </div>
+                </div>
+            </section>
+
+    <!-- Edge-Deployable ML Tools-->
+
+        <section> <!-- Edge-Deployable ML Tools-->
+            <div class="slide">
+                <h2 class="header">Edge-Deployable ML Tools</h2>
+                <img src="Figures/Dissertation-Contribution-Overview/Machine-Learning.svg" class="center_image">
+                    <div class="footer">
+                        <img src="Presentation/css/chevron.png" class="footer">
+                        <h4 class="footer">Edge-Deployable Tools</h4>
+                    </div>
+                </div>
+        </section>
+
+        <section> <!-- Open-Source Software-->
+            <div class="slide">
+                <h2 class="header">Open-Source Software</h2>
+                <div style="position:absolute;right:0%;width:50%;">
+                    <img src="Dissertation-Notebooks/Chapter-4/figures/ScikitLearnCitations.svg" class="right_plot">
+                    <img src="Dissertation-Notebooks/Chapter-4/figures/TensorflowCitations.svg" class="right_plot">
+                </div>
+                    <div class="footer">
+                        <img src="Presentation/css/chevron.png" class="footer">
+                        <h4 class="footer">Edge-Deployable Tools</h4>
+                    </div>
+                </div>
+        </section>
+
+        <section> <!-- Dimensionality Reduction -->
+            <div class="slide">
+                <h2 class="header">Dimensionality Reduction</h2>
+                <div class="left_text">
+                    <ul style="line-height:1.5;">
+                        <li class="fragment fade-up">Principal Components Analysis</li>
+                </div>
+                <div class="footer">
+                    <img src="Presentation/css/chevron.png" class="footer">
+                    <h4 class="footer">Edge-Deployable Tools</h4>
+                </div>
+            </div>
+        </section>
+
+        <section> <!-- Test Dataset -->
+            <div class="slide">
+                <h2 class="header">Test Dataset</h2>
+                <img src="Dissertation-Notebooks/Chapter-4/figures/Test_Signal.png" class="center_plot">
+                <img src="Dissertation-Notebooks/Chapter-4/figures/Test_Signal_FFT.png" class="center_plot">
+                <div class="footer">
+                    <img src="Presentation/css/chevron.png" class="footer">
+                    <h4 class="footer">Edge-Deployable Tools</h4>
+                </div>
+            </div>
+        </section>
+
+    <!-- Integrated Edge Device -->
+            <section>
+                <div class="slide">
+                    <h2 style="margin-top:-25px;margin-bottom:0;">Integrated Edge Device</h2>
+                    <div style="display:inline-block;position: absolute;top: 55%; left: 50%;transform: translate(-50%,-50%);width:100%;">
+                        <div style="font-size: 1.0em">
+                            <ul style="line-height:1.0;">
+                                <!-- <li class="fragment fade-up">Edge computing will become increasingly useful due to benefits of increased security and reduced latency versus the cloud.</li> -->
+                                <li class="fragment fade-up">Using a Beaglebone device, what's a reasonable performance expectation for vibration data acquisition, feature extraction, and model inference</li>
+                                <li class="fragment fade-up">Experimental Setup:</li>
+                                    <ul>
+                                        <li>Use C script for PRU measurements</li>
+                                        <li>Store measurements in a serial file</li>
+                                        <li>Use Python API for feature extraction, followed by model inference</li>
+                                    </ul>
+                                <li class="fragment fade-up">Evaluate computation time required for increasing sample sizes</li>
+                                <li class="fragment fade-up">Hold sampling duration constant (higher sample size = higher sample rate)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="slide">
+                    <h2 style="margin-top:-25px;margin-bottom:0;">Edge Device Diagram</h2>
+                        <!-- <div style="display:inline-block;position: absolute;top: 55%; left: 50%;transform: translate(-50%,-50%);width:100%;"> -->
+                    <img src="Figures/Integrated_Edge_Device.svg" style="vertical-align:middle;border:0;height:83%">
+                <!-- </div> -->
+                </div>
+            </section>
+
+            <section>
+                <div class="slide">
+                    <h2 style="margin-top:-25px;margin-bottom:0;">Total Latency</h2>
+                        <!-- <div style="display:inline-block;position: absolute;top: 55%; left: 50%;transform: translate(-50%,-50%);width:100%;"> -->
+                    <img src="figures/Chapter5/Edge_ExtractLatency.png" style="vertical-align:middle;border:0;height:83%">
+                <!-- </div> -->
+                </div>
+            </section>
+
+            <section>
+                <div class="slide">
+                    <h3 style="margin-top:-25px;margin-bottom:0;">Edge vs Cloud: Processing</h3>
+                        <div style="display:inline-block;position: absolute;top: 55%; left: 50%;transform: translate(-50%,-50%);width:100%;">
+                    <img src="figures/Chapter5/EdgeVsCloud_ComputeLatency.png" style="vertical-align:middle;border:0;width:83%">
+                </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="slide">
+                    <h2 style="margin-top:-25px;margin-bottom:0;">Edge vs Cloud: Total</h2>
+                        <div style="display:inline-block;position: absolute;top: 55%; left: 50%;transform: translate(-50%,-50%);width:100%;">
+                    <img src="figures/Chapter5/EdgeCloud_TotalLatency.png" style="vertical-align:middle;border:0;width:83%">
+                </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="slide">
+                    <h2 style="margin-top:-25px;margin-bottom:0;">Case Study: Tool Wear</h2>
+                    <div style="display:inline-block;position: absolute;top: 55%; left: 50%;transform: translate(-50%,-50%);width:100%;">
+                        <div style="font-size: 1.0em">
+                            <ul style="line-height:1.0;">
+                                <!-- <li class="fragment fade-up">Edge computing will become increasingly useful due to benefits of increased security and reduced latency versus the cloud.</li> -->
+                                <li class="fragment fade-up">Two studies to illustrate different health monitoring techniques</li>
+                                <li class="fragment fade-up">Classification: PCA-GNB model</li>
+                                <li class="fragment fade-up">Anomaly detection:PCA-GMM model</li>                             
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="slide">
+                    <h2 style="margin-top:-25px;margin-bottom:0;">Tool Wear Classification</h2>
+                    <div style="display:inline-block;position: absolute;top: 55%; left: 50%;transform: translate(-50%,-50%);width:100%;">
+                        <div style="font-size: 1.0em">
+                            <ul style="line-height:1.0;">
+                                <!-- <li class="fragment fade-up">Edge computing will become increasingly useful due to benefits of increased security and reduced latency versus the cloud.</li> -->
+                                <li class="fragment fade-up">Determine which features to use:</li>
+                                <ul style="line-height:1.0;">
+                                    <li class="fragment fade-up">Power Spectral Density Measurements</li>
+                                    <li class="fragment fade-up">Time-domain statistics</li>
+                                    <li class="fragment fade-up">OPC-UA controller labels (Spindle speed, feed rate)</li>
+                                </ul>
+                                <li class="fragment fade-up">Determine how many frequency components in PSD to use</li>
+                                <li class="fragment fade-up">Determine many PCA dimensions to use</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="slide">
+                    <h3 style="margin-top:-25px;margin-bottom:0;">Hyperparameter Optimization</h3>
+                        <div style="display:inline-block;position: absolute;top: 55%; left: 50%;transform: translate(-50%,-50%);width:100%;">
+                    <img src="Dissertation-Notebooks/Chapter-6/figures/noDoE_Scores_Presentation.png" style="vertical-align:middle;border:0;width:75%">
+                </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="slide">
+                    <h3 style="margin-top:-25px;margin-bottom:0;">Model Comparison</h3>
+                        <div style="display:inline-block;position: absolute;top: 55%; left: 50%;transform: translate(-50%,-50%);width:100%;">
+                    <img src="Figures/Features-Performance-Comparison.png" style="vertical-align:middle;border:0;width:75%">
+                </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="slide">
+                    <h3 style="margin-top:-25px;margin-bottom:0;">Model Performance: Training</h3>
+                        <div style="display:inline-block;position: absolute;top: 55%; left: 50%;transform: translate(-50%,-50%);width:100%;">
+                            <img src="Dissertation-Notebooks/Chapter-6/figures/pca_gnb_confmatrix_train.png" style="vertical-align:middle;border:0;width:75%">   
+                        </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="slide">
+                    <h3 style="margin-top:-25px;margin-bottom:0;">Model Performance: Validation</h3>
+                        <div style="display:inline-block;position: absolute;top: 55%; left: 50%;transform: translate(-50%,-50%);width:100%;">
+                            <img src="Dissertation-Notebooks/Chapter-6/figures/pca_gnb_confmatrix_valid.png" style="vertical-align:middle;border:0;width:75%">   
+                        </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="slide">
+                    <h2 class="header">Model Comparison</h2>
+                    <img src="figures/test.svg" style="vertical-align:middle;border:0;width:75%">   
+                        
+                    <div style="position:absolute;left:0px;bottom:1%;height:15%">
+                        <img src="Presentation/css/chevron.png" style="vertical-align:middle;border:0;height:100%">
+                        <h4 style="position:absolute;left:100%;top:74%;border:0;">Architecture</h4>
+                    </div>
+                    </div>
+            </section>
+
+
+            <section>
+                <div class="slide">
+                    <h3 class="header">Anomaly Detection: Training vs Validation</h3>
+                        <div style="display:inline-block;position: absolute;top: 55%; left: 50%;transform: translate(-50%,-50%);width:100%;">
+                    <img src="Dissertation-Notebooks/Chapter-6/figures/Spindle_Load_Anomalous_Compare.svg" style="vertical-align:middle;border:0;width:83%">
+                </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="slide">
+                    <h3 class="header">Anomaly Detection: Healthy vs Unhealthy</h3>
+                        <div style="display:inline-block;position: absolute;top: 55%; left: 50%;transform: translate(-50%,-50%);width:100%;">
+                    <img src="Dissertation-Notebooks/Chapter-6/figures/Spindle_Load_Anomalous_Compare-Healthy_Unhealthy.svg" style="vertical-align:middle;border:0;width:83%">
+                </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="slide">
+                    <h3 class="header">Anomaly Detection: Precision and Recall</h3>
+                        <!-- <div style="display:inline-block;position: absolute;top: 55%; left: 50%;transform: translate(-50%,-50%);width:100%;"> -->
+                    <img src="Dissertation-Notebooks/Chapter-6/figures/Precision_Statistic.svg" class="center_plot">
+                    <img src="Dissertation-Notebooks/Chapter-6/figures/Recall_Statistic.svg" class="center_plot">
+                <!-- </div> -->
+                </div>
+            </section>
+
+        <!-- <script src="lib/js/head.min.js"></script> -->
+        
+        <script src="Presentation/js/reveal.js"></script>
+
+        <!-- Try to get jQuery from CDN, if not fall back to local version -->
+        <!-- <script src="https://code.jquery.com/jquery-1.8.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/jquery-1.8.0.min.js"><\/script>')</script>
+         -->
+        <!-- Try to get jQuery UI from CDN, if not fall back to local version -->
+        <!-- <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+        <script>window.jQuery.ui || document.write('<script src="js/jquery-ui.min.js"><\/script>')</script> -->
+
+        <script>
+            // Full list of configuration options available at:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: false,
+                progress: true,
+                history: true,
+                center: false,
+                
+                // Help the user learn the controls by providing hints, for example by
+                // bouncing the down arrow when they first encounter a vertical slide
+                controlsTutorial: true,
+
+                transition: 'none', // none/fade/slide/convex/concave/zoom
+                
+                // The "normal" size of the presentation, aspect ratio will be preserved
+                // when the presentation is scaled to fit different resolutions. Can be
+                // specified using percentage units.
+                width: 1920,
+                height: 1080,
+
+                // Factor of the display size that should remain empty around the content
+                margin: 0.0,
+
+                // Bounds for smallest/largest possible scale to apply to content
+                minScale: 0.2,
+                maxScale: 1.5,
+
+                pdfSeparateFragments: false,
+
+                fragments: false,
+
+                slideNumber: 'c/t',
+
+                // Optional reveal.js plugins
+                dependencies: [
+                    { src: 'Presentation/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: 'Presentation/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'Presentation/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'Presentation/plugin/highlight/highlight.js', async: true},
+                    { src: 'Presentation/plugin/zoom-js/zoom.js', async: true },
+                    { src: 'Presentation/plugin/math/math.js', async: true },
+                    { src: 'Presentation/plugin/notes/notes.js', async: true }
+                ]
+            });
+
+            Reveal.addEventListener( 'centerText', function() {
+			    Reveal.configure({center: true});
+			}, false );
+
+            // You can provide a function to fully customize the number:
+            Reveal.configure({ slideNumber: function() {
+            // Ignore numbering of vertical slides
+            return [ Reveal.getIndices().h +  '/' ];
+            }});
+        </script>
+
+
+    
+	</body>
+</html>
