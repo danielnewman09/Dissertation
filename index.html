@@ -350,44 +350,6 @@
                     </div>
             </section>
 
-            <section> <!-- Discrete Fourier Transform -->
-                <div class="slide">
-                    <h2 class="header">Discrete Fourier Transform</h2>
-                    <div class="left_text">
-                        \begin{equation}
-                        X[n] = \sum_{k=0}^{N-1} x[k] e^{-j \frac{2 \pi}{N} n k}
-                        \end{equation}
-
-                        \begin{equation}
-                        \begin{bmatrix}
-                        X_1\\
-                        X_2\\
-                        X_3\\
-                        \vdots\\
-                        X_{N}
-                        \end{bmatrix}= 
-                        \begin{bmatrix}
-                        W^{0} & W^{0} & W^{0} & \dots & W^{0} \\
-                        W^{0} & W^{1} & W^{2} & \dots & W^{N-1} \\
-                        W^{0} & W^{2} & W^{4} & \dots & W^{2(N-1)} \\
-                        \vdots \\
-                        W^{0} & W^{N-1} & W^{2(N-1)} & \dots & W^{(N-1)^2} \\
-                        \end{bmatrix}
-                        \begin{bmatrix}
-                        x_1\\
-                        x_2\\
-                        x_3\\
-                        \vdots\\
-                        x_{N}
-                        \end{bmatrix}
-                        \end{equation}
-                    </div>
-                    <div class="footer">
-                        <img src="Presentation/css/chevron.png" class="footer">
-                        <h4 class="footer">Background</h4>
-                    </div>
-            </section>
-
             <section> <!-- Spectral Power Approximation -->
                 <div class="slide">
                     <h2 class="header">Spectral Power Approximation</h2>
@@ -669,156 +631,261 @@
                 </div>
             </section>
 
-    <!-- Edge-Deployable ML Tools-->
+        <!-- Edge-Deployable ML Tools-->
 
-        <section> <!-- Edge-Deployable ML Tools-->
-            <div class="slide">
-                <h2 class="header">Edge-Deployable ML Tools</h2>
-                <img src="Figures/Dissertation-Contribution-Overview/Machine-Learning.svg" class="center_image">
+            <section> <!-- Edge-Deployable ML Tools-->
+                <div class="slide">
+                    <h2 class="header">Edge-Deployable ML Tools</h2>
+                    <img src="Figures/Dissertation-Contribution-Overview/Machine-Learning.svg" class="center_image">
+                        <div class="footer">
+                            <img src="Presentation/css/chevron.png" class="footer">
+                            <h4 class="footer">Edge-Deployable Tools</h4>
+                        </div>
+                    </div>
+            </section>
+
+            <section> <!-- Open-Source Software-->
+                <div class="slide">
+                    <h2 class="header">Open-Source Software</h2>
+                    <div style="position:absolute;right:0%;width:50%;">
+                        <img src="Dissertation-Notebooks/Chapter-4/figures/ScikitLearnCitations.svg" class="right_plot">
+                        <img src="Dissertation-Notebooks/Chapter-4/figures/TensorflowCitations.svg" class="right_plot">
+                    </div>
+                        <div class="footer">
+                            <img src="Presentation/css/chevron.png" class="footer">
+                            <h4 class="footer">Edge-Deployable Tools</h4>
+                        </div>
+                    </div>
+            </section>
+
+            <section> <!-- Dimensionality Reduction -->
+                <div class="slide">
+                    <h2 class="header">Dimensionality Reduction</h2>
+                    <div class="left_text">
+                        <ul style="line-height:1.5;">
+                            <li class="fragment fade-up">Principal Components Analysis</li>
+                            \begin{equation}
+                            T = X W
+                            \end{equation}
+                            <li class="fragment fade-up">Autoencoders</li>
+                        </ul>
+                        <img src="Figures/Autoencoder.svg" style="width:50%">
+                    </div>
+                    <img src="Figures/MNIST-Reduction.svg" class="right_image">
                     <div class="footer">
                         <img src="Presentation/css/chevron.png" class="footer">
                         <h4 class="footer">Edge-Deployable Tools</h4>
                     </div>
                 </div>
-        </section>
+            </section>
 
-        <section> <!-- Open-Source Software-->
-            <div class="slide">
-                <h2 class="header">Open-Source Software</h2>
-                <div style="position:absolute;right:0%;width:50%;">
-                    <img src="Dissertation-Notebooks/Chapter-4/figures/ScikitLearnCitations.svg" class="right_plot">
-                    <img src="Dissertation-Notebooks/Chapter-4/figures/TensorflowCitations.svg" class="right_plot">
-                </div>
+            <section> <!-- Test Dataset -->
+                <div class="slide">
+                    <h2 class="header">Test Dataset</h2>
+                    <img src="Dissertation-Notebooks/Chapter-4/figures/Test_Signal.png" class="center_plot">
+                    <img src="Dissertation-Notebooks/Chapter-4/figures/Test_Signal_FFT.png" class="center_plot">
                     <div class="footer">
                         <img src="Presentation/css/chevron.png" class="footer">
                         <h4 class="footer">Edge-Deployable Tools</h4>
                     </div>
                 </div>
-        </section>
+            </section>
 
-        <section> <!-- Dimensionality Reduction -->
-            <div class="slide">
-                <h2 class="header">Dimensionality Reduction</h2>
-                <div class="left_text">
-                    <ul style="line-height:1.5;">
-                        <li class="fragment fade-up">Principal Components Analysis</li>
-                </div>
-                <div class="footer">
-                    <img src="Presentation/css/chevron.png" class="footer">
-                    <h4 class="footer">Edge-Deployable Tools</h4>
-                </div>
-            </div>
-        </section>
+        <!-- Integrated Edge Device -->
 
-        <section> <!-- Test Dataset -->
-            <div class="slide">
-                <h2 class="header">Test Dataset</h2>
-                <img src="Dissertation-Notebooks/Chapter-4/figures/Test_Signal.png" class="center_plot">
-                <img src="Dissertation-Notebooks/Chapter-4/figures/Test_Signal_FFT.png" class="center_plot">
-                <div class="footer">
-                    <img src="Presentation/css/chevron.png" class="footer">
-                    <h4 class="footer">Edge-Deployable Tools</h4>
-                </div>
-            </div>
-        </section>
-
-    <!-- Integrated Edge Device -->
-            <section>
+            <section> <!-- Integrated Edge Device -->
                 <div class="slide">
-                    <h2 style="margin-top:-25px;margin-bottom:0;">Integrated Edge Device</h2>
-                    <div style="display:inline-block;position: absolute;top: 55%; left: 50%;transform: translate(-50%,-50%);width:100%;">
-                        <div style="font-size: 1.0em">
-                            <ul style="line-height:1.0;">
-                                <!-- <li class="fragment fade-up">Edge computing will become increasingly useful due to benefits of increased security and reduced latency versus the cloud.</li> -->
-                                <li class="fragment fade-up">Using a Beaglebone device, what's a reasonable performance expectation for vibration data acquisition, feature extraction, and model inference</li>
-                                <li class="fragment fade-up">Experimental Setup:</li>
-                                    <ul>
-                                        <li>Use C script for PRU measurements</li>
-                                        <li>Store measurements in a serial file</li>
-                                        <li>Use Python API for feature extraction, followed by model inference</li>
-                                    </ul>
-                                <li class="fragment fade-up">Evaluate computation time required for increasing sample sizes</li>
-                                <li class="fragment fade-up">Hold sampling duration constant (higher sample size = higher sample rate)</li>
-                            </ul>
-                        </div>
+                    <h2 class="header">Integrated Edge Device</h2>
+                        <img src="Figures/Dissertation-Contribution-Overview/Edge-Device.svg" class="center_image">
+                    <div class="footer">
+                        <img src="Presentation/css/chevron.png" class="footer">
+                        <h4 class="footer">Integrated Edge Device</h4>
                     </div>
                 </div>
             </section>
 
-            <section>
+            <section> <!-- Open-Source Components-->
                 <div class="slide">
-                    <h2 style="margin-top:-25px;margin-bottom:0;">Edge Device Diagram</h2>
-                        <!-- <div style="display:inline-block;position: absolute;top: 55%; left: 50%;transform: translate(-50%,-50%);width:100%;"> -->
-                    <img src="Figures/Integrated_Edge_Device.svg" style="vertical-align:middle;border:0;height:83%">
-                <!-- </div> -->
-                </div>
-            </section>
-
-            <section>
-                <div class="slide">
-                    <h2 style="margin-top:-25px;margin-bottom:0;">Total Latency</h2>
-                        <!-- <div style="display:inline-block;position: absolute;top: 55%; left: 50%;transform: translate(-50%,-50%);width:100%;"> -->
-                    <img src="figures/Chapter5/Edge_ExtractLatency.png" style="vertical-align:middle;border:0;height:83%">
-                <!-- </div> -->
-                </div>
-            </section>
-
-            <section>
-                <div class="slide">
-                    <h3 style="margin-top:-25px;margin-bottom:0;">Edge vs Cloud: Processing</h3>
-                        <div style="display:inline-block;position: absolute;top: 55%; left: 50%;transform: translate(-50%,-50%);width:100%;">
-                    <img src="figures/Chapter5/EdgeVsCloud_ComputeLatency.png" style="vertical-align:middle;border:0;width:83%">
-                </div>
-                </div>
-            </section>
-
-            <section>
-                <div class="slide">
-                    <h2 style="margin-top:-25px;margin-bottom:0;">Edge vs Cloud: Total</h2>
-                        <div style="display:inline-block;position: absolute;top: 55%; left: 50%;transform: translate(-50%,-50%);width:100%;">
-                    <img src="figures/Chapter5/EdgeCloud_TotalLatency.png" style="vertical-align:middle;border:0;width:83%">
-                </div>
-                </div>
-            </section>
-
-            <section>
-                <div class="slide">
-                    <h2 style="margin-top:-25px;margin-bottom:0;">Case Study: Tool Wear</h2>
-                    <div style="display:inline-block;position: absolute;top: 55%; left: 50%;transform: translate(-50%,-50%);width:100%;">
-                        <div style="font-size: 1.0em">
-                            <ul style="line-height:1.0;">
-                                <!-- <li class="fragment fade-up">Edge computing will become increasingly useful due to benefits of increased security and reduced latency versus the cloud.</li> -->
-                                <li class="fragment fade-up">Two studies to illustrate different health monitoring techniques</li>
-                                <li class="fragment fade-up">Classification: PCA-GNB model</li>
-                                <li class="fragment fade-up">Anomaly detection:PCA-GMM model</li>                             
-                            </ul>
-                        </div>
+                    <h2 style="margin-top:-25px;margin-bottom:0;">Open-Source Components</h2>
+                    <div style="position:absolute;right:0%;width:50%;">
+                        <img src="Figures/Beaglebone/Beaglebone_Black.svg" class="right_plot" style="width:50%">
+                        <img src="Figures/Node-Red-Screenshot-Annotated.svg" class="right_plot">
                     </div>
                 </div>
             </section>
 
-            <section>
+            <section> <!-- CNC Controller Integration -->
                 <div class="slide">
-                    <h2 style="margin-top:-25px;margin-bottom:0;">Tool Wear Classification</h2>
-                    <div style="display:inline-block;position: absolute;top: 55%; left: 50%;transform: translate(-50%,-50%);width:100%;">
-                        <div style="font-size: 1.0em">
-                            <ul style="line-height:1.0;">
-                                <!-- <li class="fragment fade-up">Edge computing will become increasingly useful due to benefits of increased security and reduced latency versus the cloud.</li> -->
-                                <li class="fragment fade-up">Determine which features to use:</li>
-                                <ul style="line-height:1.0;">
-                                    <li class="fragment fade-up">Power Spectral Density Measurements</li>
-                                    <li class="fragment fade-up">Time-domain statistics</li>
-                                    <li class="fragment fade-up">OPC-UA controller labels (Spindle speed, feed rate)</li>
-                                </ul>
-                                <li class="fragment fade-up">Determine how many frequency components in PSD to use</li>
-                                <li class="fragment fade-up">Determine many PCA dimensions to use</li>
-                            </ul>
-                        </div>
+                    <h2 style="margin-top:-25px;margin-bottom:0;">CNC Controller Integration</h2>
+                    <img src="Figures/OPC-UA_Gateway.svg" class="left_image">
+                    <img src="Figures/MTConnect_Gateway.svg" class="right_image">
+                    <div class="footer">
+                        <img src="Presentation/css/chevron.png" class="footer">
+                        <h4 class="footer">Integrated Edge Device</h4>
                     </div>
                 </div>
             </section>
 
-            <section>
+            <section> <!-- Analog Data Acquisition -->
+                <div class="slide">
+                    <h2 class="header">Analog Data Acquisition</h2>
+                    <div style="position:absolute;right:0%;width:50%;">
+                        <img src="Figures/Accelerometer-Compare.svg" class="right_plot" style="width:100%">
+                        <img src="Figures/PRU-Voltage-Divider.svg" class="right_plot">
+                    </div>
+                    <div class="footer">
+                        <img src="Presentation/css/chevron.png" class="footer">
+                        <h4 class="footer">Integrated Edge Device</h4>
+                    </div>
+                </div>
+            </section>
+
+            <section> <!-- Edge Device Diagram-->
+                <div class="slide">
+                    <h2 class="header">Edge Device Diagram</h2>
+                    <img src="Figures/Integrated_Edge_Device.svg" class="right_image">
+                    <div class="footer">
+                        <img src="Presentation/css/chevron.png" class="footer">
+                        <h4 class="footer">Integrated Edge Device</h4>
+                    </div>
+                </div>
+            </section>
+
+            <section> <!-- Total Latency -->
+                <div class="slide">
+                    <h2 class="header">Total Latency</h2>
+                    <img src="Dissertation-Notebooks/Chapter-5/figures/Edge_ExtractLatency.svg" class="center_image">
+                    <div class="footer">
+                        <img src="Presentation/css/chevron.png" class="footer">
+                        <h4 class="footer">Integrated Edge Device</h4>
+                    </div>
+                </div>
+            </section>
+
+            <section> <!-- Edge Vs Cloud: Compute time -->
+                <div class="slide"> 
+                    <h2 class="header">Edge vs Cloud: Compute Time</h2>
+                    <img src="Dissertation-Notebooks/Chapter-5/figures/EdgeVsCloud_ComputeLatency.svg" class="center_image">
+                    <div class="footer">
+                        <img src="Presentation/css/chevron.png" class="footer">
+                        <h4 class="footer">Integrated Edge Device</h4>
+                    </div>
+                </div>
+            </section>
+
+            <section> <!-- Edge vs Cloud: Round-Trip Latency-->
+                <div class="slide"> 
+                    <h2 class="header">Edge vs Cloud: Round-Trip Latency</h2>
+                    <img src="Dissertation-Notebooks/Chapter-5/figures/EdgeCloud_TotalLatency.svg" class="center_image">
+                    <div class="footer">
+                        <img src="Presentation/css/chevron.png" class="footer">
+                        <h4 class="footer">Integrated Edge Device</h4>
+                    </div>
+                </div>
+            </section>
+
+        <!-- Case Study: Tool Wear Classification -->
+
+            <section> <!-- Case Study: Tool Wear Classification -->
+                <div class="slide">
+                    <h2 class="header">Case Study: Tool Wear Classification</h2>
+                    <img src="Figures/Dissertation-Contribution-Overview/Overall.svg" class="center_image">
+                    <div class="footer">
+                        <img src="Presentation/css/chevron.png" class="footer">
+                        <h4 class="footer">Case Study: Tool Wear Classification</h4>
+                    </div>
+                </div>
+            </section>
+
+            <section> <!-- Experimental Setup -->
+                <div class="slide">
+                    <h2 class="header">Experimental Setup</h2>
+                    <img src="Figures/Images_EMCO/Accelerometer-Zoom.jpeg" class="left_image">
+                    <img src="Figures/Images_EMCO/Accelerometer-Wide.jpeg" class="right_image">
+                    <div class="footer">
+                        <img src="Presentation/css/chevron.png" class="footer">
+                        <h4 class="footer">Case Study: Tool Wear Classification</h4>
+                    </div>
+                </div>
+            </section>
+
+            <section> <!-- Experimental Parameters -->
+                <div class="slide">
+                    <h2 class="header">Experimental Parameters</h2>
+                    <img src="Figures/Experimental-Parameters.svg" class="center_image" style="height:25%">
+                    <div class="left_text" style="margin-top:-1em;">
+                        <ul style="line-height:1.0;">
+                            <li class="fragment fade-up">Partial factorial design</li>
+                            <li class="fragment fade-up">Sample at 20kHz</li>
+                            <li class="fragment fade-up">4,200-sample length</li>
+                        </ul>     
+                    </div>
+                    <div class="footer">
+                        <img src="Presentation/css/chevron.png" class="footer">
+                        <h4 class="footer">Case Study: Tool Wear Classification</h4>
+                    </div>
+                </div>
+            </section>
+        
+            <section> <!-- Sample Labeling -->
+                <div class="slide">
+                    <h2 class="header">Sample Labeling</h2>
+                    <img src="Figures/Edge_Layer.svg" class="center_image" style="height:50%">
+                    <div class="left_text" style="margin-top:-2em;">
+                        <ul style="line-height:1.0;">
+                            <li class="fragment fade-up">Partial factorial design</li>
+                            <li class="fragment fade-up">Sample at 20kHz</li>
+                            <li class="fragment fade-up">4,200-sample length</li>
+                        </ul>     
+                    </div>
+                    <div class="footer">
+                        <img src="Presentation/css/chevron.png" class="footer">
+                        <h4 class="footer">Case Study: Tool Wear Classification</h4>
+                    </div>
+                </div>
+            </section>
+
+            <section> <!-- Experimental Spectrogram -->
+                <div class="slide">
+                    <h2 class="header">Experimental Spectrogram</h2>
+                    <img src="Figures/Experiment-Spectrogram.svg" class="center_image">
+                    <div class="footer">
+                        <img src="Presentation/css/chevron.png" class="footer">
+                        <h4 class="footer">Case Study: Tool Wear Classification</h4>
+                    </div>
+                </div>
+            </section>
+
+            <section> <!-- Experimental Spectrogram - Annotated -->
+                <div class="slide">
+                    <h2 class="header">Experimental Spectrogram</h2>
+                    <img src="Figures/Experiment-Spectrogram-Annotated.svg" class="center_image">
+                    <div class="footer">
+                        <img src="Presentation/css/chevron.png" class="footer">
+                        <h4 class="footer">Case Study: Tool Wear Classification</h4>
+                    </div>
+                </div>
+            </section>
+
+            <section> <!-- Data Composition -->
+                <div class="slide">
+                    <h2 class="header">Data Composition</h2>
+                    <div class="left_text">
+                        <ul style="line-height:1.0;">
+                            <li class="fragment fade-up">Full Dataset: 560 vibration samples</li>
+                            <li class="fragment fade-up">Manually prune samples from beginning and end of cut</li>
+                            <li class="fragment fade-up"></li>
+                        </ul>   
+                    </div>
+                    <img src="Figures/Experimental-Breakdown.svg" class="center_image" style="height:15%">
+                    <div class="footer">
+                        <img src="Presentation/css/chevron.png" class="footer">
+                        <h4 class="footer">Case Study: Tool Wear Classification</h4>
+                    </div>
+                </div>
+            </section>
+            
+            <section> <!-- Hyperparameter Optimization -->
                 <div class="slide">
                     <h3 style="margin-top:-25px;margin-bottom:0;">Hyperparameter Optimization</h3>
                         <div style="display:inline-block;position: absolute;top: 55%; left: 50%;transform: translate(-50%,-50%);width:100%;">
@@ -827,142 +894,64 @@
                 </div>
             </section>
 
-            <section>
-                <div class="slide">
-                    <h3 style="margin-top:-25px;margin-bottom:0;">Model Comparison</h3>
-                        <div style="display:inline-block;position: absolute;top: 55%; left: 50%;transform: translate(-50%,-50%);width:100%;">
-                    <img src="Figures/Features-Performance-Comparison.png" style="vertical-align:middle;border:0;width:75%">
-                </div>
-                </div>
-            </section>
+    <script src="Presentation/js/reveal.js"></script>
 
-            <section>
-                <div class="slide">
-                    <h3 style="margin-top:-25px;margin-bottom:0;">Model Performance: Training</h3>
-                        <div style="display:inline-block;position: absolute;top: 55%; left: 50%;transform: translate(-50%,-50%);width:100%;">
-                            <img src="Dissertation-Notebooks/Chapter-6/figures/pca_gnb_confmatrix_train.png" style="vertical-align:middle;border:0;width:75%">   
-                        </div>
-                </div>
-            </section>
+    <script>
+        // Full list of configuration options available at:
+        // https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            controls: false,
+            progress: true,
+            history: true,
+            center: false,
+            
+            // Help the user learn the controls by providing hints, for example by
+            // bouncing the down arrow when they first encounter a vertical slide
+            controlsTutorial: true,
 
-            <section>
-                <div class="slide">
-                    <h3 style="margin-top:-25px;margin-bottom:0;">Model Performance: Validation</h3>
-                        <div style="display:inline-block;position: absolute;top: 55%; left: 50%;transform: translate(-50%,-50%);width:100%;">
-                            <img src="Dissertation-Notebooks/Chapter-6/figures/pca_gnb_confmatrix_valid.png" style="vertical-align:middle;border:0;width:75%">   
-                        </div>
-                </div>
-            </section>
+            transition: 'none', // none/fade/slide/convex/concave/zoom
+            
+            // The "normal" size of the presentation, aspect ratio will be preserved
+            // when the presentation is scaled to fit different resolutions. Can be
+            // specified using percentage units.
+            width: 1920,
+            height: 1080,
 
-            <section>
-                <div class="slide">
-                    <h2 class="header">Model Comparison</h2>
-                    <img src="figures/test.svg" style="vertical-align:middle;border:0;width:75%">   
-                        
-                    <div style="position:absolute;left:0px;bottom:1%;height:15%">
-                        <img src="Presentation/css/chevron.png" style="vertical-align:middle;border:0;height:100%">
-                        <h4 style="position:absolute;left:100%;top:74%;border:0;">Architecture</h4>
-                    </div>
-                    </div>
-            </section>
+            // Factor of the display size that should remain empty around the content
+            margin: 0.0,
 
+            // Bounds for smallest/largest possible scale to apply to content
+            minScale: 0.2,
+            maxScale: 1.5,
 
-            <section>
-                <div class="slide">
-                    <h3 class="header">Anomaly Detection: Training vs Validation</h3>
-                        <div style="display:inline-block;position: absolute;top: 55%; left: 50%;transform: translate(-50%,-50%);width:100%;">
-                    <img src="Dissertation-Notebooks/Chapter-6/figures/Spindle_Load_Anomalous_Compare.svg" style="vertical-align:middle;border:0;width:83%">
-                </div>
-                </div>
-            </section>
+            pdfSeparateFragments: false,
 
-            <section>
-                <div class="slide">
-                    <h3 class="header">Anomaly Detection: Healthy vs Unhealthy</h3>
-                        <div style="display:inline-block;position: absolute;top: 55%; left: 50%;transform: translate(-50%,-50%);width:100%;">
-                    <img src="Dissertation-Notebooks/Chapter-6/figures/Spindle_Load_Anomalous_Compare-Healthy_Unhealthy.svg" style="vertical-align:middle;border:0;width:83%">
-                </div>
-                </div>
-            </section>
+            fragments: false,
 
-            <section>
-                <div class="slide">
-                    <h3 class="header">Anomaly Detection: Precision and Recall</h3>
-                        <!-- <div style="display:inline-block;position: absolute;top: 55%; left: 50%;transform: translate(-50%,-50%);width:100%;"> -->
-                    <img src="Dissertation-Notebooks/Chapter-6/figures/Precision_Statistic.svg" class="center_plot">
-                    <img src="Dissertation-Notebooks/Chapter-6/figures/Recall_Statistic.svg" class="center_plot">
-                <!-- </div> -->
-                </div>
-            </section>
+            slideNumber: 'c/t',
 
-        <!-- <script src="lib/js/head.min.js"></script> -->
-        
-        <script src="Presentation/js/reveal.js"></script>
+            // Optional reveal.js plugins
+            dependencies: [
+                { src: 'Presentation/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                { src: 'Presentation/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                { src: 'Presentation/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                { src: 'Presentation/plugin/highlight/highlight.js', async: true},
+                { src: 'Presentation/plugin/zoom-js/zoom.js', async: true },
+                { src: 'Presentation/plugin/math/math.js', async: true },
+                { src: 'Presentation/plugin/notes/notes.js', async: true }
+            ]
+        });
 
-        <!-- Try to get jQuery from CDN, if not fall back to local version -->
-        <!-- <script src="https://code.jquery.com/jquery-1.8.0.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/jquery-1.8.0.min.js"><\/script>')</script>
-         -->
-        <!-- Try to get jQuery UI from CDN, if not fall back to local version -->
-        <!-- <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
-        <script>window.jQuery.ui || document.write('<script src="js/jquery-ui.min.js"><\/script>')</script> -->
+        Reveal.addEventListener( 'centerText', function() {
+            Reveal.configure({center: true});
+        }, false );
 
-        <script>
-            // Full list of configuration options available at:
-            // https://github.com/hakimel/reveal.js#configuration
-            Reveal.initialize({
-                controls: false,
-                progress: true,
-                history: true,
-                center: false,
-                
-                // Help the user learn the controls by providing hints, for example by
-                // bouncing the down arrow when they first encounter a vertical slide
-                controlsTutorial: true,
-
-                transition: 'none', // none/fade/slide/convex/concave/zoom
-                
-                // The "normal" size of the presentation, aspect ratio will be preserved
-                // when the presentation is scaled to fit different resolutions. Can be
-                // specified using percentage units.
-                width: 1920,
-                height: 1080,
-
-                // Factor of the display size that should remain empty around the content
-                margin: 0.0,
-
-                // Bounds for smallest/largest possible scale to apply to content
-                minScale: 0.2,
-                maxScale: 1.5,
-
-                pdfSeparateFragments: false,
-
-                fragments: false,
-
-                slideNumber: 'c/t',
-
-                // Optional reveal.js plugins
-                dependencies: [
-                    { src: 'Presentation/lib/js/classList.js', condition: function() { return !document.body.classList; } },
-                    { src: 'Presentation/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-                    { src: 'Presentation/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-                    { src: 'Presentation/plugin/highlight/highlight.js', async: true},
-                    { src: 'Presentation/plugin/zoom-js/zoom.js', async: true },
-                    { src: 'Presentation/plugin/math/math.js', async: true },
-                    { src: 'Presentation/plugin/notes/notes.js', async: true }
-                ]
-            });
-
-            Reveal.addEventListener( 'centerText', function() {
-			    Reveal.configure({center: true});
-			}, false );
-
-            // You can provide a function to fully customize the number:
-            Reveal.configure({ slideNumber: function() {
-            // Ignore numbering of vertical slides
-            return [ Reveal.getIndices().h +  '/' ];
-            }});
-        </script>
+        // You can provide a function to fully customize the number:
+        Reveal.configure({ slideNumber: function() {
+        // Ignore numbering of vertical slides
+        return [ Reveal.getIndices().h +  '/' ];
+        }});
+    </script>
 
 
     

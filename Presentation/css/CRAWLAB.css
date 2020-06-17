@@ -517,6 +517,15 @@ transform-style: flat;
   height:83%
 }
 
+.reveal section img.left_image {
+  display:inline-block;
+  position: absolute;
+  top: 52.5%; 
+  left: 25%;
+  transform: translate(-50%,-50%);
+  height:83%
+}
+
 .reveal section img.center_image {
   vertical-align:middle;
   top: 52.5%; 
