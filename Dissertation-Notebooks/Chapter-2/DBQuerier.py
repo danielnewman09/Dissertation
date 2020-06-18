@@ -6,7 +6,7 @@ import ast
 
 class DBQuerier(object):
 
-    def __init__(self,database,assetId,host='10.8.0.1',debug=True):
+    def __init__(self,database,assetId,host='10.0.0.17',debug=True):
 
         if debug:
             self.debug_str = ""
