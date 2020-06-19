@@ -21,7 +21,7 @@ class DBQuerier(object):
 
         self.user = 'dnewman'
         self.password = 'Convolve7691!'
-        self.host = '10.0.0.17'
+        self.host = '69.222.133.95'
         self.limit = limit
         
     def connect(self):
