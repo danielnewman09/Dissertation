@@ -887,10 +887,58 @@
             
             <section> <!-- Hyperparameter Optimization -->
                 <div class="slide">
-                    <h3 style="margin-top:-25px;margin-bottom:0;">Hyperparameter Optimization</h3>
-                        <div style="display:inline-block;position: absolute;top: 55%; left: 50%;transform: translate(-50%,-50%);width:100%;">
+                    <h2 class="header">Hyperparameter Optimization</h2>
                     <img src="Dissertation-Notebooks/Chapter-6/figures/noDoE_Scores_Presentation.png" style="vertical-align:middle;border:0;width:75%">
                 </div>
+            </section>
+
+            <section> <!-- Hyperparameter Optimization -->
+                <div class="slide">
+                    <h2 class="header">Model Validation</h2>
+                    <div class="left_text">
+                        <ul>
+                            <li>Repeated March experiments</li>
+                            <li>Ran existing model (v1) while performing data acquisition</li>
+                            <ul>
+                                <li>Generate full dataset considering machine downtime (3 months), new DAQ</li>
+                                <li>Test model (v1)</li>
+                            </ul>
+                            <li>Developed updated model (v2) based on these new data</li>
+                            <li>Validated this model on (v2) unseen parameters</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section> <!-- Hyperparameter Optimization -->
+                <div class="slide">
+                    <h2 class="header">Model Performance (v1)</h2>
+                    <div class="left_text" style="width:100%">
+                        <ul>
+                            <li>Null Hypothesis: tool is healthy</li>
+                            <li>Balanced accuracy: 85.4%</li>
+                            <li>True Positive Rate: 94.6%</li>
+                            <li>True Negative Rate: 76.2%</li>
+                            <li>Precision: 0.700</li>
+                            <li>Recall: 0.946</li>
+                            <li><b>This is on parameters that have been seen before</b></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section> <!-- Hyperparameter Optimization -->
+                <div class="slide">
+                    <h2 class="header">Model Performance (v1)</h2>
+                    <div class="left_text">
+                        <ul>
+                            <li>Balanced accuracy: 85.4%</li>
+                            <li>True Positive Rate: 94.6%</li>
+                            <li>True Negative Rate: 76.2%</li>
+                            <li>Precision: 0.700</li>
+                            <li>Recall: 0.946</li>
+                        </ul>
+                    </div>
                 </div>
             </section>
 
