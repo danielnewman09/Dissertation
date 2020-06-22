@@ -541,7 +541,7 @@ transform-style: flat;
 .reveal section img.center_plot {
   vertical-align:middle;
   position:relative;
-  margin-top:-1em; 
+  margin-top:1em; 
   width:75%;
 }
 
