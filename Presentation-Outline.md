@@ -26,22 +26,43 @@ Through investigating these questions, I will present an integrated Internet of 
 
 ### Slide 8: Demonstration (1:00)
 
-All of these elements are 
+All of these elements are demonstrated at a high-level in this video of a simple end milling process.
 
 ### Slide 9: Outline
 
 ## Background (5 Minutes)
 
 ### Slide 10: Industrial Internet of Things
+
+The industrial internet of things is an important concept in improving manufacturing process efficiency, rapidly responding to changes, and preventing unscheduled downtime. This figure shows a simple heriarchy of the main components involved in this .
+
+...
+
+For this presentation, I'll be going into more depth specifically on the data acquisition and message transmission layers of this framework. I want to particularly focus on the means by which CNC controller data and external sensor data are extracted and processed.
+
 ### Slide 11: CNC Controller Protocols
+
+For modern CNC machines, their controllers often come equipped with software that allows important data to be readily extracted from them.
+
 ### Slide 12: Sensor Data Acquisition
+
+In addition to controller data, external sensors can be used to enrich the data from the machine. Using sensors such as thermocouples, accelerometers, and current sensors, highly detailed information can be captured from these devices. 
+
 ### Slide 13: Health Monitoring
-### Slide 14: Time-Domain Statistics
+
+Health monitoring is an important application for these controller and sensor data streams. 
+
 ### Slide 15: Spectral Power Approximation
+
 
 ## Digital Architecture for Health Monitoring (6 minutes)
 
+Now I'll get into the first contribution of this thesis, the integrated digital architecture. This section focuses on the types of data that are necessary for manufacturing health monitoring and how they are integrated to provide a full picture of machine utilization and health.
+
 ### Slide 19: MQTT-Based Framework
+
+
+
 ### Slide 20: MQTT Message Definitions
 ### Slide 21: Controller/Sensor Payload Example
 ### Slide 23: Contextual Data Acquisition and Training
@@ -50,35 +71,35 @@ All of these elements are
 
 ## Edge-Deployable ML Tools (6 minutes)
 
-## Open Source Software
-## Example Dataset
-## Feature Normalization
-## Deployed Models
-## Model Deployment
-## Full Latency Comparison: Classifiers
+### Open Source Software
+### Example Dataset
+### Feature Normalization
+### Deployed Models
+### Model Deployment
+### Full Latency Comparison: Classifiers
 
 ## Integrated Edge Device (8 minutes)
 
-## Open Source Components
-## CNC Controller Integration
-## Analog Data Acquisition
-## Edge Device Diagram
-## Device Benchmarking
-## Local Compute Latency
-## Cloud Compute Latency Comparison
+### Open Source Components
+### CNC Controller Integration
+### Analog Data Acquisition
+### Edge Device Diagram
+### Device Benchmarking
+### Local Compute Latency
+### Cloud Compute Latency Comparison
 
 ## Case Study (10 minutes)
 
-## Experimental Setup
-## Experimental Parameters
-## Sample Labeling
-## Experimental Spectrogram
-## Data Composition
-## Model Selection
-## Hyperparameter Optimization
-## Model Validation
-## Model Performance: Validation
-## Control Chart Analysis: Range
-## Control Chart Analysis: Mean
+### Experimental Setup
+### Experimental Parameters
+### Sample Labeling
+### Experimental Spectrogram
+### Data Composition
+### Model Selection
+### Hyperparameter Optimization
+### Model Validation
+### Model Performance: Validation
+### Control Chart Analysis: Range
+### Control Chart Analysis: Mean
 
 ## Conclusion (3 minutes)
