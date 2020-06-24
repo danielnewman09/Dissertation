@@ -55,21 +55,33 @@ Health monitoring is an important application for these controller and sensor da
 ### Slide 15: Spectral Power Approximation
 
 
-## Digital Architecture for Health Monitoring (6 minutes)
+## Digital Architecture for Health Monitoring (6 minutes) [0:25]
 
-Now I'll get into the first contribution of this thesis, the integrated digital architecture. This section focuses on the types of data that are necessary for manufacturing health monitoring and how they are integrated to provide a full picture of machine utilization and health.
+Now I'll get into the first contribution of this thesis, the integrated digital architecture. This section focuses on acquiring and parsing the types of data that are necessary for manufacturing health monitoring. Specifically, this strategy seeks to record sensor and controller data to paint a complete picture of machine health and utilization.
 
-### Slide 19: MQTT-Based Framework
+### Slide 19: MQTT-Based Framework [1:30]
+
+Now, when transmitting data in an IoT infrastructure, it's important to begin with an efficient and effective messaging protocol. In this case, MQTT is an excellent candidate. This is a publish-subscribe protocol which has low overhead and uses a simple topic syntax which makes subscribing to a desired data stream extremely easy. As this figure shows, ...
 
 
+### Slide 20: MQTT Message Definitions 
 
-### Slide 20: MQTT Message Definitions
+To use this protocol in a large manufacturing environment, it's important to establish a data structure. For MQTT, this includes the topic and payload as shown in this slide.
+
 ### Slide 21: Controller/Sensor Payload Example
+
+With this message structure established, here are two example messages - one from a CNC controller and one from an accelerometer.
+
 ### Slide 23: Contextual Data Acquisition and Training
+
+
+
 ### Slide 26: Emco Warm-Up Program
 ### Slide 27: Emco Warm-Up History
 
 ## Edge-Deployable ML Tools (6 minutes)
+
+
 
 ### Open Source Software
 ### Example Dataset
