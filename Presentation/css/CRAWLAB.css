@@ -559,11 +559,23 @@ transform-style: flat;
   height:15%;
   width:100%;
 }
-
 .reveal section div.left_text {
   position:relative;
   left:0px;
   top:5%;
+  width:50%;
+}
+.reveal section div.left_text_abs {
+  position:absolute;
+  left:0px;
+  top:15%;
+  width:50%;
+}
+
+.reveal section div.right_text_abs {
+  position:absolute;
+  left:50%;
+  top:15%;
   width:50%;
 }
 

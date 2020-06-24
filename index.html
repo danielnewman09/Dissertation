@@ -52,6 +52,7 @@
         </section>
 
         <!-- Introduction Material -->
+        <section>
 
             <section> <!-- The Past Decade -->
                 <div class="slide">
@@ -136,7 +137,8 @@
                 </div>
             </section>
 
-            <section> <!-- Sensor/Controller Integration -->
+            <!-- Sensor/Controller Integration -->
+            <!-- <section> 
                 <div class="slide">
                     <h2 class="header">Sensor/Controller Integration</h2>
                     <img src="Figures/Dissertation-Contribution-Overview/Contextualization.svg" class="right_image">
@@ -154,9 +156,10 @@
                         <img src="Presentation/css/chevron.png" class="footer">
                         <h4 class="footer">Introduction</h4>
                     </div>
-            </section>
+            </section> -->
 
-            <section> <!-- Consistent ML Framework -->
+            <!-- Consistent ML Framework -->
+            <!-- <section> 
                 <div class="slide">
                     <h2 class="header">Consistent ML Framework</h2>
                     <img src="Figures/Dissertation-Contribution-Overview/Machine-Learning.svg" class="right_image">
@@ -172,9 +175,10 @@
                         <img src="Presentation/css/chevron.png" class="footer">
                         <h4 class="footer">Introduction</h4>
                     </div>
-            </section>
+            </section> -->
 
-            <section> <!-- Integrated Edge Device -->
+            <!-- Integrated Edge Device -->
+            <!-- <section> 
                 <div class="slide">
                     <h2 class="header">Integrated Edge Device</h2>
                         <img src="Figures/Dissertation-Contribution-Overview/Edge-Device.svg" class="right_image">
@@ -194,7 +198,7 @@
                         <h4 class="footer">Introduction</h4>
                     </div>
                 </div>
-            </section>
+            </section> -->
 
             <section> <!-- Demonstration-->
                 <div class="slide">
@@ -203,48 +207,27 @@
                 </div>
             </section>
 
-            <section> <!-- Outline -->
-                <div class="slide">
-                    <h2 class="header">Outline</h2>
-                        <div class="left_text">
-                            <ul style="line-height:1.5;">
-                                <!-- <li class="fragment fade-up">Edge computing will become increasingly useful due to benefits of increased security and reduced latency versus the cloud.</li> -->
-                                <li class="fragment fade-up">Background</li>
-                                <ul style="line-height:1.0">
-                                    <li class="fragment fade-up">Industrial Internet of Things</li>
-                                    <li class="fragment fade-up">Data Acquisition Strategies</li>
-                                    <li class="fragment fade-up">Open Source Tools</li>
-                                    <li class="fragment fade-up">Machine Health Monitoring</li>
-                                </ul>
-                                <li class="fragment fade-up">Proposed IoT framework</li>
-                                <ul style="line-height:1.0">
-                                    <li class="fragment fade-up">OPC-UA</li>
-                                </ul>
+        </section>
 
-                                <li class="fragment fade-up">Frequency-Domain Signal Processsing</li>
-                                <ul style="line-height:1.0">
-                                    <li class="fragment fade-up">Discrete Fourier Transform</li>
-                                    <li class="fragment fade-up">Improving DFT results</li>
-                                </ul>
-
-                            </ul>
-                        </div>
-                </div>
-            </section>
+        <section> <!-- Outline -->
+            <div class="slide">
+                <h2 class="header">Outline</h2>
+                    <div class="left_text" style="width:100%">
+                        <ul style="line-height:1.5;">
+                            <!-- <li class="fragment fade-up">Edge computing will become increasingly useful due to benefits of increased security and reduced latency versus the cloud.</li> -->
+                            <li class="fragment fade-up">Background</li>
+                            <li class="fragment fade-up">Proposed Digital Architecture</li>
+                            <li class="fragment fade-up">Edge-Deployable Machine Learning Tools</li>
+                            <li class="fragment fade-up">Integrated Data Acquisition Device</li>
+                            <li class="fragment fade-up">End-To-End Case Study in Tool Wear</li>
+                            <li class="fragment fade-up">Concluding Remarks</li>
+                        </ul>
+                    </div>
+            </div>
+        </section>
 
         <!-- Background -->
-
-            <!-- Industrial Internet of Things -->
-            <!-- <section> 
-                <div class="slide">
-                    <h2 class="header">Industrial Internet of Things</h2>
-                    <img src="Figures/CPS_Architecture.svg" class="center_image">
-                    <div class="footer">
-                        <img src="Presentation/css/chevron.png" class="footer">
-                        <h4 class="footer">Background</h4>
-                    </div>
-                    </div>
-            </section> -->
+        <section>
 
             <section> <!-- Industrial Internet of Things -->
                 <div class="slide">
@@ -388,8 +371,11 @@
                         <h4 class="footer">Background</h4>
                     </div>
             </section>
+        
+        </section>
 
         <!-- Digital Architecture -->
+        <section>
 
             <section> <!-- Digital Architecture for Health Monitoring -->
                 <div class="slide">
@@ -401,100 +387,6 @@
                     </div>
                 </div>
             </section>
-
-            <section> <!-- Controller vs Sensor Data -->
-                <div class="slide">
-                    <h2 class="header">Controller vs Sensor Data</h2>
-                    <div class="left_text">
-                        <ul style="line-height:1.1;">
-                            <li class="fragment fade-up">This framework relies on two data sources:</li>
-                            <ul>
-                                <li class="fragment fade-up">CNC controllers</li>
-                                <li class="fragment fade-up">Sensors</li>
-                            </ul>
-                            <li class="fragment fade-up">CNC machines can provide large quantities of highly detailed data</li>
-                            <ul>
-                                <li class="fragment fade-up">G-Code program name</li>
-                                <li class="fragment fade-up">Spindle speed</li>
-                                <li class="fragment fade-up">Axis loads</li>
-                                <li class="fragment fade-up">Machine coordinates</li>
-                            </ul>
-                        </ul>
-                    </div>
-                    <div class="center_emphasis">
-                            <p><b>Why use external sensors?</b></p>
-                    </div>
-                    <div class="footer">
-                        <img src="Presentation/css/chevron.png" class="footer">
-                        <h4 class="footer">Architecture</h4>
-                    </div>
-                    </div>
-            </section>
-
-            <!-- Controller vs Sensor Test -->
-            <!-- <section> 
-                <div class="slide">
-                    <h2 class="header">Controller vs Sensor Test</h2>
-                        <img src="Figures/Tool_Wear/Good_Bad_Presentation.svg" class="center_image_width">
-                    <div class="full_text" style="margin-top:-1em">
-                        <ul style="line-height:1.1;">
-                            <li class="fragment fade-up">Compare process data from worn and unworn tools</li>
-                            <li class="fragment fade-up">Use spindle power from CNC controller</li>
-                            <li class="fragment fade-up">Compare with accelerometer measurements</li>
-                            <li class="fragment fade-up">Given the advanced wear, data should show obvious distinction between tools</li>
-                        </ul>
-                    </div>
-
-                    <div class="footer">
-                        <img src="Presentation/css/chevron.png" class="footer">
-                        <h4 class="footer">Architecture</h4>
-                    </div>
-                </div>
-            </section> -->
-
-            <section> <!-- Controller vs Sensor Results -->
-                <div class="slide">
-                    <h2 class="header">Controller vs Sensor Results</h2>
-                        <img src="Dissertation-Notebooks/Chapter-3/figures/Spindle_Load_Anomalous_Compare.svg" class="center_plot">
-                        <img src="Dissertation-Notebooks/Chapter-3/figures/RMS_Anomalous_Compare.svg" class="center_plot" style="margin-top:-1em;">
-                    <div class="footer">
-                        <img src="Presentation/css/chevron.png" class="footer">
-                        <h4 class="footer">Architecture</h4>
-                    </div>
-                    </div>
-            </section>
-
-            <!-- Frequency-Domain Results -->
-            <!-- <section> 
-                <div class="slide">
-                    <h2 class="header">Frequency-Domain Results</h2>
-                        <img src="Dissertation-Notebooks/Chapter-3/figures/Emco_Nominal_vs_Anomalous_FFT.svg" class="center_plot" style="margin-top:0em;">
-                        <img src="Dissertation-Notebooks/Chapter-3/figures/Emco_Nominal_vs_Anomalous_FFT_Diff.svg" class="center_plot">
-                    <div class="footer">
-                        <img src="Presentation/css/chevron.png" class="footer">
-                        <h4 class="footer">Architecture</h4>
-                    </div>
-                </div>
-            </section> -->
-
-            <!-- Frequency-Domain Results: Summary bullet points -->
-            <!-- <section> 
-        <div class="slide">
-            <h2 class="header">Frequency-Domain Results</h4>
-            <img src="Dissertation-Notebooks/Chapter-3/Figures/Emco_Nominal_vs_Anomalous_FFT.png" style="vertical-align:middle;border:0;width:70%;">
-            <img src="Dissertation-Notebooks/Chapter-3/Figures/Emco_Nominal_vs_Anomalous_FFT_Diff.png" style="vertical-align:middle;border:0;width:70%;">
-            <div style="position:absolute;left:0px;top:10%;margin:1em;background-color:rgba(255, 255, 255, 1.0);box-shadow: 5px 10px 8px #888888;border:3pt solid black;">
-                <p><b>Clearly, an accelerometer provides more <i>features</i> than the controller. More control over sampling ensures better distinction in health metrics as well.</b></p>
-            </div>
-            <div style="position:absolute;left:0px;top:50%;margin:1em;background-color:rgba(255, 255, 255, 1.0);box-shadow: 5px 10px 8px #888888;border:3pt solid black;">
-                <p><b>For these reasons, the controller data are considered useful for <i>contextual</i> information such as Program Name, Spindle Speed, Tool Number, etc. Sensor data are used to extract health metrics within this context.</b></p>
-            </div>
-            <div style="position:absolute;left:0px;bottom:1%;height:15%">
-                <img src="Presentation/css/chevron.png" style="vertical-align:middle;border:0;height:100%">
-                <h4 style="position:absolute;left:100%;top:74%;border:0;">Architecture</h4>
-            </div>
-            </div>
-    </section> -->
 
             <section> <!-- MQTT-Based Framework -->
                 <div class="slide">
@@ -522,7 +414,8 @@
             <section> <!-- Controller Payload Example -->
                 <div class="slide">
                     <h2 class="header">Controller Payload Example</h2>
-                    <p style="text-align:left;">
+                    <div class="left_text_abs">
+                    <p style="text-align:left;font-size:1.1em;">
                     
                     <b>topic</b>: "Asset/A1000/rotaryVelocity_S"<br>
                     <b>payload</b>: { <br>    
@@ -531,35 +424,27 @@
                     &nbsp;&nbsp;&nbsp;&nbsp; "dataItemId" : "rotaryVelocity_S",<br>
                     &nbsp;&nbsp;&nbsp;&nbsp; "value" : 1002<br>
                         }</p>
-
-                        <div class="footer">
-                            <img src="Presentation/css/chevron.png" class="footer">
-                            <h4 class="footer">Architecture</h4>
-                        </div>
                     </div>
-            </section>
-
-            <section> <!-- Sensor Payload Example -->
-                <div class="slide">
-                    <h2 class="header">Sensor Payload Example</h2>
-                    <p style="text-align:left;font-size:1.1em;">
-                        <b>topic</b>: "Asset/A1000/Vibration"<br>
-                        <b>payload</b>: {<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp; "dateTime": "2019-03-08T15:43:44.808Z",<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp; "assetId" : "A1000",<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp; "dataItemId" : "Vibration",<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp; "iteminstanceId" : "Part_1001",<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp; "sensorId": "accelerometer1",<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp; "samplingInterval":0.00048828125,<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp; "Kurtosis": 0.033,<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp; "mean": -0.040,<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp; "rootMeanSquare": 0.025,<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp; "skewness": -0.204,<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp; "variance": 0.001,<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp; "PSDFreqInterval":10,<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp; "PSDAmps":[0.895,0.889,...,0.877]<br>
-                        }
-                        </p>
+                    <div class="right_text_abs">
+                        <p style="text-align:left;font-size:1.1em;">
+                            <b>topic</b>: "Asset/A1000/Vibration"<br>
+                            <b>payload</b>: {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; "dateTime": "2019-03-08T15:43:44.808Z",<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; "assetId" : "A1000",<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; "dataItemId" : "Vibration",<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; "iteminstanceId" : "Part_1001",<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; "sensorId": "accelerometer1",<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; "samplingInterval":0.00048828125,<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; "Kurtosis": 0.033,<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; "mean": -0.040,<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; "rootMeanSquare": 0.025,<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; "skewness": -0.204,<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; "variance": 0.001,<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; "PSDFreqInterval":10,<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; "PSDAmps":[0.895,0.889,...,0.877]<br>
+                            }
+                            </p>
+                    </div>
 
                         <div class="footer">
                             <img src="Presentation/css/chevron.png" class="footer">
@@ -571,29 +456,8 @@
             <section> <!-- Contextual Data Acquisition -->
                 <div class="slide">
                     <h2 class="header">Contextual Data Acquisition</h2>
-                        <img src="Figures/Contextual_Training.svg" class="right_image">
-                    <div class="footer">
-                        <img src="Presentation/css/chevron.png" class="footer">
-                        <h4 class="footer">Architecture</h4>
-                    </div>
-                </div>
-            </section>
-
-            <section> <!-- Contextual Data Acquisition -->
-                <div class="slide">
-                    <h2 class="header">Data Contextualization Training</h2>
+                        <img src="Figures/Contextual_Training.svg" class="left_image">
                         <img src="Figures/Table_Example.svg" class="right_image">
-                    <div class="footer">
-                        <img src="Presentation/css/chevron.png" class="footer">
-                        <h4 class="footer">Architecture</h4>
-                    </div>
-                </div>
-            </section>
-
-            <section> <!-- Emco Warm-Up -->
-                <div class="slide">
-                    <h2 class="header">CNC Mill Warmup</h2>
-                        <img src="Dissertation-Notebooks/Chapter-3/Emco_Warmup_Monitoring/figures/Warmup_Spindle_Speed.svg" class="right_image">
                     <div class="footer">
                         <img src="Presentation/css/chevron.png" class="footer">
                         <h4 class="footer">Architecture</h4>
@@ -623,8 +487,10 @@
                     </div>
                 </div>
             </section>
+        </section>
 
         <!-- Edge-Deployable ML Tools-->
+        <section>
 
             <section> <!-- Edge-Deployable ML Tools-->
                 <div class="slide">
@@ -766,9 +632,10 @@
                 </div>
             </section>
 
-
+        </section>
 
         <!-- Integrated Edge Device -->
+        <section>
 
             <section> <!-- Integrated Edge Device -->
                 <div class="slide">
@@ -871,8 +738,11 @@
                     </div>
                 </div>
             </section>
+        
+        </section>
 
         <!-- Case Study: Tool Wear Classification -->
+        <section>
 
             <section> <!-- Case Study: Tool Wear Classification -->
                 <div class="slide">
@@ -900,9 +770,9 @@
             <section> <!-- Experimental Parameters -->
                 <div class="slide">
                     <h2 class="header">Experimental Parameters</h2>
-                    <img src="Figures/Experimental-Parameters.svg" class="center_image" style="height:25%">
-                    <div class="left_text" style="margin-top:-1em;">
-                        <ul style="line-height:1.0;">
+                    <img src="Figures/Experimental-Parameters.svg" class="center_image" style="height:25%;margin-top:2em">
+                    <div class="left_text" style="margin-top:2em;">
+                        <ul style="line-height:1.5;">
                             <li class="fragment fade-up">Partial factorial design</li>
                             <li class="fragment fade-up">Sample at 20kHz</li>
                             <li class="fragment fade-up">4,200-sample length</li>
@@ -918,14 +788,7 @@
             <section> <!-- Sample Labeling -->
                 <div class="slide">
                     <h2 class="header">Sample Labeling</h2>
-                    <img src="Figures/Edge_Layer.svg" class="center_image" style="height:50%">
-                    <div class="left_text" style="margin-top:-2em;">
-                        <ul style="line-height:1.0;">
-                            <li class="fragment fade-up">Partial factorial design</li>
-                            <li class="fragment fade-up">Sample at 20kHz</li>
-                            <li class="fragment fade-up">4,200-sample length</li>
-                        </ul>     
-                    </div>
+                    <img src="Figures/Edge_Layer.svg" class="center_image" style="height:60%;top:20%">
                     <div class="footer">
                         <img src="Presentation/css/chevron.png" class="footer">
                         <h4 class="footer">Case Study: Tool Wear Classification</h4>
@@ -958,14 +821,14 @@
             <section> <!-- Data Composition -->
                 <div class="slide">
                     <h2 class="header">Data Composition</h2>
-                    <div class="left_text">
-                        <ul style="line-height:1.0;">
+                    <div class="center_text" style="margin-top:2em;margin-bottom:2em">
+                        <ul style="line-height:1.5;">
                             <li class="fragment fade-up">Full Dataset: 560 vibration samples</li>
                             <li class="fragment fade-up">Manually prune samples from beginning and end of cut</li>
-                            <li class="fragment fade-up"></li>
+                            <li class="fragment fade-up">Pruned Dataset: 457 samples</li>
                         </ul>   
                     </div>
-                    <img src="Figures/Experimental-Breakdown.svg" class="center_image" style="height:15%">
+                    <img src="Figures/Experimental-Breakdown.svg" class="center_image" style="height:20%">
                     <div class="footer">
                         <img src="Presentation/css/chevron.png" class="footer">
                         <h4 class="footer">Case Study: Tool Wear Classification</h4>
@@ -1058,6 +921,10 @@
                 </div>
             </section>
 
+        </section>
+
+        <!-- Concluding Remarks -->
+        <section>
 
             <section> <!-- Hyperparameter Optimization -->
                 <div class="slide">
@@ -1066,6 +933,78 @@
                     <img src="Dissertation-Notebooks/Chapter-3/Emco_Warmup_Monitoring/figures/Warmup_RMS.svg" class="center_plot">
                 </div>
             </section>
+
+        </section>
+
+        <!-- Supplementary Slides -->
+
+        <section>
+
+            <section> <!-- Title Slide -->
+                <div class="slide">
+                <h2 style="text-align:center;margin-top:25%">Supplementary Slides</h2>
+                </div>
+            </section>
+    
+
+            <section> <!-- Controller vs Sensor Data -->
+                <div class="slide">
+                    <h2 class="header">Controller vs Sensor Data</h2>
+                    <div class="left_text">
+                        <ul style="line-height:1.1;">
+                            <li class="fragment fade-up">This framework relies on two data sources:</li>
+                            <ul>
+                                <li class="fragment fade-up">CNC controllers</li>
+                                <li class="fragment fade-up">Sensors</li>
+                            </ul>
+                            <li class="fragment fade-up">CNC machines can provide large quantities of highly detailed data</li>
+                            <ul>
+                                <li class="fragment fade-up">G-Code program name</li>
+                                <li class="fragment fade-up">Spindle speed</li>
+                                <li class="fragment fade-up">Axis loads</li>
+                                <li class="fragment fade-up">Machine coordinates</li>
+                            </ul>
+                        </ul>
+                    </div>
+                    <div class="center_emphasis">
+                            <p><b>Why use external sensors?</b></p>
+                    </div>
+                    <div class="footer">
+                        <img src="Presentation/css/chevron.png" class="footer">
+                        <h4 class="footer">Architecture</h4>
+                    </div>
+                    </div>
+            </section>
+
+            <section> <!-- Controller vs Sensor Results -->
+                <div class="slide">
+                    <h2 class="header">Controller vs Sensor Results</h2>
+                        <img src="Dissertation-Notebooks/Chapter-3/figures/Spindle_Load_Anomalous_Compare.svg" class="center_plot">
+                        <img src="Dissertation-Notebooks/Chapter-3/figures/RMS_Anomalous_Compare.svg" class="center_plot" style="margin-top:-1em;">
+                    <div class="footer">
+                        <img src="Presentation/css/chevron.png" class="footer">
+                        <h4 class="footer">Architecture</h4>
+                    </div>
+                    </div>
+            </section>
+
+            <!-- Frequency-Domain Results -->
+            <section> 
+                <div class="slide">
+                    <h2 class="header">Frequency-Domain Results</h2>
+                        <img src="Dissertation-Notebooks/Chapter-3/figures/Emco_Nominal_vs_Anomalous_FFT.svg" class="center_plot" style="margin-top:0em;">
+                        <img src="Dissertation-Notebooks/Chapter-3/figures/Emco_Nominal_vs_Anomalous_FFT_Diff.svg" class="center_plot">
+                    <div class="footer">
+                        <img src="Presentation/css/chevron.png" class="footer">
+                        <h4 class="footer">Architecture</h4>
+                    </div>
+                </div>
+            </section>
+
+        </section>
+
+        
+
 
     <script src="Presentation/js/reveal.js"></script>
 
@@ -1122,7 +1061,7 @@
         // You can provide a function to fully customize the number:
         Reveal.configure({ slideNumber: function() {
         // Ignore numbering of vertical slides
-        return [ Reveal.getIndices().h +  '/' ];
+        return [ Reveal.getIndices().h + '.' + Reveal.getIndices().v + '/' ];
         }});
     </script>
 
