@@ -767,12 +767,34 @@
                 </div>
             </section>
 
+            <section> <!-- Experimental Setup -->
+                <div class="slide">
+                    <h2 class="header">Experimental Setup</h2>
+                    <div class="full_text">
+                        <ul>
+                            <li>5/8" four-flute end mill</li>
+
+                            
+                        </ul>
+                    </div>
+                    <img src="Figures/Tool_Wear/Good_Bad_Presentation.svg" class="right_image">
+
+                    <!-- <img src="Figures/Images_EMCO/Accelerometer-Wide.jpeg" class="right_image"> -->
+                    <div class="footer">
+                        <img src="Presentation/css/chevron.png" class="footer">
+                        <h4 class="footer">Case Study: Tool Wear Classification</h4>
+                    </div>
+                </div>
+            </section>
+
+
             <section> <!-- Experimental Parameters -->
                 <div class="slide">
                     <h2 class="header">Experimental Parameters</h2>
                     <img src="Figures/Experimental-Parameters.svg" class="center_image" style="height:25%;margin-top:2em">
                     <div class="left_text" style="margin-top:2em;">
                         <ul style="line-height:1.5;">
+                            <li class="fragment fade-up">Machining mild steel</li>
                             <li class="fragment fade-up">Partial factorial design</li>
                             <li class="fragment fade-up">Sample at 20kHz</li>
                             <li class="fragment fade-up">4,200-sample length</li>
@@ -839,16 +861,21 @@
             <section> <!-- Model Selection -->
                 <div class="slide">
                     <h2 class="header">Model Selection</h2>
+                    <div style="position:absolute;right:0%;width:50%;">
+                        <img src="Dissertation-Notebooks/Chapter-6/figures/FFT_Signal_Compare.svg" class="right_plot">
+                        <img src="Dissertation-Notebooks/Chapter-6/figures/Test_PCA_Decomposition.svg" class="right_plot">    
+                    </div>
+                        
                     <div class="left_text">
                         <ul>
-                            <li>Repeated March experiments</li>
-                            <li>Ran existing model (v1) while performing data acquisition</li>
+                            <li>Model: Gaussian Naive Bayes with Principal Components Analysis (PCA-GNB)</li>
+                            <li>Use Spectrum amplitudes as features</li>
+                            <li>Hyperparameters:</li>
                             <ul>
-                                <li>Generate full dataset considering machine downtime (3 months), new DAQ</li>
-                                <li>Test model (v1)</li>
+                                <li>What amplitudes should be used?</li>
+                                <li>How many dimensions should be retained?</li>
                             </ul>
-                            <li>Developed updated model (v2) based on these new data</li>
-                            <li>Validated this model on (v2) unseen parameters</li>
+                            <li>Maximize: $J = F^2_{1,train} + F^2_{1,test}$</li>
                         </ul>
                     </div>
                     <div class="footer">
