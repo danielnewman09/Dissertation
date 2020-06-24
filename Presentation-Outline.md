@@ -1,126 +1,105 @@
 # Presentation Outline
 
-0.1. Motivation
+## Introduction: (7 minutes)
 
-- Advancement of embedded computing
-- Integration of the Internet of Things
-- High-Level, 
+## Slide 1: Title (0:15)
 
-0.2. Image showing the entire framework
+Good afternoon and thank you for coming to my thesis defense. Before I begin, I want to draw your attention to the links at the bottom of this slide. I have made these slides, and the code used to generate them available online. All of the data used for this research is also available on Github.
 
-- Consistent Python libraries for use on the edge and in the cloud
-- Near Real-time feature extraction and inference
-- Bi-directional communication between CNC machine and sensor pack to facilitate sensor data contextualization
-- Consistent Messaging Format 
+### Slide 2: The Past Decade (2:00)
 
-0.3. Video Demonstration
-
-- Edge Data Acquisition
-- Communication between Edge Device and CNC Controller
-- Near Real-Time feature extraction and model inference
-- 
-
-0.4. Contributions
-
-  - Data management strategy for the Internet of Things. 
-
-    - This includes a strategy for utilizing machine controller data in conjunction with sensor Data.
+With that said, I want to begin by providing some context for this research. The work I'm about to present would have been impossible ten, five, or for some elements even two years ago. The advancements in embedded computing, machine learning, and Internet of Things have dramatically changed the technological landscape in the past decade. Many of these advancements are built on technologies first introduced in the mid 2000's. A couple of examples, shown here, are the 32-bit microprocessor architecture and the Numpy library. 
   
-  - Edge-based model inference strategy
-  - Integrated Data Acquisition Device capable of performing real-time sensor data capture and near real-time inference.
+### Slide 3: Research Questions (1:15)
 
-0.5. Outline
-  
-1.1. Timeline
+This research is specifically interested in how recent technological changes can be leveraged in a machine monitoring application. To that end, I am interested in answering these questions. 
 
-  - Show the progression of embedded computing technology
-  - 
+...
 
-1.2. Industrial Internet of Things
+Again, these questions essentially boil down to investigating how these new embedded computing and internet of things tools can be leveraged in a manufacturing environment
 
-1.3. Data Acquisition and Analysis Tools
+### Slide 4: Thesis Contributions (2:30)
 
-  - MTConnect/OPC-UA
-  - Sensor Data
+Through investigating these questions, I will present an integrated Internet of Things architecture and data acquisition strategy that facilitates manufacturing machine health monitoring. Specifically, this architecture incorporates three major contributions. First, ...
 
-1.4. Advancement of Open-Source Tools
+...While previous work has addressed individual aspects of the work, a critical advancement from this thesis is the integration of all these elements from data acquisition to health monitoring. As a result, this work shows a truly end-to-end system which can be scaled to a manufacturing environment.
 
-1.5. Machine Health Monitoring
+### Slide 8: Demonstration (1:00)
 
-2.1 - Digital Architecture for Machine Health Monitoring
+All of these elements are demonstrated at a high-level in this video of a simple end milling process.
 
+### Slide 9: Outline
 
+## Background (5 Minutes)
 
-2.2 - Utility of Controller Data
+### Slide 10: Industrial Internet of Things
 
-  - Figures:
-    - Good/Bad tool
-    - Part Setup
-    - Controller Histogram
-    - Accelerometer Histogram
-    - Accelerometer FFT
+The industrial internet of things is an important concept in improving manufacturing process efficiency, rapidly responding to changes, and preventing unscheduled downtime. This figure shows a simple heriarchy of the main components involved in this .
 
-2.3 - Example - Historical monitoring of spindle health
+...
 
-  - Linked Sensor data with CNC controller data to trigger on machine startup
-  - Sent commanded spindle speeds and program names 
-  - Detected an honest-to-goodness anomaly
-  - Figures: 
-    - Spindle Warmup Program Speed
-    - RMS of vibration for spindle program
-    - RMS history over the course of monitoring
+For this presentation, I'll be going into more depth specifically on the data acquisition and message transmission layers of this framework. I want to particularly focus on the means by which CNC controller data and external sensor data are extracted and processed.
 
-3.1 - Edge-Deployable Statistical and Machine Learning Inference Tools
+### Slide 11: CNC Controller Protocols
 
-  - Flexibility in deploying new, better algorithms as they become available
-  - Build on commonly used, open-source libraries
- 
-3.2 - Different Machine Learning Approaches
+For modern CNC machines, their controllers often come equipped with software that allows important data to be readily extracted from them.
 
-  - Show supervised/unsupervised learning
-  - Figure:
-    - Tree structure showing different methods
+### Slide 12: Sensor Data Acquisition
 
-3.3 - Data preprocessing
+In addition to controller data, external sensors can be used to enrich the data from the machine. Using sensors such as thermocouples, accelerometers, and current sensors, highly detailed information can be captured from these devices. 
 
-  - PCA
-  - Data normalization
-  - Labeling if possible
+### Slide 13: Health Monitoring
 
-3.4 - Statistical Models
+Health monitoring is an important application for these controller and sensor data streams. 
 
-  - Gaussian Naive Bayes
-  - Gaussian Mixture Models
-
-3.5 - Neural Network Models
-
-  - How a neural network functions
-  - How Convolutional Neural Networks Function
-  - Autoencoders
-
-3.6 - Example Case Study with Simulated Data
-
-  - Introduction/Explanation
-  - Data Preprocessing
-    - PCA
-  - Classification Model Discussion
-  - Novelty Detection Model Discussion
-  - Deployment to edge/cloud
-  
-4.1 - Integrated Data Acquisition Device
-
-  - Beaglebone
-    - PRU
-  - Node Red
-  - Data Acquisition
-    - MTConnect
-    - OPC-UA
-    - Analog Sensors
-  - Data processing
-  - Latency Analysis
-    - Comparison with Cloud
-
-5.1 - Case Study
-  
+### Slide 15: Spectral Power Approximation
 
 
+## Digital Architecture for Health Monitoring (6 minutes)
+
+Now I'll get into the first contribution of this thesis, the integrated digital architecture. This section focuses on the types of data that are necessary for manufacturing health monitoring and how they are integrated to provide a full picture of machine utilization and health.
+
+### Slide 19: MQTT-Based Framework
+
+
+
+### Slide 20: MQTT Message Definitions
+### Slide 21: Controller/Sensor Payload Example
+### Slide 23: Contextual Data Acquisition and Training
+### Slide 26: Emco Warm-Up Program
+### Slide 27: Emco Warm-Up History
+
+## Edge-Deployable ML Tools (6 minutes)
+
+### Open Source Software
+### Example Dataset
+### Feature Normalization
+### Deployed Models
+### Model Deployment
+### Full Latency Comparison: Classifiers
+
+## Integrated Edge Device (8 minutes)
+
+### Open Source Components
+### CNC Controller Integration
+### Analog Data Acquisition
+### Edge Device Diagram
+### Device Benchmarking
+### Local Compute Latency
+### Cloud Compute Latency Comparison
+
+## Case Study (10 minutes)
+
+### Experimental Setup
+### Experimental Parameters
+### Sample Labeling
+### Experimental Spectrogram
+### Data Composition
+### Model Selection
+### Hyperparameter Optimization
+### Model Validation
+### Model Performance: Validation
+### Control Chart Analysis: Range
+### Control Chart Analysis: Mean
+
+## Conclusion (3 minutes)
