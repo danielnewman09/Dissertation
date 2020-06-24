@@ -468,8 +468,8 @@
             <section> <!-- Emco Warm-Up Program -->
                 <div class="slide">
                     <h2 class="header">Emco Warm-Up Program</h2>
-                        <img src="Dissertation-Notebooks/Chapter-3/Emco_Warmup_Monitoring/figures/Warmup_Spindle_Speed.svg" class="center_plot">
-                        <img src="Dissertation-Notebooks/Chapter-3/Emco_Warmup_Monitoring/figures/Warmup_RMS.svg" class="center_plot" style="margin-top:-0.5em;">
+                        <img src="Dissertation-Notebooks/Chapter-3/Emco_Warmup_Monitoring/figures/Warmup_Spindle_Speed.svg" class="center_plot" style="margin-top:0em;">
+                        <img src="Dissertation-Notebooks/Chapter-3/Emco_Warmup_Monitoring/figures/Warmup_RMS.svg" class="center_plot" style="margin-top:-1em;">
                     <div class="footer">
                         <img src="Presentation/css/chevron.png" class="footer">
                         <h4 class="footer">Architecture</h4>
@@ -480,7 +480,7 @@
             <section> <!-- Emco Warm-Up History -->
                 <div class="slide">
                     <h2 class="header">Emco Warm-Up History</h2>
-                        <img src="Dissertation-Notebooks/Chapter-3/Emco_Warmup_Monitoring/figures/Warmup_RMS_History.svg" class="right_image" style="height:60%">
+                        <img src="Dissertation-Notebooks/Chapter-3/Emco_Warmup_Monitoring/figures/Warmup_RMS_History.svg" class="center_image" style="height:85%">
                     <div class="footer">
                         <img src="Presentation/css/chevron.png" class="footer">
                         <h4 class="footer">Architecture</h4>
@@ -517,32 +517,11 @@
                     </div>
             </section>
 
-            <section> <!-- Dimensionality Reduction -->
-                <div class="slide">
-                    <h2 class="header">Dimensionality Reduction</h2>
-                    <div class="left_text">
-                        <ul style="line-height:1.5;">
-                            <li class="fragment fade-up">Principal Components Analysis</li>
-                            \begin{equation}
-                            T = X W
-                            \end{equation}
-                            <li class="fragment fade-up">Autoencoders</li>
-                        </ul>
-                        <img src="Figures/Autoencoder.svg" style="width:50%">
-                    </div>
-                    <img src="Figures/MNIST-Reduction.svg" class="right_image">
-                    <div class="footer">
-                        <img src="Presentation/css/chevron.png" class="footer">
-                        <h4 class="footer">Edge-Deployable Tools</h4>
-                    </div>
-                </div>
-            </section>
-
             <section> <!-- Test Dataset -->
                 <div class="slide">
                     <h2 class="header">Test Dataset</h2>
-                    <img src="Dissertation-Notebooks/Chapter-4/figures/Test_Signal.png" class="center_plot" style="margin-top:1em">
-                    <img src="Dissertation-Notebooks/Chapter-4/figures/Test_Signal_FFT.png" class="center_plot">
+                    <img src="Dissertation-Notebooks/Chapter-4/figures/Test_Signal.png" class="center_plot" style="margin-top:0em">
+                    <img src="Dissertation-Notebooks/Chapter-4/figures/Test_Signal_FFT.png" class="center_plot" style="margin-top:-1em">
                     <div class="footer">
                         <img src="Presentation/css/chevron.png" class="footer">
                         <h4 class="footer">Edge-Deployable Tools</h4>
@@ -553,8 +532,14 @@
             <section> <!-- Feature Normalization -->
                 <div class="slide">
                     <h2 class="header">Feature Normalization</h2>
-                    <img src="Dissertation-Notebooks/Chapter-4/figures/Test_Signal.png" class="center_plot">
-                    <img src="Dissertation-Notebooks/Chapter-4/figures/Test_Signal_FFT.png" class="center_plot">
+                    <div class="full_text">
+                        <ul>
+                            <li>Convert logarithmic spectrum to linear features</li>
+                            <li>Use 1024-point spectrum as model input</li>
+                        </ul>
+                    </div>
+                    <img src="Dissertation-Notebooks/Chapter-4/figures/FFT_Log_Example.svg" class="left_image" style="height:60%">
+                    <img src="Dissertation-Notebooks/Chapter-4/figures/FFT_Norm_Example.svg" class="right_image" style="height:60%">
                     <div class="footer">
                         <img src="Presentation/css/chevron.png" class="footer">
                         <h4 class="footer">Edge-Deployable Tools</h4>
@@ -585,18 +570,6 @@
                     </div>
                 </div>
             </section>
-            <!-- Deployed Models -->
-            <!-- <section> 
-                <div class="slide">
-                    <h2 class="header">Deployed Models</h2>
-                    <img src="Figures/CNN-AE-Summary.svg" class="right_image">
-                    <img src="Figures/CNN-MLP-Summary.svg" class="left_image">
-                    <div class="footer">
-                        <img src="Presentation/css/chevron.png" class="footer">
-                        <h4 class="footer">Edge-Deployable Tools</h4>
-                    </div>
-                </div>
-            </section> -->
 
             <section> <!-- Deployment Locations -->
                 <div class="slide">
@@ -654,6 +627,10 @@
                     <div style="position:absolute;right:0%;width:50%;">
                         <img src="Figures/Beaglebone/Beaglebone_Black.svg" class="right_plot" style="width:50%">
                         <img src="Figures/Node-Red-Screenshot-Annotated.svg" class="right_plot">
+                    </div>
+                    <div class="footer">
+                        <img src="Presentation/css/chevron.png" class="footer">
+                        <h4 class="footer">Integrated Edge Device</h4>
                     </div>
                 </div>
             </section>
@@ -770,13 +747,7 @@
             <section> <!-- Experimental Setup -->
                 <div class="slide">
                     <h2 class="header">Experimental Setup</h2>
-                    <div class="full_text">
-                        <ul>
-                            <li>5/8" four-flute end mill</li>
-
-                            
-                        </ul>
-                    </div>
+                    <img src="Figures/BBB-DAQ.png" class="left_image">
                     <img src="Figures/Tool_Wear/Good_Bad_Presentation.svg" class="right_image">
 
                     <!-- <img src="Figures/Images_EMCO/Accelerometer-Wide.jpeg" class="right_image"> -->
@@ -888,7 +859,7 @@
             <section> <!-- Hyperparameter Optimization -->
                 <div class="slide">
                     <h2 class="header">Hyperparameter Optimization</h2>
-                    <img src="Dissertation-Notebooks/Chapter-6/figures/noDoE_Scores_Presentation.png" style="vertical-align:middle;border:0;width:70%">
+                    <img src="Dissertation-Notebooks/Chapter-6/figures/noDoE_Scores_Presentation.png" style="vertical-align:middle;border:0;width:100%">
                     <div class="footer">
                         <img src="Presentation/css/chevron.png" class="footer">
                         <h4 class="footer">Case Study: Tool Wear Classification</h4>
@@ -910,7 +881,7 @@
             <section> <!-- Model Performance: Validation -->
                 <div class="slide">
                     <h2 class="header">Model Performance: Validation</h2>
-                    <img src="Dissertation-Notebooks/Chapter-6/figures/classification-compare-v1.svg" class="center_plot">
+                    <img src="Dissertation-Notebooks/Chapter-6/figures/classification-compare-v1.svg" class="center_plot" style="margin-top:0em">
                     <div class="footer">
                         <img src="Presentation/css/chevron.png" class="footer">
                         <h4 class="footer">Case Study: Tool Wear Classification</h4>
@@ -1028,6 +999,41 @@
                 </div>
             </section>
 
+            <!-- Deployed Models -->
+            <section> 
+                <div class="slide">
+                    <h2 class="header">Deployed Models</h2>
+                    <img src="Figures/CNN-AE-Summary.svg" class="right_image">
+                    <img src="Figures/CNN-MLP-Summary.svg" class="left_image">
+                    <div class="footer">
+                        <img src="Presentation/css/chevron.png" class="footer">
+                        <h4 class="footer">Edge-Deployable Tools</h4>
+                    </div>
+                </div>
+            </section>
+
+
+            <section> <!-- Dimensionality Reduction -->
+                <div class="slide">
+                    <h2 class="header">Dimensionality Reduction</h2>
+                    <div class="left_text">
+                        <ul style="line-height:1.5;">
+                            <li class="fragment fade-up">Principal Components Analysis</li>
+                            \begin{equation}
+                            T = X W
+                            \end{equation}
+                            <li class="fragment fade-up">Autoencoders</li>
+                        </ul>
+                        <img src="Figures/Autoencoder.svg" style="width:50%">
+                    </div>
+                    <img src="Figures/MNIST-Reduction.svg" class="right_image">
+                    <div class="footer">
+                        <img src="Presentation/css/chevron.png" class="footer">
+                        <h4 class="footer">Edge-Deployable Tools</h4>
+                    </div>
+                </div>
+            </section>
+
         </section>
 
         
@@ -1047,6 +1053,8 @@
             // Help the user learn the controls by providing hints, for example by
             // bouncing the down arrow when they first encounter a vertical slide
             controlsTutorial: true,
+
+            navigationMode:'linear',
 
             transition: 'none', // none/fade/slide/convex/concave/zoom
             
