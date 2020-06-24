@@ -186,6 +186,8 @@ def generate_plot(
         plt.figure(figsize=(12,4))
     elif template.lower() == 'presentation':
         plt.figure(figsize=(9,6))
+    elif template.lower() == 'presentation-wide':
+        plt.figure(figsize=(12,6))
     else:
         plt.figure()
 
@@ -649,6 +651,8 @@ def plot_timeseries(
         plt.figure(figsize=(12,4))
     elif template.lower() == 'presentation':
         plt.figure(figsize=(9,6))
+    elif template.lower() == 'presentation-wide':
+        plt.figure(figsize=(12,6))
     else:
         plt.figure(figsize=(6,4))
 
