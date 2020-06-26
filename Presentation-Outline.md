@@ -114,11 +114,18 @@ Now, let's integrate this functionality into an open-source data acquisition dev
 
 ## Case Study (10 minutes)
 
-Alright, so we've established that we can use embedded computing to perform data acquisition, processing, and machine learning inference in near-real time. We've also established a protocol for sending and storing all of these data so they are readily used in a health monitoring application. 
-
-Now let's bring all of these elements together in an end-to-end case study on tool wear classification.
+The summary of the experimental setup is shown in this figure. We have an embedded computer doing data acquisition on the CNC controller, an external sensor kit gathering vibration data, the MQTT message broker, cloud storage, computing, and ultimately model inference on the edge device.
 
 ### Experimental Setup
+
+To show some more detail for the experimental setup, here are some images taken of the machine, where you see the accelerometer mounted to the spindle and its power/signal cable routed outside of the machine.
+
+### Experimental Setup 2
+
+This slide shows the data acquisition device used for model training. Due to campus access limitations from COVID-19, data for training was captured using an earlier version of this IoT sensor device which uses an Arduino microcontroller. This device is tolerant to higher ADC voltages and has limited sampling capacity relative to the Beaglebone. 
+
+Model validation was still done using the device which I just showed. With slight changes in the data acquisition device and time elapsed from model training to validation, this study can actually demonstrate the relative robustness of this health monitoring approach. 
+
 ### Experimental Parameters
 ### Sample Labeling
 ### Experimental Spectrogram
