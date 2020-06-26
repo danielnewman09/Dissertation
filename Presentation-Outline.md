@@ -1,6 +1,6 @@
 # Presentation Outline
 
-## Introduction: (7 minutes)
+## Introduction: (7 minutes) [6:35]
 
 ## Slide 1: Title (0:15)
 
@@ -8,15 +8,14 @@ Good afternoon and thank you for coming to my thesis defense. Before I begin, I 
 
 ### Slide 2: The Past Decade (2:00)
 
-With that said, I want to begin by providing some context for this research. The work I'm about to present would have been impossible ten, five, or for some elements even two years ago. The advancements in embedded computing, machine learning, and Internet of Things have dramatically changed the technological landscape in the past decade. Many of these advancements are built on technologies first introduced in the mid 2000's. A couple of examples, shown here, are the 32-bit microprocessor architecture and the Numpy library. 
+With that said, I want to begin by providing some context for this research. The work I'm about to present would have been impossible ten, five, or for some elements even two years ago. And that's because the advancements in embedded computing, machine learning, and Internet of Things have dramatically changed the technological landscape in the past decade. Many of these advancements are built on technologies first introduced in the mid 2000's. A couple of examples being the ARM 32-bit microprocessor architecture and the Numpy library. 
   
 ### Slide 3: Research Questions (1:15)
 
-This research is specifically interested in how recent technological changes can be leveraged in a machine monitoring application. To that end, I am interested in answering these questions. 
+This research is specifically focused on examining how recent technological changes can be leveraged in a machine monitoring application. To that end, I am interested in answering these questions. 
 
 ...
 
-Again, these questions essentially boil down to investigating how these new embedded computing and internet of things tools can be leveraged in a manufacturing environment
 
 ### Slide 4: Thesis Contributions (2:30)
 
@@ -38,7 +37,9 @@ The industrial internet of things is an important concept in improving manufactu
 
 ...
 
-For this presentation, I'll be going into more depth specifically on the data acquisition and message transmission layers of this framework. I want to particularly focus on the means by which CNC controller data and external sensor data are extracted and processed.
+Now, I'll go into more depth specifically on the data acquisition and message transmission layers of this framework 
+
+I want to focus on the data acquisition process and how meaningful information can be extracted from these devices to be sent through the industrial network.
 
 ### Slide 11: CNC Controller Protocols
 
@@ -61,7 +62,7 @@ Now I'll get into the first contribution of this thesis, the integrated digital 
 
 ### Slide 19: MQTT-Based Framework [1:30]
 
-Now, when transmitting data in an IoT infrastructure, it's important to begin with an efficient and effective messaging protocol. In this case, MQTT is an excellent candidate. This is a publish-subscribe protocol which has low overhead and uses a simple topic syntax which makes subscribing to a desired data stream extremely easy. As this figure shows, ...
+Now, when transmitting data in an IoT infrastructure, it's important to begin with an efficient and effective messaging protocol. In this case, MQTT is an excellent candidate. This is a publish-subscribe protocol which has low overhead and uses a simple topic syntax to make subscribing to a desired data stream extremely easy. As this figure shows, ...
 
 
 ### Slide 20: MQTT Message Definitions 
@@ -76,11 +77,13 @@ With this message structure established, here are two example messages - one fro
 
 
 
+
 ### Slide 26: Emco Warm-Up Program
 ### Slide 27: Emco Warm-Up History
 
 ## Edge-Deployable ML Tools (6 minutes)
 
+With this approach, we can capture meaningful features from a manufacturing process and 
 
 
 ### Open Source Software
