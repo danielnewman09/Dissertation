@@ -9,6 +9,8 @@ Good afternoon and thank you for coming to my thesis defense. Before I begin, I 
 ### Slide 2: The Past Decade (2:00)
 
 With that said, I want to begin by providing some context for this research. The work I'm about to present would have been impossible ten, five, or for some elements even two years ago. And that's because the advancements in embedded computing, machine learning, and Internet of Things have dramatically changed the technological landscape in the past decade. Many of these advancements are built on technologies first introduced in the mid 2000's. A couple of examples being the ARM 32-bit microprocessor architecture and the Numpy library. 
+
+I want to stress that with these tools, we can do some really extraordinary things on low-power devices at little cost. 
   
 ### Slide 3: Research Questions (1:15)
 
@@ -33,13 +35,11 @@ All of these elements are demonstrated at a high-level in this video of a simple
 
 ### Slide 10: Industrial Internet of Things
 
-The industrial internet of things is an important concept in improving manufacturing process efficiency, rapidly responding to changes, and preventing unscheduled downtime. This figure shows a simple heriarchy of the main components involved in this .
+This research is based on the concept the industrial internet of things. is an important concept in improving manufacturing process efficiency, rapidly responding to changes, and preventing unscheduled downtime. This figure shows a simple heriarchy of the main components involved in this .
 
 ...
 
-Now, I'll go into more depth specifically on the data acquisition and message transmission layers of this framework 
-
-I want to focus on the data acquisition process and how meaningful information can be extracted from these devices to be sent through the industrial network.
+I want to focus on the data acquisition process and how meaningful information can be extracted from these devices to be sent through the industrial network. This starts with the factory machines and sensors.
 
 ### Slide 11: CNC Controller Protocols
 
@@ -51,7 +51,11 @@ In addition to controller data, external sensors can be used to enrich the data 
 
 ### Slide 13: Health Monitoring
 
-Health monitoring is an important application for these controller and sensor data streams. 
+These controller and sensor data are typically used for something like health monitoring. This is abroad, rich field of study with many unique applications based on the specific machinery being monitored. The essense of health monitoring is quite simple: take some data stream, which may be quite large, and find a way to compress it into some low dimensional space where a health assessment can be made. 
+
+As an example, vibration data are often used for the purpose. Motors, pumps, and really anything with a rotating shaft generates vibration which can be used to gain insight into its health state. 
+
+Focus on vibration.
 
 ### Slide 15: Spectral Power Approximation
 
@@ -83,8 +87,7 @@ With this message structure established, here are two example messages - one fro
 
 ## Edge-Deployable ML Tools (6 minutes)
 
-With this approach, we can capture meaningful features from a manufacturing process and 
-
+With this approach, we can capture meaningful features from a manufacturing process and use them to train statistical models to predict machine health. In this section, I want to focus on the tools at our disposal to do this, and how they can be deployed on edge devices. 
 
 ### Open Source Software
 ### Example Dataset
@@ -95,7 +98,13 @@ With this approach, we can capture meaningful features from a manufacturing proc
 
 ## Integrated Edge Device (8 minutes)
 
+So that's awesome! We've established that we can deploy fairly large machine learning models to a low power edge device using state-of-the-art software.
+
+Now, let's integrate this functionality into an open-source data acquisition device.
+
+
 ### Open Source Components
+
 ### CNC Controller Integration
 ### Analog Data Acquisition
 ### Edge Device Diagram
@@ -104,6 +113,10 @@ With this approach, we can capture meaningful features from a manufacturing proc
 ### Cloud Compute Latency Comparison
 
 ## Case Study (10 minutes)
+
+Alright, so we've established that we can use embedded computing to perform data acquisition, processing, and machine learning inference in near-real time. We've also established a protocol for sending and storing all of these data so they are readily used in a health monitoring application. 
+
+Now let's bring all of these elements together in an end-to-end case study on tool wear classification.
 
 ### Experimental Setup
 ### Experimental Parameters
