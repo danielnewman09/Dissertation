@@ -31,7 +31,7 @@ All of these elements are demonstrated at a high-level in this video of a simple
 
 ### Slide 9: Outline
 
-## Background (5 Minutes)
+## Background (5 Minutes) [8:00]
 
 ### Slide 10: Industrial Internet of Things
 
