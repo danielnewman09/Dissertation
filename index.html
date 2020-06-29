@@ -111,7 +111,7 @@
                         <img src="Figures/Dissertation-Contribution-Overview/Overall.svg" class="right_image">
                     <div class="left_text">
                         <ul>
-                            <li class="fragment fade-up">Data acquisition stragegy integrating:</li>
+                            <li class="fragment fade-up">Data acquisition strategy integrating:</li>
                             <ul>
                                 <li class="fragment fade-up">Machine controller data</li>
                                 <li class="fragment fade-up">External sensor measurements</li>
@@ -126,7 +126,7 @@
                             <ul>
                                 <li class="fragment fade-up">Open source components</li>
                                 <li class="fragment fade-up">High quality sensor measurements</li>
-                                <li class="fragment fade-up">Data preprocessing framework</li>
+                                <!-- <li class="fragment fade-up">Data preprocessing framework</li> -->
                             </ul>
                         </ul>
                     </div>
@@ -314,20 +314,18 @@
             <section> <!-- Time-Domain Vibration Features -->
                 <div class="slide">
                     <h2 class="header">Time-Domain Statistics</h2>
-                    <div class="left_text">
-                        \begin{equation}
-                        M^{k} = \frac{1}{n} \sum\limits_{i=1}^n X_i^k
-                        \end{equation}
-                        \begin{equation}
-                        \sigma^2 = \frac{1}{(n-1)} \sum\limits_{i=1}^n (X_i-\bar{X})^2
-                        \end{equation}
-                        \begin{equation}
-                        \mathrm{Skew} = \frac{M^{3}}{\sigma^3}
-                        \end{equation}
-                        \begin{equation}
-                        \mathrm{Kurtosis} = \frac{M^{4}}{\sigma^4}
-                        \end{equation}
+                    <div style="position:absolute;right:0%;width:50%;">
+                        <img src="Figures/Time-Domain-Presentation.svg" class="right_plot">
                     </div>
+                    <div class="left_text">
+                        <ul>
+                            <li>First moment (mean):<br>$M^{k} = \frac{1}{n} \sum\limits_{i=1}^n X_i^k$</li>
+                            <li>Second moment (variance):<br>$\sigma^2 = \frac{1}{(n-1)} \sum\limits_{i=1}^n (X_i-\bar{X})^2$</li>
+                            <li>Third moment:<br>$\mathrm{Skewness} = \frac{M^{3}}{\sigma^3}$</li>
+                            <li>Fourth moment:<br>$\mathrm{Kurtosis} = \frac{M^{4}}{\sigma^4}$</li>
+                        </ul>
+                    </div>
+                    
                     <div class="footer">
                         <img src="Presentation/css/chevron.png" class="footer">
                         <h4 class="footer">Background</h4>
@@ -337,35 +335,12 @@
             <section> <!-- Spectral Power Approximation -->
                 <div class="slide">
                     <h2 class="header">Spectral Power Approximation</h2>
-                    <div class="left_text">
+                    <div class="center_text">
                         \begin{equation}
                         X[n] = \sum_{k=0}^{N-1} x[k] e^{-j \frac{2 \pi}{N} n k}
                         \end{equation}
-
-                        \begin{equation}
-                        \begin{bmatrix}
-                        X_1\\
-                        X_2\\
-                        X_3\\
-                        \vdots\\
-                        X_{N}
-                        \end{bmatrix}= 
-                        \begin{bmatrix}
-                        W^{0} & W^{0} & W^{0} & \dots & W^{0} \\
-                        W^{0} & W^{1} & W^{2} & \dots & W^{N-1} \\
-                        W^{0} & W^{2} & W^{4} & \dots & W^{2(N-1)} \\
-                        \vdots \\
-                        W^{0} & W^{N-1} & W^{2(N-1)} & \dots & W^{(N-1)^2} \\
-                        \end{bmatrix}
-                        \begin{bmatrix}
-                        x_1\\
-                        x_2\\
-                        x_3\\
-                        \vdots\\
-                        x_{N}
-                        \end{bmatrix}
-                        \end{equation}
                     </div>
+                    <img src="Figures/Bearing1_Spectrogram-Annotated.svg" class="center_plot" style="margin-top:2em;width:90%">
                     <div class="footer">
                         <img src="Presentation/css/chevron.png" class="footer">
                         <h4 class="footer">Background</h4>
@@ -467,7 +442,7 @@
 
             <section> <!-- Emco Warm-Up Program -->
                 <div class="slide">
-                    <h2 class="header">Emco Warm-Up Program</h2>
+                    <h2 class="header">CNC Mill Warm-Up Program</h2>
                         <img src="Dissertation-Notebooks/Chapter-3/Emco_Warmup_Monitoring/figures/Warmup_Spindle_Speed.svg" class="center_plot" style="margin-top:0em;">
                         <img src="Dissertation-Notebooks/Chapter-3/Emco_Warmup_Monitoring/figures/Warmup_RMS.svg" class="center_plot" style="margin-top:-1em;">
                     <div class="footer">
@@ -479,7 +454,7 @@
 
             <section> <!-- Emco Warm-Up History -->
                 <div class="slide">
-                    <h2 class="header">Emco Warm-Up History</h2>
+                    <h2 class="header">CNC Mill Warm-Up History</h2>
                         <img src="Dissertation-Notebooks/Chapter-3/Emco_Warmup_Monitoring/figures/Warmup_RMS_History.svg" class="center_image" style="height:85%">
                     <div class="footer">
                         <img src="Presentation/css/chevron.png" class="footer">
@@ -509,6 +484,16 @@
                     <div style="position:absolute;right:0%;width:50%;">
                         <img src="Dissertation-Notebooks/Chapter-4/figures/ScikitLearnCitations.svg" class="right_plot">
                         <img src="Dissertation-Notebooks/Chapter-4/figures/TensorflowCitations.svg" class="right_plot">
+                    </div>
+                    <div class="left_text">
+                        <ul>
+                            <li>Python libraries widely used:</li>
+                            <ul>
+                                <li>Tensorflow - State-of-the-art neural networks</li>
+                                <li>Scikit-Learn - Wide range of statistical and machine learning tools</li>
+                            </ul>
+                            <li>Permissively licensed</li>
+                        </ul>
                     </div>
                         <div class="footer">
                             <img src="Presentation/css/chevron.png" class="footer">
@@ -554,13 +539,13 @@
                         <ul>
                             <li>Classification:</li>
                             <ul>
-                                <li>Gaussian Naive Bayes with Principal Components Analysis feature down-selection (PCA-GNB)</li>
-                                <li>Multi-Layer Perceptron with Convolutional Neural Network feature down-selection (CNN-MLP)</li>
+                                <li>SK-Learn: Gaussian Naive Bayes with Principal Components Analysis feature down-selection (PCA-GNB)</li>
+                                <li>TF-Lite: Multi-Layer Perceptron with Convolutional Neural Network feature down-selection (CNN-MLP)</li>
                             </ul>
                             <li>Novelty Detection:</li>
                             <ul>
-                                <li>Gaussian Mixture Model with Principal Components Analysis feature down-selection (PCA-GMM)</li>
-                                <li>Convolutional Autoencoder (CNN-AE)</li>
+                                <li>SK-Learn: Gaussian Mixture Model with Principal Components Analysis feature down-selection (PCA-GMM)</li>
+                                <li>TF-Lite: Convolutional Autoencoder (CNN-AE)</li>
                             </ul>
                         </ul>
                     </div>
@@ -574,19 +559,16 @@
             <section> <!-- Deployment Locations -->
                 <div class="slide">
                     <h2 class="header">Model Deployment</h2>
+                    <br>
                     <img src="Figures/Model-Deployment-Locations.svg" class="center_plot">
-                    <img src="Figures/Model-Deployment-Details.svg" class="center_plot">
-                    <div class="footer">
-                        <img src="Presentation/css/chevron.png" class="footer">
-                        <h4 class="footer">Edge-Deployable Tools</h4>
+                    
+                    <div class="full_text" style="margin-top:1em">
+                        <ul>
+                            <li>Pocketbeagle: cheaper version of Beaglebone with same computing power</li>
+                            <li>Amazon-EC2: benchmark for cloud computing comparison</li>
+                        </ul>
                     </div>
-                </div>
-            </section>
-
-            <section> <!-- Deployment Locations -->
-                <div class="slide">
-                    <h2 class="header">Full Latency Comparison: Desktop</h2>
-                    <img src="Dissertation-Notebooks/Chapter-4/figures/Desktop-CompareLatency.svg" class="center_plot" style="height:80%">
+                    <!-- <img src="Figures/Model-Deployment-Details.svg" class="center_plot"> -->
                     <div class="footer">
                         <img src="Presentation/css/chevron.png" class="footer">
                         <h4 class="footer">Edge-Deployable Tools</h4>
@@ -628,6 +610,21 @@
                         <img src="Figures/Beaglebone/Beaglebone_Black.svg" class="right_plot" style="width:50%">
                         <img src="Figures/Node-Red-Screenshot-Annotated.svg" class="right_plot">
                     </div>
+                    <div class="left_text">
+                        <ul>
+                            <li>Beaglebone:</li>
+                            <ul>
+                                <li>Non-profit, open hardware design</li>
+                                <li>Programmable Real-Time Unit (PRU)</li>
+                                <li>Embedded Linux: can run machine learning models</li>
+                            </ul>
+                            <li>Node Red:</li>
+                            <ul>
+                                <li>Lightweight IoT tool</li>
+                                <li>Rapidly prototype and deploy</li>
+                            </ul>
+                        </ul>
+                    </div>
                     <div class="footer">
                         <img src="Presentation/css/chevron.png" class="footer">
                         <h4 class="footer">Integrated Edge Device</h4>
@@ -647,24 +644,10 @@
                 </div>
             </section>
 
-            <section> <!-- Analog Data Acquisition -->
-                <div class="slide">
-                    <h2 class="header">Analog Data Acquisition</h2>
-                    <div style="position:absolute;right:0%;width:50%;">
-                        <img src="Figures/Accelerometer-Compare.svg" class="right_plot" style="width:100%">
-                        <img src="Figures/PRU-Voltage-Divider.svg" class="right_plot">
-                    </div>
-                    <div class="footer">
-                        <img src="Presentation/css/chevron.png" class="footer">
-                        <h4 class="footer">Integrated Edge Device</h4>
-                    </div>
-                </div>
-            </section>
-
             <section> <!-- Edge Device Diagram-->
                 <div class="slide">
-                    <h2 class="header">Edge Device Diagram</h2>
-                    <img src="Figures/Integrated_Edge_Device.svg" class="right_image">
+                    <h2 class="header">Analog Data Acquisition</h2>
+                    <img src="Figures/Integrated_Edge_Device.svg" class="center_image">
                     <div class="footer">
                         <img src="Presentation/css/chevron.png" class="footer">
                         <h4 class="footer">Integrated Edge Device</h4>
@@ -676,28 +659,17 @@
                 <div class="slide">
                     <h2 class="header">Device Benchmarking</h2>
                     <img src="Figures/Integrated_Edge_Device.svg" class="right_image">
-                    <div class="footer">
-                        <img src="Presentation/css/chevron.png" class="footer">
-                        <h4 class="footer">Integrated Edge Device</h4>
+                    <div class="left_text">
+                        <ul>
+                            <li>Capture signals of varying lengths</li>
+                            <li>Determine computational latency</li>
+                            <li>Compare two conditions:</li>
+                            <ul>
+                                <li>All computing done on Beaglebone</li>
+                                <li>Raw data sent to Amazon-EC2 and processed in cloud</li>
+                            </ul>
+                        </ul>
                     </div>
-                </div>
-            </section>
-
-            <section> <!-- Total Latency -->
-                <div class="slide">
-                    <h2 class="header">Total Latency</h2>
-                    <img src="Dissertation-Notebooks/Chapter-5/figures/Edge_ExtractLatency.svg" class="center_image">
-                    <div class="footer">
-                        <img src="Presentation/css/chevron.png" class="footer">
-                        <h4 class="footer">Integrated Edge Device</h4>
-                    </div>
-                </div>
-            </section>
-
-            <section> <!-- Edge Vs Cloud: Compute time -->
-                <div class="slide"> 
-                    <h2 class="header">Edge vs Cloud: Compute Time</h2>
-                    <img src="Dissertation-Notebooks/Chapter-5/figures/EdgeVsCloud_ComputeLatency.svg" class="center_image">
                     <div class="footer">
                         <img src="Presentation/css/chevron.png" class="footer">
                         <h4 class="footer">Integrated Edge Device</h4>
@@ -924,6 +896,40 @@
         <!-- Concluding Remarks -->
         <section>
 
+            <section> <!-- Research Questions -->
+                <div class="slide">
+                    <h2 class="header">Research Questions</h2>
+                    <img src="Figures/Dissertation-Contribution-Overview/Overall.svg" class="right_image">
+                    <div class="left_text">
+                        <ul>
+                            <li class="fragment fade-up">Developed a data acquisition and transmission strategy for machine health monitoring</li>
+
+                            <li class="fragment fade-up">Presented a case study which used Scikit-Learn to predict tool health</li>
+
+                            <li class="fragment fade-up">Showed that embedded computing can be used for:</li>
+                            <ul>
+                                <li class="fragment fade-up">vibration data acquisition</li>
+                                <li class="fragment fade-up">feature extraction and preprocessing</li>
+                                <li class="fragment fade-up">Machine learning inference</li>
+                            </ul>
+                            <li class="fragment fade-up">Embedded system performance on par with cloud computing</li>
+                        </ul>
+                    </div>
+                    <div class="footer">
+                        <img src="Presentation/css/chevron.png" class="footer">
+                        <h4 class="footer">Introduction</h4>
+                    </div>
+                </div>
+            </section>
+
+            <section> <!-- Hyperparameter Optimization -->
+                <div class="slide">
+                    <h2 class="header">Warmup Program</h2>
+                    <img src="Dissertation-Notebooks/Chapter-6/figures/Warmup-RMS.svg" class="center_plot" style="margin-top:0.5em;">
+                    <img src="Dissertation-Notebooks/Chapter-3/Emco_Warmup_Monitoring/figures/Warmup_RMS.svg" class="center_plot">
+                </div>
+            </section>
+
             <section> <!-- Hyperparameter Optimization -->
                 <div class="slide">
                     <h2 class="header">Warmup Program</h2>
@@ -1034,6 +1040,52 @@
                 </div>
             </section>
 
+            <section> <!-- Deployment Locations -->
+                <div class="slide">
+                    <h2 class="header">Full Latency Comparison: Desktop</h2>
+                    <img src="Dissertation-Notebooks/Chapter-4/figures/Desktop-CompareLatency.svg" class="center_plot" style="height:80%">
+                    <div class="footer">
+                        <img src="Presentation/css/chevron.png" class="footer">
+                        <h4 class="footer">Edge-Deployable Tools</h4>
+                    </div>
+                </div>
+            </section>
+
+            <section> <!-- Total Latency -->
+                <div class="slide">
+                    <h2 class="header">Total Latency</h2>
+                    <img src="Dissertation-Notebooks/Chapter-5/figures/Edge_ExtractLatency.svg" class="center_image">
+                    <div class="footer">
+                        <img src="Presentation/css/chevron.png" class="footer">
+                        <h4 class="footer">Integrated Edge Device</h4>
+                    </div>
+                </div>
+            </section>
+
+            <section> <!-- Edge Vs Cloud: Compute time -->
+                <div class="slide"> 
+                    <h2 class="header">Edge vs Cloud: Compute Time</h2>
+                    <img src="Dissertation-Notebooks/Chapter-5/figures/EdgeVsCloud_ComputeLatency.svg" class="center_image">
+                    <div class="footer">
+                        <img src="Presentation/css/chevron.png" class="footer">
+                        <h4 class="footer">Integrated Edge Device</h4>
+                    </div>
+                </div>
+            </section>
+
+            <section> <!-- Analog Data Acquisition -->
+                <div class="slide">
+                    <h2 class="header"></h2>
+                    <div style="position:absolute;right:0%;width:50%;">
+                        <img src="Figures/Accelerometer-Compare.svg" class="right_plot" style="width:100%">
+                        <img src="Figures/PRU-Voltage-Divider.svg" class="right_plot">
+                    </div>
+                    <div class="footer">
+                        <img src="Presentation/css/chevron.png" class="footer">
+                        <h4 class="footer">Integrated Edge Device</h4>
+                    </div>
+                </div>
+            </section>
         </section>
 
         
