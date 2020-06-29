@@ -481,7 +481,8 @@ transform-style: flat;
 
 .reveal section div.slide {
   position:relative; 
-  width:1920px; 
+  /* width:1920px;  */
+  width:1800px;
   height:1080px; 
   margin:0 auto;
   justify-content: center;

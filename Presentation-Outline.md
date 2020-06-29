@@ -1,6 +1,6 @@
 # Presentation Outline
 
-## Introduction: (7 minutes)
+## Introduction: (7 minutes) [6:35] [5:49]
 
 ## Slide 1: Title (0:15)
 
@@ -8,15 +8,16 @@ Good afternoon and thank you for coming to my thesis defense. Before I begin, I 
 
 ### Slide 2: The Past Decade (2:00)
 
-With that said, I want to begin by providing some context for this research. The work I'm about to present would have been impossible ten, five, or for some elements even two years ago. The advancements in embedded computing, machine learning, and Internet of Things have dramatically changed the technological landscape in the past decade. Many of these advancements are built on technologies first introduced in the mid 2000's. A couple of examples, shown here, are the 32-bit microprocessor architecture and the Numpy library. 
+With that said, I want to begin by providing some context for this research. The work I'm about to present would have been impossible ten, five, or for some elements even two years ago. And that's because the advancements in embedded computing, machine learning, and Internet of Things have dramatically changed the technological landscape in the past decade. Many of these advancements are built on technologies first introduced in the mid 2000's. A couple of examples being the ARM 32-bit microprocessor architecture and the Numpy library. 
+
+I want to stress that with these tools, we can do some really extraordinary things on low-power devices at little cost. 
   
 ### Slide 3: Research Questions (1:15)
 
-This research is specifically interested in how recent technological changes can be leveraged in a machine monitoring application. To that end, I am interested in answering these questions. 
+This research is specifically focused on examining how recent technological changes can be leveraged in a machine monitoring application. To that end, I am interested in answering these questions. 
 
 ...
 
-Again, these questions essentially boil down to investigating how these new embedded computing and internet of things tools can be leveraged in a manufacturing environment
 
 ### Slide 4: Thesis Contributions (2:30)
 
@@ -30,15 +31,15 @@ All of these elements are demonstrated at a high-level in this video of a simple
 
 ### Slide 9: Outline
 
-## Background (5 Minutes)
+## Background (5 Minutes) [8:00]
 
 ### Slide 10: Industrial Internet of Things
 
-The industrial internet of things is an important concept in improving manufacturing process efficiency, rapidly responding to changes, and preventing unscheduled downtime. This figure shows a simple heriarchy of the main components involved in this .
+This research is based on the concept the industrial internet of things. is an important concept in improving manufacturing process efficiency, rapidly responding to changes, and preventing unscheduled downtime. This figure shows a simple heriarchy of the main components involved in this .
 
 ...
 
-For this presentation, I'll be going into more depth specifically on the data acquisition and message transmission layers of this framework. I want to particularly focus on the means by which CNC controller data and external sensor data are extracted and processed.
+I want to focus on the data acquisition process and how meaningful information can be extracted from these devices to be sent through the industrial network. This starts with the factory machines and sensors.
 
 ### Slide 11: CNC Controller Protocols
 
@@ -50,7 +51,11 @@ In addition to controller data, external sensors can be used to enrich the data 
 
 ### Slide 13: Health Monitoring
 
-Health monitoring is an important application for these controller and sensor data streams. 
+These controller and sensor data are typically used for something like health monitoring. This is abroad, rich field of study with many unique applications based on the specific machinery being monitored. The essense of health monitoring is quite simple: take some data stream, which may be quite large, and find a way to compress it into some low dimensional space where a health assessment can be made. 
+
+As an example, vibration data are often used for the purpose. Motors, pumps, and really anything with a rotating shaft generates vibration which can be used to gain insight into its health state. 
+
+Focus on vibration.
 
 ### Slide 15: Spectral Power Approximation
 
@@ -61,7 +66,7 @@ Now I'll get into the first contribution of this thesis, the integrated digital 
 
 ### Slide 19: MQTT-Based Framework [1:30]
 
-Now, when transmitting data in an IoT infrastructure, it's important to begin with an efficient and effective messaging protocol. In this case, MQTT is an excellent candidate. This is a publish-subscribe protocol which has low overhead and uses a simple topic syntax which makes subscribing to a desired data stream extremely easy. As this figure shows, ...
+Now, when transmitting data in an IoT infrastructure, it's important to begin with an efficient and effective messaging protocol. In this case, MQTT is an excellent candidate. This is a publish-subscribe protocol which has low overhead and uses a simple topic syntax to make subscribing to a desired data stream extremely easy. As this figure shows, ...
 
 
 ### Slide 20: MQTT Message Definitions 
@@ -76,12 +81,13 @@ With this message structure established, here are two example messages - one fro
 
 
 
+
 ### Slide 26: Emco Warm-Up Program
 ### Slide 27: Emco Warm-Up History
 
 ## Edge-Deployable ML Tools (6 minutes)
 
-
+With this approach, we can capture meaningful features from a manufacturing process and use them to train statistical models to predict machine health. In this section, I want to focus on the tools at our disposal to do this, and how they can be deployed on edge devices. 
 
 ### Open Source Software
 ### Example Dataset
@@ -92,7 +98,13 @@ With this message structure established, here are two example messages - one fro
 
 ## Integrated Edge Device (8 minutes)
 
+So that's awesome! We've established that we can deploy fairly large machine learning models to a low power edge device using state-of-the-art software.
+
+Now, let's integrate this functionality into an open-source data acquisition device.
+
+
 ### Open Source Components
+
 ### CNC Controller Integration
 ### Analog Data Acquisition
 ### Edge Device Diagram
@@ -102,7 +114,18 @@ With this message structure established, here are two example messages - one fro
 
 ## Case Study (10 minutes)
 
+The summary of the experimental setup is shown in this figure. We have an embedded computer doing data acquisition on the CNC controller, an external sensor kit gathering vibration data, the MQTT message broker, cloud storage, computing, and ultimately model inference on the edge device.
+
 ### Experimental Setup
+
+To show some more detail for the experimental setup, here are some images taken of the machine, where you see the accelerometer mounted to the spindle and its power/signal cable routed outside of the machine.
+
+### Experimental Setup 2
+
+This slide shows the data acquisition device used for model training. Due to campus access limitations from COVID-19, data for training was captured using an earlier version of this IoT sensor device which uses an Arduino microcontroller. This device is tolerant to higher ADC voltages and has limited sampling capacity relative to the Beaglebone. 
+
+Model validation was still done using the device which I just showed. With slight changes in the data acquisition device and time elapsed from model training to validation, this study can actually demonstrate the relative robustness of this health monitoring approach. 
+
 ### Experimental Parameters
 ### Sample Labeling
 ### Experimental Spectrogram

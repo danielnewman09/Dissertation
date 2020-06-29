@@ -1,46 +1,5 @@
 import numpy as np
-from sklearn.mixture import BayesianGaussianMixture as GMM
-from sklearn.naive_bayes import GaussianNB
 
-import seaborn as sns
-sns.set(style="ticks")
-
-import pandas as pd
-
-from matplotlib import pyplot as plt
-plt.rcParams['figure.figsize'] = (15, 4)
-
-def fit_GMM(data,num_components):
-    gmm = GMM(n_components=num_components)
-    gmm.fit(data)
-
-    predicted_class = gmm.predict(data)
-    num_classes = np.unique(gmm.predict(data)).shape[0]
-
-    return gmm,predicted_class,num_classes
-
-def fit_NB(data,predicted_class):
-    
-    clf = GaussianNB()
-    clf.fit(data,predicted_class)
-
-    return clf
-
-def determine_probabilities(clf,data,predicted_class):
-
-    num_classes = np.unique(predicted_class).shape[0]
-
-    probability_scores = np.zeros((num_classes,num_classes))
-
-    for i in range(num_classes):
-        class_mask = np.argwhere(predicted_class == i)
-        for j in range(num_classes):
-            if data[class_mask.flatten(),:].size > 0:
-                probability_scores[j,i] = clf.score(data[class_mask.flatten(),:],j * np.ones(class_mask.shape[0]))
-
-    probability_scores = np.sort(probability_scores,axis=0)[::-1]
-
-    return probability_scores
 
 
 def lin_log_interp(fft_features):
@@ -65,30 +24,66 @@ def lin_log_interp(fft_features):
     # Return the interpolated valuess
     return np.interp(np.log10(fft_features),np.log10(x),y)
 
-def show_statistical_fft(clf):
-
-    fig = plt.figure(figsize=(15, 4))
     
-    num_classes,num_features = clf.theta_.shape
+def create_noisy_signal(
+    numPoints, samplingRate, frequencies, amplitudes,
+    noiseStDev, phase=0, offset=0,
+    frequencyError=0.05, harmonics=1,
+    saveSignal=False,fileName='signal'):
+    '''
+    create_noisy_signal
 
-    loc = clf.theta_
-    scale = np.clip(clf.sigma_,1e-16,np.inf)
-    allLabels = []
-    df = pd.DataFrame()
-    
-    num_samples = 100
-    
-    for j in range(loc.shape[0]):
-        tempDF = pd.DataFrame(np.random.normal(loc[j,:],scale[j,:],size=(num_samples,num_features)))
-        labels = [clf.classes_[j] for k in range(num_samples)]
-        allLabels = allLabels + labels
-        df = df.append(tempDF,sort=False)
-        
-    frequencies = np.arange(0,2640,10.27961000)
-    df['Label'] = allLabels
-    thisDF = pd.DataFrame({"Label": np.repeat(df['Label'].values,257),
-     "frequencies": np.tile(frequencies,df.shape[0]),
-     "fftValue": np.array([np.array(row[:257]) for index, row in df.iterrows()]).astype(np.float64).flatten()})
+    Create a signal with desired randomness and spectral qualities.
 
-    sns.lineplot(x="frequencies", y="fftValue",hue='Label',ci="sd",data=thisDF)
-    plt.show()
+    Inputs:
+        - duration: time (in seconds) captured by the signal
+        - samplingRate: rate (in Hz) of the signal
+        - frequencies: list of frequencies in the signal
+        - amplitudes: amplitudes of the corresponding frequencies
+        - (float) noiseStDev: standard deviation squared) of
+                the gaussian noise added to the signal
+        - (float) frequencyStDev: standard deviation
+                of the gaussian noise added to the frequency
+        - (float) amplitudeStDev: standard deviation
+                of the gaussian noise added to the amplitudes
+        - (float) phaseStDev: StDev (standard deviation squared) of
+                the gaussian noise added to the phase of the signal
+
+    '''
+
+    # determine the required number of datapoints to cover the duration
+    # at the required sampling rate
+#     numPoints = int(duration * samplingRate)
+
+    # Create a time array with the correct start and endpoint, sampled at
+    # the required sampling rates
+#     time = np.atleast_2d(np.linspace(0,duration,numPoints))
+    time = np.atleast_2d(np.cumsum(np.ones(numPoints) / samplingRate))
+
+    # Ensure that all of the inputs are cast as numpy arrays
+    freqs = np.atleast_2d(np.asarray(frequencies).flatten()).T
+    amps = np.atleast_2d(np.asarray(amplitudes).flatten()).T
+    noiseStDev = np.asarray(noiseStDev)
+
+    # Modify the signal slightly
+    m, n = freqs.shape
+#     phase = np.atleast_2d(phaseStDev * np.random.random((m, n)))
+
+    # Create randomly distributed noise with a given standard deviation
+    noise = noiseStDev * np.random.random(numPoints)
+
+    # The number of input frequencies must be identical to the number
+    # of input amplitudes
+    if len(freqs) != len(amps):
+        raise ValueError('Length of input frequencies must be identical to\
+                          that of input amplitudes')
+
+    signal = np.sum(amps * np.sin(2 * np.pi * freqs * time + phase), axis=0) + noise + offset
+
+    if saveSignal:
+        fName = fileName + '.txt'
+        timeName = fileName + '_time.txt'
+        np.savetxt(fName, np.round(signal,6), header='Signal', delimiter=',')
+        np.savetxt(timeName, np.round(time,6), header='Time (s)', delimiter=',')
+
+    return time.flatten(), signal
