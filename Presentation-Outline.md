@@ -1,6 +1,6 @@
 # Presentation Outline
 
-## Introduction: (7 minutes) [6:35]
+## Introduction: (7 minutes) [6:35] [5:49]
 
 ## Slide 1: Title (0:15)
 
