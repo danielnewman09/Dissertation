@@ -354,7 +354,7 @@
 
             <section> <!-- Digital Architecture for Health Monitoring -->
                 <div class="slide">
-                    <h2 class="header">Digital Architecture for Health Monitoring</h2>
+                    <h2 class="header" style="font-size:2.3em;">Digital Architecture for Health Monitoring</h2>
                     <img src="Figures/Proposed_Architecture.svg" class="center_image">
                     <div class="footer">
                         <img src="Presentation/css/chevron.png" class="footer">
@@ -377,8 +377,10 @@
             <section> <!-- JSON Message Definitions -->
                 <div class="slide">
                     <h2 class="header">MQTT Message Definitions</h2>
+                    <a href="https://arch.fis.gatech.edu" title="ArchitectureSite">Complete Documentation: arch.fis.gatech.edu</a>
                     <img src="Figures/MQTT_Topic_Structure.svg" class="center_image" style="height:35%;margin-top:1em;">
-                    <img src="Figures/JSON-Message.svg" class="center_image" style="height:40%;margin-top:-0.em;">
+                    <img src="Figures/JSON-Message.svg" class="center_image" style="height:40%;margin-top:-0.em;"><br>
+                    
                     <div class="footer">
                         <img src="Presentation/css/chevron.png" class="footer">
                         <h4 class="footer">Architecture</h4>
@@ -526,8 +528,8 @@
                             <li>Use 1024-point spectrum as model input</li>
                         </ul>
                     </div>
-                    <img src="Dissertation-Notebooks/Chapter-4/figures/FFT_Log_Example.svg" class="left_image" style="height:60%">
-                    <img src="Dissertation-Notebooks/Chapter-4/figures/FFT_Norm_Example.svg" class="right_image" style="height:60%">
+                    <img src="Dissertation-Notebooks/Chapter-4/figures/FFT_Log_Example.svg" class="left_image" style="height:60%;margin-top:2em">
+                    <img src="Dissertation-Notebooks/Chapter-4/figures/FFT_Norm_Example.svg" class="right_image" style="height:60%;margin-top:2em">
                     <div class="footer">
                         <img src="Presentation/css/chevron.png" class="footer">
                         <h4 class="footer">Edge-Deployable Tools</h4>
@@ -584,7 +586,18 @@
 
             <section> <!-- Deployment Locations -->
                 <div class="slide">
-                    <h2 class="header">Full Latency Comparison: Classifiers</h2>
+                    <h2 class="header" style="font-size:2.4em">Latency Comparison: Novelty Detection</h2>
+                    <img src="Dissertation-Notebooks/Chapter-4/figures/ND-CompareLatency.svg" class="center_plot" style="height:80%">
+                    <div class="footer">
+                        <img src="Presentation/css/chevron.png" class="footer">
+                        <h4 class="footer">Edge-Deployable Tools</h4>
+                    </div>
+                </div>
+            </section>
+
+            <section> <!-- Deployment Locations -->
+                <div class="slide">
+                    <h2 class="header">Latency Comparison: Classification</h2>
                     <img src="Dissertation-Notebooks/Chapter-4/figures/Classifier-CompareLatency.svg" class="center_plot" style="height:80%">
                     <div class="footer">
                         <img src="Presentation/css/chevron.png" class="footer">
@@ -725,7 +738,7 @@
             <section> <!-- Experimental Setup -->
                 <div class="slide">
                     <h2 class="header">Experimental Setup</h2>
-                    <img src="Figures/BBB-DAQ.png" class="left_image">
+                    <img src="Figures/Old-DAQ.png" class="left_image">
                     <img src="Figures/Tool_Wear/Good_Bad_Presentation.svg" class="right_image">
 
                     <!-- <img src="Figures/Images_EMCO/Accelerometer-Wide.jpeg" class="right_image"> -->
@@ -810,10 +823,11 @@
             <section> <!-- Model Selection -->
                 <div class="slide">
                     <h2 class="header">Model Selection</h2>
-                    <div style="position:absolute;right:0%;width:50%;">
-                        <img src="Dissertation-Notebooks/Chapter-6/figures/FFT_Signal_Compare.svg" class="right_plot">
-                        <img src="Dissertation-Notebooks/Chapter-6/figures/Test_PCA_Decomposition.svg" class="right_plot">    
-                    </div>
+                    <img src="Figures/Chapter-6-Data-Processing.svg" class="right_image" style="width:80%">
+                    <!-- <div style="position:absolute;right:0%;width:50%;"> -->
+                        <!-- <img src="Dissertation-Notebooks/Chapter-6/figures/FFT_Signal_Compare.svg" class="right_plot">
+                        <img src="Dissertation-Notebooks/Chapter-6/figures/Test_PCA_Decomposition.svg" class="right_plot">     -->
+                    <!-- </div> -->
                         
                     <div class="left_text">
                         <ul>
@@ -821,8 +835,8 @@
                             <li>Use Spectrum amplitudes as features</li>
                             <li>Hyperparameters:</li>
                             <ul>
-                                <li>What amplitudes should be used?</li>
-                                <li>How many dimensions should be retained?</li>
+                                <li>Spectrum Bandwidth</li>
+                                <li>PCA Dimensionality</li>
                             </ul>
                             <li>Maximize: $J = F^2_{1,train} + F^2_{1,test}$</li>
                         </ul>
@@ -837,7 +851,7 @@
             <section> <!-- Hyperparameter Optimization -->
                 <div class="slide">
                     <h2 class="header">Hyperparameter Optimization</h2>
-                    <img src="Dissertation-Notebooks/Chapter-6/figures/noDoE_Scores_Presentation.png" style="vertical-align:middle;border:0;width:100%">
+                    <img src="Figures/noDoE_Scores_Presentation.svg" style="vertical-align:middle;border:0;width:100%">
                     <div class="footer">
                         <img src="Presentation/css/chevron.png" class="footer">
                         <h4 class="footer">Case Study: Tool Wear Classification</h4>
@@ -848,7 +862,8 @@
             <section> <!-- Hyperparameter Optimization -->
                 <div class="slide">
                     <h2 class="header">Model Validation</h2>
-                    <img src="Figures/Model-Validation-Chapter6.svg" class="center_plot" style="margin-top:1em">
+                    <img src="Figures/Model-Validation-Chapter6.svg" class="right_image" style="margin-top:1em;width:50%">
+                    <img src="Figures/BBB-DAQ.png" class="left_image" style="margin-top:0em">
                     <div class="footer">
                         <img src="Presentation/css/chevron.png" class="footer">
                         <h4 class="footer">Case Study: Tool Wear Classification</h4>
@@ -860,6 +875,7 @@
                 <div class="slide">
                     <h2 class="header">Model Performance: Validation</h2>
                     <img src="Dissertation-Notebooks/Chapter-6/figures/classification-compare-v1.svg" class="center_plot" style="margin-top:0em">
+                    
                     <div class="footer">
                         <img src="Presentation/css/chevron.png" class="footer">
                         <h4 class="footer">Case Study: Tool Wear Classification</h4>
@@ -873,7 +889,7 @@
                     <div class="left_text" style="width:100%">
                         <ul>
                             <li>Use mean of 20 data points (1 minute average)</li>
-                            <li>Generate control limits from first 25% of data</li>
+                            <li>Generate control limits from first 25% of good data</li>
                         </ul>
                     </div>
                     <img src="Dissertation-Notebooks/Chapter-6/figures/R-Good.svg" class="left_image" style="height:60%;margin-top:2em">
@@ -902,11 +918,16 @@
         <!-- Concluding Remarks -->
         <section>
 
+        <section> <!-- Title Slide -->
+            <div class="slide">
+            <h2 style="text-align:center;margin-top:25%">Conclusion</h2>
+            </div>
+        </section>
+
             <section> <!-- Research Questions -->
                 <div class="slide">
                     <h2 class="header">Research Questions</h2>
-                    <img src="Figures/Dissertation-Contribution-Overview/Overall.svg" class="right_image">
-                    <div class="left_text">
+                    <div class="full_text">
                         <ul>
                             <li class="fragment fade-up">Developed a data acquisition and transmission strategy for machine health monitoring</li>
 
@@ -914,8 +935,8 @@
 
                             <li class="fragment fade-up">Showed that embedded computing can be used for:</li>
                             <ul>
-                                <li class="fragment fade-up">vibration data acquisition</li>
-                                <li class="fragment fade-up">feature extraction and preprocessing</li>
+                                <li class="fragment fade-up">Vibration data acquisition</li>
+                                <li class="fragment fade-up">Feature extraction and preprocessing</li>
                                 <li class="fragment fade-up">Machine learning inference</li>
                             </ul>
                             <li class="fragment fade-up">Embedded system performance on par with cloud computing</li>
@@ -923,26 +944,76 @@
                     </div>
                     <div class="footer">
                         <img src="Presentation/css/chevron.png" class="footer">
-                        <h4 class="footer">Introduction</h4>
+                        <h4 class="footer">Conclusion</h4>
                     </div>
                 </div>
             </section>
 
-            <section> <!-- Hyperparameter Optimization -->
+            <section> <!-- Research Questions -->
                 <div class="slide">
-                    <h2 class="header">Warmup Program</h2>
-                    <img src="Dissertation-Notebooks/Chapter-6/figures/Warmup-RMS.svg" class="center_plot" style="margin-top:0.5em;">
-                    <img src="Dissertation-Notebooks/Chapter-3/Emco_Warmup_Monitoring/figures/Warmup_RMS.svg" class="center_plot">
+                    <h2 class="header">Limitations</h2>
+                    <div class="full_text">
+                        <ul>
+                            <li class="fragment fade-up">Feasibility demonstrated for single machine</li>
+                            <li class="fragment fade-up">Generalized vibration analysis exclusively used. Unique considerations are likely required for other applications.</li>
+                            <ul>
+                                <li>For example, can similar feature extraction measures be taken on image data?</li>
+                            </ul>
+                            <li class="fragment fade-up">Long-term data storage and accessibility are not directly addressed here</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="footer">
+                        <img src="Presentation/css/chevron.png" class="footer">
+                        <h4 class="footer">Conclusion</h4>
+                    </div>
                 </div>
             </section>
 
-            <section> <!-- Hyperparameter Optimization -->
+            <section> <!-- Research Questions -->
                 <div class="slide">
-                    <h2 class="header">Warmup Program</h2>
-                    <img src="Dissertation-Notebooks/Chapter-6/figures/Warmup-RMS.svg" class="center_plot" style="margin-top:0.5em;">
-                    <img src="Dissertation-Notebooks/Chapter-3/Emco_Warmup_Monitoring/figures/Warmup_RMS.svg" class="center_plot">
+                    <h2 class="header">Future Work</h2>
+                    <img src="Figures/Arduino-Nano-BLE.jpg" class="right_image" style="height:50%">
+                    <div class="left_text">
+                        <ul>
+                            <li class="fragment fade-up">Continue to investigate feasibility of embedded computing for true real-time edge inference</li>
+                            <li class="fragment fade-up">Build edge processing strategies for other large data types</li>
+                            <ul>
+                                <li>Images</li>
+                                <li>Audio</li>
+                            </ul>
+                            <li class="fragment fade-up">Standardize health monitoring messaging syntax</li>
+                        </ul>
+                    </div>
+                    <div class="footer">
+                        <img src="Presentation/css/chevron.png" class="footer">
+                        <h4 class="footer">Conclusion</h4>
+                    </div>
                 </div>
             </section>
+
+            <section> <!-- Research Questions -->
+                <div class="slide">
+                    <h2 class="header">Acknowledgements</h2>
+                    <img src="Figures/Arduino-Nano-BLE.jpg" class="right_image" style="height:50%">
+                    <div class="left_text">
+                        <ul>
+                            <li class="fragment fade-up">Continue to investigate feasibility of embedded computing for true real-time edge inference</li>
+                            <li class="fragment fade-up">Build edge processing strategies for other large data types</li>
+                            <ul>
+                                <li>Images</li>
+                                <li>Audio</li>
+                            </ul>
+                            <li class="fragment fade-up">Standardize health monitoring messaging syntax</li>
+                        </ul>
+                    </div>
+                    <div class="footer">
+                        <img src="Presentation/css/chevron.png" class="footer">
+                        <h4 class="footer">Conclusion</h4>
+                    </div>
+                </div>
+            </section>
+
 
         </section>
 
@@ -955,7 +1026,18 @@
                 <h2 style="text-align:center;margin-top:25%">Supplementary Slides</h2>
                 </div>
             </section>
-    
+
+            <section> <!-- Hyperparameter Optimization -->
+                <div class="slide">
+                    <h2 class="header">Warmup Program</h2>
+                    <img src="Dissertation-Notebooks/Chapter-6/figures/Warmup-RMS.svg" class="center_plot" style="margin-top:0.5em;">
+                    <img src="Dissertation-Notebooks/Chapter-3/Emco_Warmup_Monitoring/figures/Warmup_RMS.svg" class="center_plot">
+                    <div class="footer">
+                        <img src="Presentation/css/chevron.png" class="footer">
+                        <h4 class="footer">Supplementary Slides</h4>
+                    </div>
+                </div>
+            </section>
 
             <section> <!-- Controller vs Sensor Data -->
                 <div class="slide">
@@ -981,10 +1063,12 @@
                     </div>
                     <div class="footer">
                         <img src="Presentation/css/chevron.png" class="footer">
-                        <h4 class="footer">Architecture</h4>
+                        <h4 class="footer">Supplementary Slides</h4>
                     </div>
                     </div>
             </section>
+
+            
 
             <section> <!-- Controller vs Sensor Results -->
                 <div class="slide">
@@ -993,7 +1077,7 @@
                         <img src="Dissertation-Notebooks/Chapter-3/figures/RMS_Anomalous_Compare.svg" class="center_plot" style="margin-top:-1em;">
                     <div class="footer">
                         <img src="Presentation/css/chevron.png" class="footer">
-                        <h4 class="footer">Architecture</h4>
+                        <h4 class="footer">Supplementary Slides</h4>
                     </div>
                     </div>
             </section>
@@ -1006,7 +1090,7 @@
                         <img src="Dissertation-Notebooks/Chapter-3/figures/Emco_Nominal_vs_Anomalous_FFT_Diff.svg" class="center_plot">
                     <div class="footer">
                         <img src="Presentation/css/chevron.png" class="footer">
-                        <h4 class="footer">Architecture</h4>
+                        <h4 class="footer">Supplementary Slides</h4>
                     </div>
                 </div>
             </section>
@@ -1014,12 +1098,23 @@
             <!-- Deployed Models -->
             <section> 
                 <div class="slide">
-                    <h2 class="header">Deployed Models</h2>
-                    <img src="Figures/CNN-AE-Summary.svg" class="right_image">
-                    <img src="Figures/CNN-MLP-Summary.svg" class="left_image">
+                    <h2 class="header">Deployed Models: CNN-AE</h2>
+                    <img src="Figures/CNN-AE-Summary.svg" class="center_image">
                     <div class="footer">
                         <img src="Presentation/css/chevron.png" class="footer">
-                        <h4 class="footer">Edge-Deployable Tools</h4>
+                        <h4 class="footer">Supplementary Slides</h4>
+                    </div>
+                </div>
+            </section>
+
+
+            <section> 
+                <div class="slide">
+                    <h2 class="header">Deployed Models: CNN-MLP</h2>
+                    <img src="Figures/CNN-MLP-Summary.svg" class="center_image">
+                    <div class="footer">
+                        <img src="Presentation/css/chevron.png" class="footer">
+                        <h4 class="footer">Supplementary Slides</h4>
                     </div>
                 </div>
             </section>
@@ -1041,7 +1136,7 @@
                     <img src="Figures/MNIST-Reduction.svg" class="right_image">
                     <div class="footer">
                         <img src="Presentation/css/chevron.png" class="footer">
-                        <h4 class="footer">Edge-Deployable Tools</h4>
+                        <h4 class="footer">Supplementary Slides</h4>
                     </div>
                 </div>
             </section>
@@ -1052,18 +1147,18 @@
                     <img src="Dissertation-Notebooks/Chapter-4/figures/Desktop-CompareLatency.svg" class="center_plot" style="height:80%">
                     <div class="footer">
                         <img src="Presentation/css/chevron.png" class="footer">
-                        <h4 class="footer">Edge-Deployable Tools</h4>
+                        <h4 class="footer">Supplementary Slides</h4>
                     </div>
                 </div>
             </section>
 
             <section> <!-- Total Latency -->
                 <div class="slide">
-                    <h2 class="header">Total Latency</h2>
+                    <h2 class="header" style="font-size:2.2em;">Latency for Various Processing Conditions</h2>
                     <img src="Dissertation-Notebooks/Chapter-5/figures/Edge_ExtractLatency.svg" class="center_image">
                     <div class="footer">
                         <img src="Presentation/css/chevron.png" class="footer">
-                        <h4 class="footer">Integrated Edge Device</h4>
+                        <h4 class="footer">Supplementary Slides</h4>
                     </div>
                 </div>
             </section>
@@ -1074,24 +1169,11 @@
                     <img src="Dissertation-Notebooks/Chapter-5/figures/EdgeVsCloud_ComputeLatency.svg" class="center_image">
                     <div class="footer">
                         <img src="Presentation/css/chevron.png" class="footer">
-                        <h4 class="footer">Integrated Edge Device</h4>
+                        <h4 class="footer">Supplementary Slides</h4>
                     </div>
                 </div>
             </section>
 
-            <section> <!-- Analog Data Acquisition -->
-                <div class="slide">
-                    <h2 class="header"></h2>
-                    <div style="position:absolute;right:0%;width:50%;">
-                        <img src="Figures/Accelerometer-Compare.svg" class="right_plot" style="width:100%">
-                        <img src="Figures/PRU-Voltage-Divider.svg" class="right_plot">
-                    </div>
-                    <div class="footer">
-                        <img src="Presentation/css/chevron.png" class="footer">
-                        <h4 class="footer">Integrated Edge Device</h4>
-                    </div>
-                </div>
-            </section>
         </section>
 
         
@@ -1154,7 +1236,8 @@
         // You can provide a function to fully customize the number:
         Reveal.configure({ slideNumber: function() {
         // Ignore numbering of vertical slides
-        return [ Reveal.getIndices().h + '.' + Reveal.getIndices().v + '/' ];
+        return [ Reveal.getSlidePastCount() + '/50'];
+        // return [ Reveal.getIndices().f  + '.' + Reveal.getIndices().v + '/' ];
         }});
     </script>
 

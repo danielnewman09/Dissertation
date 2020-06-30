@@ -583,7 +583,7 @@ transform-style: flat;
 .reveal section div.full_text {
   position:relative;
   left:0px;
-  top:0%;
+  top:5%;
   width:100%;
 }
 
