@@ -85,26 +85,6 @@
                 </div>
             </section>
 
-            <!-- <section> 
-                <div class="slide">
-                    <h2 class="header">Recent Work</h2>
-                    <img src="Figures/Dissertation-Contribution-Overview/Overall.svg" class="right_image">
-                    <div class="left_text">
-                        <ul>
-                            <li class="fragment fade-up">How can machine health data be effectively captured in an IoT architecture?</li>
-
-                            <li class="fragment fade-up">How can state-of-the-art machine learning tools be leveraged for health monitoring?</li>
-
-                            <li class="fragment fade-up">Can embedded computing be effective in health monitoring applications?</li>
-                        </ul>
-                    </div>
-                    <div class="footer">
-                        <img src="Presentation/css/chevron.png" class="footer">
-                        <h4 class="footer">Introduction</h4>
-                    </div>
-                </div>
-            </section> -->
-
             <section> <!-- Thesis Contributions -->
                 <div class="slide">
                     <h2 class="header">Thesis Contributions</h2>
@@ -126,7 +106,6 @@
                             <ul>
                                 <li class="fragment fade-up">Open source components</li>
                                 <li class="fragment fade-up">High quality sensor measurements</li>
-                                <!-- <li class="fragment fade-up">Data preprocessing framework</li> -->
                             </ul>
                         </ul>
                     </div>
@@ -137,68 +116,6 @@
                 </div>
             </section>
 
-            <!-- Sensor/Controller Integration -->
-            <!-- <section> 
-                <div class="slide">
-                    <h2 class="header">Sensor/Controller Integration</h2>
-                    <img src="Figures/Dissertation-Contribution-Overview/Contextualization.svg" class="right_image">
-                    <div class="left_text">
-                        <ul>
-                            <li class="fragment fade-up">Bidirectional communication facilitates:</li>
-                            <ul>
-                                <li class="fragment fade-up">Sample triggering</li>
-                                <li class="fragment fade-up">Sensor contextualization</li>
-                            </ul>
-                            <li class="fragment fade-up">Standardized message structure</li>
-                        </ul>
-                    </div>
-                    <div class="footer">
-                        <img src="Presentation/css/chevron.png" class="footer">
-                        <h4 class="footer">Introduction</h4>
-                    </div>
-            </section> -->
-
-            <!-- Consistent ML Framework -->
-            <!-- <section> 
-                <div class="slide">
-                    <h2 class="header">Consistent ML Framework</h2>
-                    <img src="Figures/Dissertation-Contribution-Overview/Machine-Learning.svg" class="right_image">
-
-                    <div class="left_text">
-                        <ul>
-                            <li class="fragment fade-up">Perform training remotely</li>
-                            <li class="fragment fade-up">Deploy trained models to the edge for inference</li>
-                            <li class="fragment fade-up">"Close the loop"</li>
-                        </ul>
-                    </div>
-                    <div class="footer">
-                        <img src="Presentation/css/chevron.png" class="footer">
-                        <h4 class="footer">Introduction</h4>
-                    </div>
-            </section> -->
-
-            <!-- Integrated Edge Device -->
-            <!-- <section> 
-                <div class="slide">
-                    <h2 class="header">Integrated Edge Device</h2>
-                        <img src="Figures/Dissertation-Contribution-Overview/Edge-Device.svg" class="right_image">
-                    <div class="left_text">
-                        <ul>
-                            <li class="fragment fade-up">Embedded Linux computer capable of:</li>
-                            <ul>
-                                <li class="fragment fade-up">Controller data acquisition</li>
-                                <li class="fragment fade-up">Analog sensor measurements</li>
-                            </ul>
-                            <li class="fragment fade-up">Open source software</li>
-                            <li class="fragment fade-up">Near real-time data analytics</li>
-                        </ul>
-                    </div>
-                    <div class="footer">
-                        <img src="Presentation/css/chevron.png" class="footer">
-                        <h4 class="footer">Introduction</h4>
-                    </div>
-                </div>
-            </section> -->
 
             <section> <!-- Demonstration-->
                 <div class="slide">
@@ -281,25 +198,6 @@
                     </div>
             </section>
 
-            <!-- Health Monitoring bullet points -->
-            <!-- <section>  
-            <div class="slide">
-                <h2 class="header">Health Monitoring</h2>
-                <div style="display:inline-block;position: absolute;top: 60%; left: 50%;transform: translate(-50%,-50%);height:100%;width:100%">
-                </div>
-                <div style="position:absolute;left:0px;top:15%;width:50%">
-                    <ul>
-                        <li class="fragment fade-up">Condition-based and predictive maintenance are widely understood methods of reducing downtime and maintenance costs</li>
-                        <li class="fragment fade-up">The objective of sensor data acquisition is to retrieve actionable information on machine health status</li>
-                        <li class="fragment fade-up">Feature extraction and model inference are excellent methods by which this may be done</li>
-                    </ul>
-                </div>
-                <div class="footer">
-                    <img src="Presentation/css/chevron.png" style="vertical-align:middle;border:0;height:100%">
-                    <h4 class="footer">Background</h4>
-                </div>
-        </section> -->
-
             <section> <!-- Health Monitoring -->
                 <div class="slide">
                     <h2 class="header">Health Monitoring</h2>
@@ -317,12 +215,24 @@
                     <div style="position:absolute;right:0%;width:50%;">
                         <img src="Figures/Time-Domain-Presentation.svg" class="right_plot">
                     </div>
-                    <div class="left_text">
-                        <ul>
-                            <li>First moment (mean):<br>$M^{k} = \frac{1}{n} \sum\limits_{i=1}^n X_i^k$</li>
-                            <li>Second moment (variance):<br>$\sigma^2 = \frac{1}{(n-1)} \sum\limits_{i=1}^n (X_i-\bar{X})^2$</li>
-                            <li>Third moment:<br>$\mathrm{Skewness} = \frac{M^{3}}{\sigma^3}$</li>
-                            <li>Fourth moment:<br>$\mathrm{Kurtosis} = \frac{M^{4}}{\sigma^4}$</li>
+                    <div class="full_text">
+                        <ul style="line-height:2.0;">
+                            <li>First moment (mean):</li>
+                                <ul style="list-style-type:none;">
+                                    <li style="font-size:1em">$M^{k} = \frac{1}{n} \sum\limits_{i=1}^n X_i^k$</li>
+                                </ul>
+                            <li>Second moment (variance):</li>
+                                <ul style="list-style-type:none;">
+                                    <li style="font-size:1em">$\sigma^2 = \frac{1}{(n-1)} \sum\limits_{i=1}^n (X_i-\bar{X})^2$</li>
+                                </ul>                
+                            <li>Third moment:</li>
+                                <ul style="list-style-type:none;">
+                                    <li style="font-size:1em">$\mathrm{Skewness} = \frac{M^{3}}{\sigma^3}$</li>
+                                </ul>
+                            <li>Fourth moment:</li>
+                                <ul style="list-style-type:none;">
+                                    <li style="font-size:1em">$\mathrm{Kurtosis} = \frac{M^{4}}{\sigma^4}$</li>
+                                </ul>
                         </ul>
                     </div>
                     
@@ -336,6 +246,7 @@
                 <div class="slide">
                     <h2 class="header">Spectral Power Approximation</h2>
                     <div class="center_text">
+                    <p>Discrete Fourier Transform:</p>
                         \begin{equation}
                         X[n] = \sum_{k=0}^{N-1} x[k] e^{-j \frac{2 \pi}{N} n k}
                         \end{equation}
@@ -374,23 +285,10 @@
                 </div>
             </section>
 
-            <section> <!-- JSON Message Definitions -->
-                <div class="slide">
-                    <h2 class="header">MQTT Message Definitions</h2>
-                    <a href="https://arch.fis.gatech.edu" title="ArchitectureSite">Complete Documentation: arch.fis.gatech.edu</a>
-                    <img src="Figures/MQTT_Topic_Structure.svg" class="center_image" style="height:35%;margin-top:1em;">
-                    <img src="Figures/JSON-Message.svg" class="center_image" style="height:40%;margin-top:-0.em;"><br>
-                    
-                    <div class="footer">
-                        <img src="Presentation/css/chevron.png" class="footer">
-                        <h4 class="footer">Architecture</h4>
-                    </div>
-                    </div>
-            </section>
-
             <section> <!-- Controller Payload Example -->
                 <div class="slide">
-                    <h2 class="header">Controller Payload Example</h2>
+                    <h2 class="header">MQTT Message Example</h2>
+                    <a href="https://arch.fis.gatech.edu" title="ArchitectureSite">Complete Documentation: arch.fis.gatech.edu</a>
                     <div class="left_text_abs">
                     <p style="text-align:left;font-size:1.1em;">
                     
@@ -1036,6 +934,20 @@
                 </div>
             </section>
 
+            <section> <!-- JSON Message Definitions -->
+                <div class="slide">
+                    <h2 class="header">MQTT Message Definitions</h2>
+                    <a href="https://arch.fis.gatech.edu" title="ArchitectureSite">Complete Documentation: arch.fis.gatech.edu</a>
+                    <img src="Figures/MQTT_Topic_Structure.svg" class="center_image" style="height:35%;margin-top:1em;">
+                    <img src="Figures/JSON-Message.svg" class="center_image" style="height:40%;margin-top:-0.em;"><br>
+                    
+                    <div class="footer">
+                        <img src="Presentation/css/chevron.png" class="footer">
+                        <h4 class="footer">Architecture</h4>
+                    </div>
+                    </div>
+            </section>
+
             <section> <!-- Hyperparameter Optimization -->
                 <div class="slide">
                     <h2 class="header">Warmup Program</h2>
@@ -1182,6 +1094,88 @@
                     </div>
                 </div>
             </section>
+
+            <!-- Health Monitoring bullet points -->
+            <!-- <section>  
+            <div class="slide">
+                <h2 class="header">Health Monitoring</h2>
+                <div style="display:inline-block;position: absolute;top: 60%; left: 50%;transform: translate(-50%,-50%);height:100%;width:100%">
+                </div>
+                <div style="position:absolute;left:0px;top:15%;width:50%">
+                    <ul>
+                        <li class="fragment fade-up">Condition-based and predictive maintenance are widely understood methods of reducing downtime and maintenance costs</li>
+                        <li class="fragment fade-up">The objective of sensor data acquisition is to retrieve actionable information on machine health status</li>
+                        <li class="fragment fade-up">Feature extraction and model inference are excellent methods by which this may be done</li>
+                    </ul>
+                </div>
+                <div class="footer">
+                    <img src="Presentation/css/chevron.png" style="vertical-align:middle;border:0;height:100%">
+                    <h4 class="footer">Background</h4>
+                </div>
+            </section> -->
+
+            <!-- Sensor/Controller Integration -->
+            <!-- <section> 
+                <div class="slide">
+                    <h2 class="header">Sensor/Controller Integration</h2>
+                    <img src="Figures/Dissertation-Contribution-Overview/Contextualization.svg" class="right_image">
+                    <div class="left_text">
+                        <ul>
+                            <li class="fragment fade-up">Bidirectional communication facilitates:</li>
+                            <ul>
+                                <li class="fragment fade-up">Sample triggering</li>
+                                <li class="fragment fade-up">Sensor contextualization</li>
+                            </ul>
+                            <li class="fragment fade-up">Standardized message structure</li>
+                        </ul>
+                    </div>
+                    <div class="footer">
+                        <img src="Presentation/css/chevron.png" class="footer">
+                        <h4 class="footer">Introduction</h4>
+                    </div>
+            </section> -->
+
+            <!-- Consistent ML Framework -->
+            <!-- <section> 
+                <div class="slide">
+                    <h2 class="header">Consistent ML Framework</h2>
+                    <img src="Figures/Dissertation-Contribution-Overview/Machine-Learning.svg" class="right_image">
+
+                    <div class="left_text">
+                        <ul>
+                            <li class="fragment fade-up">Perform training remotely</li>
+                            <li class="fragment fade-up">Deploy trained models to the edge for inference</li>
+                            <li class="fragment fade-up">"Close the loop"</li>
+                        </ul>
+                    </div>
+                    <div class="footer">
+                        <img src="Presentation/css/chevron.png" class="footer">
+                        <h4 class="footer">Introduction</h4>
+                    </div>
+            </section> -->
+
+            <!-- Integrated Edge Device -->
+            <!-- <section> 
+                <div class="slide">
+                    <h2 class="header">Integrated Edge Device</h2>
+                        <img src="Figures/Dissertation-Contribution-Overview/Edge-Device.svg" class="right_image">
+                    <div class="left_text">
+                        <ul>
+                            <li class="fragment fade-up">Embedded Linux computer capable of:</li>
+                            <ul>
+                                <li class="fragment fade-up">Controller data acquisition</li>
+                                <li class="fragment fade-up">Analog sensor measurements</li>
+                            </ul>
+                            <li class="fragment fade-up">Open source software</li>
+                            <li class="fragment fade-up">Near real-time data analytics</li>
+                        </ul>
+                    </div>
+                    <div class="footer">
+                        <img src="Presentation/css/chevron.png" class="footer">
+                        <h4 class="footer">Introduction</h4>
+                    </div>
+                </div>
+            </section> -->
 
         </section>
 
