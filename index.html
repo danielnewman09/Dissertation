@@ -934,6 +934,62 @@
                 </div>
             </section>
 
+            <section> <!-- Model Performance: Validation -->
+                <div class="slide">
+                    <h2 class="header">Model Performance: Validation</h2>
+                    <img src="Dissertation-Notebooks/Chapter-6/figures/classification-compare-v2.svg" class="center_plot" style="margin-top:0em">
+                    
+                    <div class="footer">
+                        <img src="Presentation/css/chevron.png" class="footer">
+                        <h4 class="footer">Case Study: Tool Wear Classification</h4>
+                    </div>
+                </div>
+            </section>
+
+            <section> <!-- Model Performance: Validation -->
+                <div class="slide">
+                    <h2 class="header">Control Chart Analysis: Range</h2>
+                    <div class="left_text" style="width:100%">
+                        <ul>
+                            <li>Use mean of 20 data points (1 minute average)</li>
+                            <li>Generate control limits from first 25% of good data</li>
+                        </ul>
+                    </div>
+                    <img src="Dissertation-Notebooks/Chapter-6/figures/R-Good-v2.svg" class="left_image" style="height:60%;margin-top:2em">
+                    <img src="Dissertation-Notebooks/Chapter-6/figures/R-Bad-v2.svg" class="right_image" style="height:60%;margin-top:2em">
+                    <div class="footer">
+                        <img src="Presentation/css/chevron.png" class="footer">
+                        <h4 class="footer">Case Study: Tool Wear Classification</h4>
+                    </div>
+                </div>
+            </section>
+
+            <section> <!-- Model Performance: Validation -->
+                <div class="slide">
+                    <h2 class="header">Control Chart Analysis: Mean</h2>
+                    <img src="Dissertation-Notebooks/Chapter-6/figures/X-Good-v2.svg" class="left_image" style="height:60%;">
+                    <img src="Dissertation-Notebooks/Chapter-6/figures/X-Bad-v2.svg" class="right_image" style="height:60%;">
+                    <div class="footer">
+                        <img src="Presentation/css/chevron.png" class="footer">
+                        <h4 class="footer">Case Study: Tool Wear Classification</h4>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Frequency-Domain Results -->
+            <section> 
+                <div class="slide">
+                    <h2 class="header">Accelerometer Calibration</h2>
+                        <img src="Figures/Accel_Calibration/Sensitivity_Y.png" class="center_plot" style="margin-top:0em;">
+                        <img src="Figures/Accel_Calibration/Phase_Y.png" class="center_plot">
+                    <div class="footer">
+                        <img src="Presentation/css/chevron.png" class="footer">
+                        <h4 class="footer">Supplementary Slides</h4>
+                    </div>
+                </div>
+            </section>
+            
+
             <section> <!-- JSON Message Definitions -->
                 <div class="slide">
                     <h2 class="header">MQTT Message Definitions</h2>
@@ -1095,87 +1151,6 @@
                 </div>
             </section>
 
-            <!-- Health Monitoring bullet points -->
-            <!-- <section>  
-            <div class="slide">
-                <h2 class="header">Health Monitoring</h2>
-                <div style="display:inline-block;position: absolute;top: 60%; left: 50%;transform: translate(-50%,-50%);height:100%;width:100%">
-                </div>
-                <div style="position:absolute;left:0px;top:15%;width:50%">
-                    <ul>
-                        <li class="fragment fade-up">Condition-based and predictive maintenance are widely understood methods of reducing downtime and maintenance costs</li>
-                        <li class="fragment fade-up">The objective of sensor data acquisition is to retrieve actionable information on machine health status</li>
-                        <li class="fragment fade-up">Feature extraction and model inference are excellent methods by which this may be done</li>
-                    </ul>
-                </div>
-                <div class="footer">
-                    <img src="Presentation/css/chevron.png" style="vertical-align:middle;border:0;height:100%">
-                    <h4 class="footer">Background</h4>
-                </div>
-            </section> -->
-
-            <!-- Sensor/Controller Integration -->
-            <!-- <section> 
-                <div class="slide">
-                    <h2 class="header">Sensor/Controller Integration</h2>
-                    <img src="Figures/Dissertation-Contribution-Overview/Contextualization.svg" class="right_image">
-                    <div class="left_text">
-                        <ul>
-                            <li class="fragment fade-up">Bidirectional communication facilitates:</li>
-                            <ul>
-                                <li class="fragment fade-up">Sample triggering</li>
-                                <li class="fragment fade-up">Sensor contextualization</li>
-                            </ul>
-                            <li class="fragment fade-up">Standardized message structure</li>
-                        </ul>
-                    </div>
-                    <div class="footer">
-                        <img src="Presentation/css/chevron.png" class="footer">
-                        <h4 class="footer">Introduction</h4>
-                    </div>
-            </section> -->
-
-            <!-- Consistent ML Framework -->
-            <!-- <section> 
-                <div class="slide">
-                    <h2 class="header">Consistent ML Framework</h2>
-                    <img src="Figures/Dissertation-Contribution-Overview/Machine-Learning.svg" class="right_image">
-
-                    <div class="left_text">
-                        <ul>
-                            <li class="fragment fade-up">Perform training remotely</li>
-                            <li class="fragment fade-up">Deploy trained models to the edge for inference</li>
-                            <li class="fragment fade-up">"Close the loop"</li>
-                        </ul>
-                    </div>
-                    <div class="footer">
-                        <img src="Presentation/css/chevron.png" class="footer">
-                        <h4 class="footer">Introduction</h4>
-                    </div>
-            </section> -->
-
-            <!-- Integrated Edge Device -->
-            <!-- <section> 
-                <div class="slide">
-                    <h2 class="header">Integrated Edge Device</h2>
-                        <img src="Figures/Dissertation-Contribution-Overview/Edge-Device.svg" class="right_image">
-                    <div class="left_text">
-                        <ul>
-                            <li class="fragment fade-up">Embedded Linux computer capable of:</li>
-                            <ul>
-                                <li class="fragment fade-up">Controller data acquisition</li>
-                                <li class="fragment fade-up">Analog sensor measurements</li>
-                            </ul>
-                            <li class="fragment fade-up">Open source software</li>
-                            <li class="fragment fade-up">Near real-time data analytics</li>
-                        </ul>
-                    </div>
-                    <div class="footer">
-                        <img src="Presentation/css/chevron.png" class="footer">
-                        <h4 class="footer">Introduction</h4>
-                    </div>
-                </div>
-            </section> -->
 
         </section>
 
